@@ -1,0 +1,36 @@
+<configuration>
+  <configSections>
+    <section name="extnet" type="Ext.Net.GlobalConfig" requirePermission="false" />
+  </configSections>
+
+  <extnet theme="Gray" licenseKey="** Ext.NET LICENSE KEY HERE **" />
+
+  <system.web>
+    <httpHandlers>
+      <add path="*/ext.axd" verb="*" type="Ext.Net.ResourceHandler" validate="false" />
+    </httpHandlers>
+
+    <httpModules>
+      <add name="DirectRequestModule" type="Ext.Net.DirectRequestModule, Ext.Net" />
+    </httpModules>
+
+    <pages>
+      <controls>
+        <add assembly="Ext.Net" namespace="Ext.Net" tagPrefix="ext" />
+      </controls>
+      <namespaces>
+        <add namespace="Ext.Net"/>
+        <!--<add namespace="Ext.Net.MVC"/>-->
+      </namespaces>
+    </pages>
+  </system.web>
+  <system.webServer>
+    <validation validateIntegratedModeConfiguration="false" />
+    <handlers>
+      <add name="DirectRequestHandler" verb="*" path="*/ext.axd" preCondition="integratedMode" type="Ext.Net.ResourceHandler" />
+    </handlers>
+    <modules>
+      <add name="DirectRequestModule" preCondition="managedHandler" type="Ext.Net.DirectRequestModule, Ext.Net" />
+    </modules>
+  </system.webServer>
+</configuration>

@@ -1,0 +1,16 @@
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\BankSwitch.Logic.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\BankSwitch.Logic.pdb
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\BankSwitch.Core.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\BankSwitch.DAO.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\NHibernate.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\FluentNHibernate.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\BankSwitch.Mapping.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\BankSwitch.Core.pdb
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\BankSwitch.Mapping.pdb
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Logic\obj\Debug\BankSwitch.Logic.csprojResolveAssemblyReference.cache
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Logic\obj\Debug\BankSwitch.Logic.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Logic\obj\Debug\BankSwitch.Logic.pdb
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\BankSwitch.DAO.pdb
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\log4net.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\Iesi.Collections.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\log4net.xml

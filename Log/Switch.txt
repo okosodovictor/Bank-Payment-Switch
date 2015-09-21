@@ -1,0 +1,58 @@
+Switch Has Started>>>19/Sep/2015 03:32:20 PM
+Searching for pre-configured source servers:-->> 19/Sep/2015 03:32:20 PM
+Switch Has Started>>>19/Sep/2015 03:35:33 PM
+Searching for pre-configured source servers:-->> 19/Sep/2015 03:35:33 PM
+Switch Has Started>>>19/Sep/2015 03:40:30 PM
+Searching for pre-configured source servers:-->> 19/Sep/2015 03:40:30 PM
+Switch Has Started>>>19/Sep/2015 03:43:15 PM
+Searching for pre-configured source servers:-->> 19/Sep/2015 03:43:15 PM
+Switch Has Started>>>19/Sep/2015 03:51:03 PM
+Searching for pre-configured source servers:-->> 19/Sep/2015 03:51:03 PM
+Switch Has Started>>>19/Sep/2015 03:52:52 PM
+Searching for pre-configured source servers:-->> 19/Sep/2015 03:52:52 PM
+Switch Has Started>>>19/Sep/2015 03:55:28 PM
+Searching for pre-configured source servers:-->> 19/Sep/2015 03:55:28 PM
+Switch Has Started>>>19/Sep/2015 03:57:02 PM
+Searching for pre-configured source servers:-->> 19/Sep/2015 03:57:02 PM
+Switch Has Started>>>19/Sep/2015 03:59:39 PM
+Searching for pre-configured source servers:-->> 19/Sep/2015 03:59:39 PM
+Switch Has Started>>>19/Sep/2015 04:01:37 PM
+Searching for pre-configured source servers:-->> 19/Sep/2015 04:01:37 PM
+Switch Has Started>>>19/Sep/2015 04:04:59 PM
+Searching for pre-configured source servers:-->> 19/Sep/2015 04:04:59 PM
+Switch Has Started>>>19/Sep/2015 04:06:25 PM
+Searching for pre-configured source servers:-->> 19/Sep/2015 04:06:25 PM
+Switch Has Started>>>19/Sep/2015 04:32:41 PM
+Searching for pre-configured source servers:-->> 19/Sep/2015 04:32:41 PM
+Switch Has Started>>>19/Sep/2015 04:36:02 PM
+Searching for pre-configured source servers:-->> 19/Sep/2015 04:36:02 PM
+Switch Has Started>>>19/Sep/2015 04:37:01 PM
+Searching for pre-configured source servers:-->> 19/Sep/2015 04:37:01 PM
+Switch Has Started>>>19/Sep/2015 04:38:03 PM
+Searching for pre-configured source servers:-->> 19/Sep/2015 04:38:03 PM
+Switch Has Started>>>19/Sep/2015 05:27:13 PM
+Searching for pre-configured source servers:-->> 19/Sep/2015 05:27:13 PM
+Switch Has Started>>>19/Sep/2015 05:29:56 PM
+Searching for pre-configured source servers:-->> 19/Sep/2015 05:29:56 PM
+Switch Has Started>>>19/Sep/2015 05:31:56 PM
+Searching for pre-configured source servers:-->> 19/Sep/2015 05:31:56 PM
+Switch Has Started>>>19/Sep/2015 05:38:27 PM
+Searching for pre-configured source servers:-->> 19/Sep/2015 05:38:27 PM
+Switch Has Started>>>19/Sep/2015 05:47:06 PM
+Searching for pre-configured source servers:-->> 19/Sep/2015 05:47:06 PM
+Switch Has Started>>>19/Sep/2015 05:51:23 PM
+Searching for pre-configured source servers:-->> 19/Sep/2015 05:51:23 PM
+Switch Has Started>>>20/Sep/2015 06:23:35 PM
+Searching for pre-configured source servers:-->> 20/Sep/2015 06:23:35 PM
+0 Source server(s) found:-->> 20/Sep/2015 06:23:44 PM
+Switch Has Started>>>20/Sep/2015 06:23:44 PM
+Switch Has Started>>>20/Sep/2015 06:24:09 PM
+sinkone shutting down at 192.168.1.1 on 808020/Sep/2015 06:24:13 PM
+Switch Has Started>>>20/Sep/2015 06:24:43 PM
+Searching for pre-configured source servers:-->> 20/Sep/2015 06:24:43 PM
+0 Source server(s) found:-->> 20/Sep/2015 06:24:45 PM
+Switch Has Started>>>20/Sep/2015 06:24:45 PM
+Switch Has Started>>>	20/Sep/2015 06:27:31 PM
+Searching for pre-configured source servers:-->> 	20/Sep/2015 06:27:31 PM
+0 Source server(s) found:-->> 	20/Sep/2015 06:27:33 PM
+Switch Has Started>>>	20/Sep/2015 06:27:33 PM

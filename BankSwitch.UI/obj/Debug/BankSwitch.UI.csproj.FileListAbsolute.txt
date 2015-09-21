@@ -1,0 +1,40 @@
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.UI.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.UI.pdb
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.UI\bin\Debug\AppZoneUI.Framework.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.Core.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.UI\bin\Debug\FluentNHibernate.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.UI\bin\Debug\CuttingEdge.ServiceLocation.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.UI\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.UI\bin\Debug\EPPlus.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.Core.pdb
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.UI\obj\Debug\BankSwitch.UI.csprojResolveAssemblyReference.cache
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.UI\obj\Debug\BankSwitch.UI.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.UI\obj\Debug\BankSwitch.UI.pdb
+C:\Users\Appzone\documents\visual studio 2013\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.Logic.dll
+C:\Users\Appzone\documents\visual studio 2013\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.DAO.dll
+C:\Users\Appzone\documents\visual studio 2013\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.Mapping.dll
+C:\Users\Appzone\documents\visual studio 2013\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.Logic.pdb
+C:\Users\Appzone\documents\visual studio 2013\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.Mapping.pdb
+C:\Users\Appzone\documents\visual studio 2013\Projects\BankSwitch\BankSwitch.UI\bin\Debug\Ext.Net.Utilities.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.DAO.pdb
+C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.UI.dll
+C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.UI.pdb
+C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\AppZoneUI.Framework.dll
+C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.Core.dll
+C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.Logic.dll
+C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\Ext.Net.Utilities.dll
+C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.DAO.dll
+C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\CuttingEdge.ServiceLocation.dll
+C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\EPPlus.dll
+C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\FluentNHibernate.dll
+C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.Mapping.dll
+C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.Core.pdb
+C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.Logic.pdb
+C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\Iesi.Collections.xml
+C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\NHibernate.xml
+C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.DAO.pdb
+C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.Mapping.pdb
+C:\Projects\BankSwitch\BankSwitch.UI\obj\Debug\BankSwitch.UI.csprojResolveAssemblyReference.cache
+C:\Projects\BankSwitch\BankSwitch.UI\obj\Debug\BankSwitch.UI.dll
+C:\Projects\BankSwitch\BankSwitch.UI\obj\Debug\BankSwitch.UI.pdb

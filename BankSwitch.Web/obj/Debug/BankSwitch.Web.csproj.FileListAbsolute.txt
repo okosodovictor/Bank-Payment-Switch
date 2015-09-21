@@ -1,0 +1,52 @@
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Web\obj\Debug\BankSwitch.Web.csprojResolveAssemblyReference.cache
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.Web.dll.config
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.Web.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.Web.pdb
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.Core.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.UI.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Web\bin\Transformer.NET.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Web\bin\WebActivatorEx.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Web\bin\Ext.Net.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Web\bin\Ext.Net.Utilities.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.Core.pdb
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.UI.pdb
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Web\bin\Transformer.NET.xml
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Web\obj\Debug\BankSwitch.Web.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Web\obj\Debug\BankSwitch.Web.pdb
+C:\Users\Appzone\documents\visual studio 2013\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.DAO.dll
+C:\Users\Appzone\documents\visual studio 2013\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.Logic.dll
+C:\Users\Appzone\documents\visual studio 2013\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.Mapping.dll
+C:\Users\Appzone\documents\visual studio 2013\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.DAO.pdb
+C:\Users\Appzone\documents\visual studio 2013\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.Logic.pdb
+C:\Users\Appzone\documents\visual studio 2013\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.Mapping.pdb
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Web\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Web\bin\EPPlus.dll
+C:\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.Web.dll.config
+C:\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.Web.dll
+C:\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.Web.pdb
+C:\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.DAO.dll
+C:\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.Logic.dll
+C:\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.Mapping.dll
+C:\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.UI.dll
+C:\Projects\BankSwitch\BankSwitch.Web\bin\Ext.Net.dll
+C:\Projects\BankSwitch\BankSwitch.Web\bin\Ext.Net.Utilities.dll
+C:\Projects\BankSwitch\BankSwitch.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Projects\BankSwitch\BankSwitch.Web\bin\Transformer.NET.dll
+C:\Projects\BankSwitch\BankSwitch.Web\bin\WebActivatorEx.dll
+C:\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.Core.dll
+C:\Projects\BankSwitch\BankSwitch.Web\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Projects\BankSwitch\BankSwitch.Web\bin\EPPlus.dll
+C:\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.DAO.pdb
+C:\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.Logic.pdb
+C:\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.Mapping.pdb
+C:\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.UI.pdb
+C:\Projects\BankSwitch\BankSwitch.Web\bin\FluentNHibernate.pdb
+C:\Projects\BankSwitch\BankSwitch.Web\bin\FluentNHibernate.xml
+C:\Projects\BankSwitch\BankSwitch.Web\bin\Iesi.Collections.xml
+C:\Projects\BankSwitch\BankSwitch.Web\bin\NHibernate.xml
+C:\Projects\BankSwitch\BankSwitch.Web\bin\Transformer.NET.xml
+C:\Projects\BankSwitch\BankSwitch.Web\bin\BankSwitch.Core.pdb
+C:\Projects\BankSwitch\BankSwitch.Web\obj\Debug\BankSwitch.Web.csprojResolveAssemblyReference.cache
+C:\Projects\BankSwitch\BankSwitch.Web\obj\Debug\BankSwitch.Web.dll
+C:\Projects\BankSwitch\BankSwitch.Web\obj\Debug\BankSwitch.Web.pdb

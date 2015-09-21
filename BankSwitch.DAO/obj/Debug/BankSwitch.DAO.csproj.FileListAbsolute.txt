@@ -1,0 +1,11 @@
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.DAO\bin\Debug\BankSwitch.DAO.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.DAO\bin\Debug\BankSwitch.DAO.pdb
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.DAO\bin\Debug\BankSwitch.Core.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.DAO\bin\Debug\BankSwitch.Mapping.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.DAO\bin\Debug\FluentNHibernate.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.DAO\bin\Debug\NHibernate.Criterion.Extensions.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.DAO\bin\Debug\BankSwitch.Core.pdb
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.DAO\bin\Debug\BankSwitch.Mapping.pdb
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.DAO\obj\Debug\BankSwitch.DAO.csprojResolveAssemblyReference.cache
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.DAO\obj\Debug\BankSwitch.DAO.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.DAO\obj\Debug\BankSwitch.DAO.pdb

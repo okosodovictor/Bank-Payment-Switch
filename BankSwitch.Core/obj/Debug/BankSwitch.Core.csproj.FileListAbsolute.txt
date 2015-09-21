@@ -1,0 +1,4 @@
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Core\bin\Debug\BankSwitch.Core.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Core\bin\Debug\BankSwitch.Core.pdb
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Core\obj\Debug\BankSwitch.Core.dll
+C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Core\obj\Debug\BankSwitch.Core.pdb

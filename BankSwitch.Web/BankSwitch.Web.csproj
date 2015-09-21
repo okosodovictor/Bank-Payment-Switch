@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0224ED96-6A8E-425D-85D4-6F65ABC6571F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BankSwitch.Web</RootNamespace>
+    <AssemblyName>BankSwitch.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AppZoneUI.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\CBAProject\CBAProject\CBA.Web\bin\AppZoneUI.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="CuttingEdge.ServiceLocation, Version=0.6.0.10043, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\CBAProject\CBAProject\CBA.Web\bin\CuttingEdge.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Ext.Net, Version=2.4.0.28438, Culture=neutral, PublicKeyToken=2e12ce3d0176cd87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\CBAProject\CBAProject\CBA.Web\bin\Ext.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Ext.Net.Utilities, Version=2.3.0.0, Culture=neutral, PublicKeyToken=2c34ac34702a3c23, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\CBAProject\CBAProject\CBA.Web\bin\Ext.Net.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\packages\FluentNHibernate.2.0.1.0\lib\net40\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\BankSwitch.DAO\bin\Debug\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\BankSwitch.DAO\bin\Debug\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Transformer.NET">
+      <HintPath>..\packages\Transformer.NET.2.1.1\lib\net35\Transformer.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx">
+      <HintPath>..\packages\WebActivatorEx.2.0.6\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\AppZoneUI.Framework.dll" />
+    <Content Include="bin\BankSwitch.Core.dll" />
+    <Content Include="bin\BankSwitch.Core.pdb" />
+    <Content Include="bin\BankSwitch.DAO.dll" />
+    <Content Include="bin\BankSwitch.Logic.pdb" />
+    <Content Include="ChannelManagement\AddChannel.aspx" />
+    <Content Include="ChannelManagement\ViewChannelList.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="FeeManagement\AddFee.aspx" />
+    <Content Include="FeeManagement\ViewFeeList.aspx" />
+    <Content Include="RouteManager\AddRoute.aspx" />
+    <Content Include="RouteManager\ViewRouteList.aspx" />
+    <Content Include="SchemeManagement\AddScheme.aspx" />
+    <Content Include="SchemeManagement\AddTransactionTypeChannelFee.aspx" />
+    <Content Include="SchemeManagement\ViewSchemeList.aspx" />
+    <Content Include="SchemeManagement\ViewTransactionTypeChannelFee.aspx" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="SinkNodeManagement\AddSinkNode.aspx" />
+    <Content Include="SinkNodeManagement\ViewSinkNodeList.aspx" />
+    <Content Include="SourceNodeManagement\AddSouceNode.aspx" />
+    <Content Include="SourceNodeManagement\ViewSourceNodeList.aspx" />
+    <Content Include="Static\Fonts\Copse-Regular.ttf" />
+    <Content Include="Static\Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Static\Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Static\Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Static\Fonts\PatuaOne-Regular.otf" />
+    <Content Include="Static\Fonts\SourceSansPro-Regular.otf" />
+    <Content Include="Static\Scripts\jquery-1.10.2.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\_references.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\WebForms\respond.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Static\CSS\Site.css" />
+    <Content Include="Static\Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Static\Images\appzone-logo.jpg" />
+    <Content Include="Static\Images\appzone-logo.png" />
+    <Content Include="Static\Images\banner_bg.png" />
+    <Content Include="Static\Images\bg.jpg" />
+    <Content Include="Static\Images\bg.png" />
+    <Content Include="Static\Images\bg_top.jpg" />
+    <Content Include="Static\Images\brand-bg.jpg" />
+    <Content Include="Static\Images\icon-accounts.png" />
+    <Content Include="Static\Images\icon-accounts2.jpg" />
+    <Content Include="Static\Images\icon-bank.png" />
+    <Content Include="Static\Images\icon-config.png" />
+    <Content Include="Static\Images\icon-customers.png" />
+    <Content Include="Static\Images\icon-gl.png" />
+    <Content Include="Static\Images\icon-gl2.png" />
+    <Content Include="Static\Images\icon-manage.png" />
+    <Content Include="Static\Images\icon-reports.png" />
+    <Content Include="Static\Images\icon-teller-posting.png" />
+    <Content Include="Static\Images\icon-teller.jpg" />
+    <Content Include="Static\Images\icon-user.png" />
+    <Content Include="Static\Images\nav.jpg" />
+    <Content Include="Static\Images\partner-bg.jpg" />
+    <Content Include="Static\Images\partners-tag.png" />
+    <Content Include="Static\Lib\Bootstrap\bootstrap.css" />
+    <Content Include="Static\Lib\Bootstrap\bootstrap.js" />
+    <Content Include="Static\Lib\Bootstrap\bootstrap.min.css" />
+    <Content Include="Static\Lib\Bootstrap\bootstrap.min.js" />
+    <None Include="Static\Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Static\Scripts\jquery-1.10.2.js" />
+    <Content Include="Static\Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Static\Scripts\modernizr-2.6.2.js" />
+    <Content Include="Static\Scripts\respond.js" />
+    <Content Include="Static\Scripts\respond.min.js" />
+    <Content Include="Static\Scripts\WebForms\DetailsView.js" />
+    <Content Include="Static\Scripts\WebForms\Focus.js" />
+    <Content Include="Static\Scripts\WebForms\GridView.js" />
+    <Content Include="Static\Scripts\WebForms\Menu.js" />
+    <Content Include="Static\Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Static\Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Static\Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Static\Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Static\Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Static\Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Static\Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Static\Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Static\Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Static\Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Static\Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Static\Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Static\Scripts\WebForms\SmartNav.js" />
+    <Content Include="Static\Scripts\WebForms\TreeView.js" />
+    <Content Include="Static\Scripts\WebForms\WebForms.js" />
+    <Content Include="Static\Scripts\WebForms\WebParts.js" />
+    <Content Include="Static\Scripts\WebForms\WebUIValidation.js" />
+    <None Include="Static\Scripts\_references.js" />
+    <Content Include="TransactionTypeManagement\AddTransactionType.aspx" />
+    <Content Include="TransactionTypeManagement\ViewTransactionTypeList.aspx" />
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Readme\Ext.NET.Utilities\BREAKING_CHANGES.txt" />
+    <Content Include="App_Readme\Ext.NET.Utilities\LICENSE.txt" />
+    <Content Include="App_Readme\Ext.NET.Utilities\README.txt" />
+    <Content Include="App_Readme\Ext.NET\BREAKING_CHANGES.txt" />
+    <Content Include="App_Readme\Ext.NET\CHANGELOG.txt" />
+    <Content Include="App_Readme\Ext.NET\Ext.NET.Default.aspx" />
+    <Content Include="App_Readme\Ext.NET\LICENSE.txt" />
+    <Content Include="App_Readme\Ext.NET\README.txt" />
+    <Content Include="App_Readme\Transformer.NET\LICENSE.txt" />
+    <Content Include="App_Readme\Transformer.NET\README.txt" />
+    <Content Include="bin\BankSwitch.Web.dll" />
+    <Content Include="bin\BankSwitch.Web.pdb" />
+    <Content Include="bin\CuttingEdge.ServiceLocation.dll" />
+    <Content Include="bin\EPPlus.dll" />
+    <Content Include="bin\FluentNHibernate.dll" />
+    <Content Include="bin\FluentNHibernate.pdb" />
+    <Content Include="bin\FluentNHibernate.xml" />
+    <Content Include="bin\Iesi.Collections.dll" />
+    <Content Include="bin\Iesi.Collections.xml" />
+    <Content Include="bin\Microsoft.Practices.ServiceLocation.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\NHibernate.dll" />
+    <Content Include="bin\NHibernate.xml" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Ext.NET.Default.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="packages.config" />
+    <Content Include="BankOne.Master" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="App_Readme\Ext.NET\Sample.Web.config" />
+    <None Include="bin\BankSwitch.Web.dll.config" />
+    <None Include="Scripts\jquery-2.1.4-vsdoc.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-2.1.4.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Scripts\jquery-2.1.4.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BankOne.Master.cs">
+      <DependentUpon>BankOne.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BankOne.Master.designer.cs">
+      <DependentUpon>BankOne.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ChannelManagement\AddChannel.aspx.cs">
+      <DependentUpon>AddChannel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChannelManagement\AddChannel.aspx.designer.cs">
+      <DependentUpon>AddChannel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChannelManagement\ViewChannelList.aspx.cs">
+      <DependentUpon>ViewChannelList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChannelManagement\ViewChannelList.aspx.designer.cs">
+      <DependentUpon>ViewChannelList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeeManagement\AddFee.aspx.cs">
+      <DependentUpon>AddFee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeeManagement\AddFee.aspx.designer.cs">
+      <DependentUpon>AddFee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeeManagement\ViewFeeList.aspx.cs">
+      <DependentUpon>ViewFeeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeeManagement\ViewFeeList.aspx.designer.cs">
+      <DependentUpon>ViewFeeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RouteManager\AddRoute.aspx.cs">
+      <DependentUpon>AddRoute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RouteManager\AddRoute.aspx.designer.cs">
+      <DependentUpon>AddRoute.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RouteManager\ViewRouteList.aspx.cs">
+      <DependentUpon>ViewRouteList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RouteManager\ViewRouteList.aspx.designer.cs">
+      <DependentUpon>ViewRouteList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SchemeManagement\AddScheme.aspx.cs">
+      <DependentUpon>AddScheme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SchemeManagement\AddScheme.aspx.designer.cs">
+      <DependentUpon>AddScheme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SchemeManagement\AddTransactionTypeChannelFee.aspx.cs">
+      <DependentUpon>AddTransactionTypeChannelFee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SchemeManagement\AddTransactionTypeChannelFee.aspx.designer.cs">
+      <DependentUpon>AddTransactionTypeChannelFee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SchemeManagement\ViewSchemeList.aspx.cs">
+      <DependentUpon>ViewSchemeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SchemeManagement\ViewSchemeList.aspx.designer.cs">
+      <DependentUpon>ViewSchemeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SchemeManagement\ViewTransactionTypeChannelFee.aspx.cs">
+      <DependentUpon>ViewTransactionTypeChannelFee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SchemeManagement\ViewTransactionTypeChannelFee.aspx.designer.cs">
+      <DependentUpon>ViewTransactionTypeChannelFee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SinkNodeManagement\AddSinkNode.aspx.cs">
+      <DependentUpon>AddSinkNode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SinkNodeManagement\AddSinkNode.aspx.designer.cs">
+      <DependentUpon>AddSinkNode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SinkNodeManagement\ViewSinkNodeList.aspx.cs">
+      <DependentUpon>ViewSinkNodeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SinkNodeManagement\ViewSinkNodeList.aspx.designer.cs">
+      <DependentUpon>ViewSinkNodeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SourceNodeManagement\AddSouceNode.aspx.cs">
+      <DependentUpon>AddSouceNode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SourceNodeManagement\AddSouceNode.aspx.designer.cs">
+      <DependentUpon>AddSouceNode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SourceNodeManagement\ViewSourceNodeList.aspx.cs">
+      <DependentUpon>ViewSourceNodeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SourceNodeManagement\ViewSourceNodeList.aspx.designer.cs">
+      <DependentUpon>ViewSourceNodeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionTypeManagement\AddTransactionType.aspx.cs">
+      <DependentUpon>AddTransactionType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TransactionTypeManagement\AddTransactionType.aspx.designer.cs">
+      <DependentUpon>AddTransactionType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionTypeManagement\ViewTransactionTypeList.aspx.cs">
+      <DependentUpon>ViewTransactionTypeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TransactionTypeManagement\ViewTransactionTypeList.aspx.designer.cs">
+      <DependentUpon>ViewTransactionTypeList.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BankSwitch.DAO\BankSwitch.DAO.csproj">
+      <Project>{f001f2a3-d776-4ad9-95c4-47ea1bf3994c}</Project>
+      <Name>BankSwitch.DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BankSwitch.Logic\BankSwitch.Logic.csproj">
+      <Project>{8f9439b7-eaff-4e2c-bda5-6fc683a87c2e}</Project>
+      <Name>BankSwitch.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BankSwitch.Mapping\BankSwitch.Mapping.csproj">
+      <Project>{f61a2a0c-1641-4a55-99e5-cb97e4488ebc}</Project>
+      <Name>BankSwitch.Mapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BankSwitch.UI\BankSwitch.UI.csproj">
+      <Project>{267743e5-803d-4c6a-be95-2c49f7e96cb5}</Project>
+      <Name>BankSwitch.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>41209</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:34669/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
