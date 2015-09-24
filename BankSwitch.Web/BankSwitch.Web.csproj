@@ -111,6 +111,7 @@
     <Content Include="SchemeManagement\AddScheme.aspx" />
     <Content Include="SchemeManagement\AddTransactionTypeChannelFee.aspx" />
     <Content Include="SchemeManagement\ViewSchemeList.aspx" />
+    <Content Include="SchemeManagement\ViewTransactionLog.aspx" />
     <Content Include="SchemeManagement\ViewTransactionTypeChannelFee.aspx" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="SinkNodeManagement\AddSinkNode.aspx" />
@@ -348,6 +349,13 @@
     </Compile>
     <Compile Include="SchemeManagement\ViewSchemeList.aspx.designer.cs">
       <DependentUpon>ViewSchemeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SchemeManagement\ViewTransactionLog.aspx.cs">
+      <DependentUpon>ViewTransactionLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SchemeManagement\ViewTransactionLog.aspx.designer.cs">
+      <DependentUpon>ViewTransactionLog.aspx</DependentUpon>
     </Compile>
     <Compile Include="SchemeManagement\ViewTransactionTypeChannelFee.aspx.cs">
       <DependentUpon>ViewTransactionTypeChannelFee.aspx</DependentUpon>

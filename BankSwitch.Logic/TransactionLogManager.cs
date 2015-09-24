@@ -47,5 +47,9 @@ namespace BankSwitch.Logic
                    _db.Update(thisLog);
                }
            }
+           public IList<TransactionLog> GetAllTransactionLog(string cardPAN, string mti, string responseCode, DateTime? transactionDatefrom, DateTime? transactionDateTo, int start, int limit, out int total)
+           {
+               return _db.GetAllTransactionLog(cardPAN, mti, responseCode, transactionDatefrom, transactionDateTo, start, limit, out total);
+           }
     }
 }

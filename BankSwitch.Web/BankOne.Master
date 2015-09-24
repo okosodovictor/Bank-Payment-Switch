@@ -129,6 +129,14 @@
                                 <li><a href="SchemeManagement/ViewTransactionTypeChannelFee.aspx" runat="server">View TransactionType Channel Fee Combo</a></li>--%>
                             </ul>
                         </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Transaction Log Management<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                           <li><a href="SchemeManagement/ViewTransactionLog.aspx" runat="server">View TRansaction Log</a></li>
+                           <%--<li><a href="SchemeManagement/AddTransactionTypeChannelFee.aspx" runat="server">Add TransactionType Channel Fee Combo</a></li>
+                                <li><a href="SchemeManagement/ViewTransactionTypeChannelFee.aspx" runat="server">View TransactionType Channel Fee Combo</a></li>--%>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <asp:LoginView runat="server" ViewStateMode="Disabled">

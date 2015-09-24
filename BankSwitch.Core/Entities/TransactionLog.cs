@@ -12,7 +12,7 @@ namespace BankSwitch.Core.Entities
         public virtual string MTI { get; set; }
         public virtual string CardPAN { get; set; }
         public virtual string STAN { get; set; }
-        public virtual DateTime TransactionDate { get; set; }
+        public virtual DateTime? TransactionDate { get; set; }
         public virtual string Account1 { get; set; }
         public virtual string Account2 { get; set; }
         public virtual string TransactionType { get; set; }
@@ -29,7 +29,7 @@ namespace BankSwitch.Core.Entities
         public virtual bool IsReversePending { get; set; }
         public virtual bool IsReversed { get; set; }
         public virtual string OriginalDataElement { get; set; }
-        public virtual DateTime DateCreated { get; set; }
-        public virtual DateTime DateModified { get; set; }
+        public virtual DateTime? DateCreated { get; set; }
+        public virtual DateTime? DateModified { get; set; }
     }
 }

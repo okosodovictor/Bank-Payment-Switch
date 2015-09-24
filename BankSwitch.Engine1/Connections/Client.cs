@@ -1,6 +1,7 @@
 ﻿using BankSwitch.Core.Entities;
 using BankSwitch.Engine.ProcessorMangement;
 using BankSwitch.Engine.Utility;
+using BankSwitch.Engine1;
 using BankSwitch.Logic;
 using System;
 using System.Collections.Generic;
@@ -59,20 +60,20 @@ namespace BankSwitch.Engine.Connections
         {
             ClientPeer client = sender as ClientPeer;
             if (client == null) return;
-            trxnManager.Log("(Event) Connected to Client " + client.Name);
+            Logger.Log("(Event) Connected to Client " + client.Name);
         }
 
         private void ClientPeerDisconnected(object sender, EventArgs e)
         {
             ClientPeer client = sender as ClientPeer;
             if (client == null) return;
-            trxnManager.Log("(Event) Disconnected from Client "  + client.Name);
+            Logger.Log("(Event) Disconnected from Client " + client.Name);
         }
 
         private void ClientPeerOnReceive(object sender, ReceiveEventArgs e)
         {
             var clientPeer = sender as ClientPeer;
-            trxnManager.Log("Client Peer Receiving>>> " + clientPeer.Name);
+            Logger.Log("Client Peer Receiving>>> " + clientPeer.Name);
 
             Iso8583Message receivedMessage = e.Message as Iso8583Message;
             SinkNode theSinkNode;
@@ -83,7 +84,7 @@ namespace BankSwitch.Engine.Connections
             }
             catch (Exception)
             {
-                trxnManager.Log(String.Format("Message from Unknown Sink Node: {0}", receivedMessage));
+                 Logger.Log(String.Format("Message from Unknown Sink Node: {0}", receivedMessage));
                 receivedMessage.SetResponseMessageTypeIdentifier();
                 receivedMessage.Fields.Add(39, "91");   //Issuer inoperative
                 clientPeer.Send(receivedMessage);
@@ -97,7 +98,7 @@ namespace BankSwitch.Engine.Connections
             if (!isValidMti)
             {
 
-                trxnManager.Log(String.Format("Invalid MTI response code {0}, {1}", receivedMessage, theSinkNode)); // work on this
+                 Logger.Log(String.Format("Invalid MTI response code {0}, {1}", receivedMessage, theSinkNode)); // work on this
                 clientPeer.Send(receivedMessage);
 
                 return;

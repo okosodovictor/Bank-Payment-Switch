@@ -2094,3 +2094,278 @@ Searching for pre-configured source servers	23/Sep/2015 03:50:39 PM
 Searching for pre-configured sink Clients:-->> 	23/Sep/2015 03:50:41 PM
 0 Sink Client(s) found	23/Sep/2015 03:50:41 PM
 Switch Has Started....>	23/Sep/2015 03:50:41 PM
+Switch Has Started....>	23/Sep/2015 04:46:55 PM
+Searching for pre-configured source servers	23/Sep/2015 04:46:55 PM
+2 Source server(s) found:.	 	23/Sep/2015 04:46:58 PM
+Initializing Listener on... 127.0.0.1	9090	23/Sep/2015 04:46:58 PM
+Switch Has Started....>	23/Sep/2015 04:46:58 PM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	23/Sep/2015 04:46:58 PM
+Initializing Listener on... 127.0.0.1	9083	23/Sep/2015 04:46:58 PM
+Switch Has Started....>	23/Sep/2015 04:46:58 PM
+Source: SourceNodeTwo listening at 127.0.0.1 on 9083	23/Sep/2015 04:46:58 PM
+Searching for pre-configured sink Clients:-->> 	23/Sep/2015 04:46:58 PM
+2 Sink Client(s) found	23/Sep/2015 04:46:58 PM
+Switch Has Started....>	23/Sep/2015 04:46:58 PM
+Switch Has Started....>	23/Sep/2015 04:46:58 PM
+Switch Has Started....>	23/Sep/2015 04:53:35 PM
+Searching for pre-configured source servers	23/Sep/2015 04:53:35 PM
+2 Source server(s) found:.	 	23/Sep/2015 04:53:37 PM
+Initializing Listener on... 127.0.0.1	9090	23/Sep/2015 04:53:37 PM
+Switch Has Started....>	23/Sep/2015 04:53:37 PM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	23/Sep/2015 04:53:37 PM
+Initializing Listener on... 127.0.0.1	9083	23/Sep/2015 04:53:37 PM
+Switch Has Started....>	23/Sep/2015 04:53:37 PM
+Source: SourceNodeTwo listening at 127.0.0.1 on 9083	23/Sep/2015 04:53:37 PM
+Searching for pre-configured sink Clients:-->> 	23/Sep/2015 04:53:38 PM
+2 Sink Client(s) found	23/Sep/2015 04:53:38 PM
+Switch Has Started....>	23/Sep/2015 04:53:38 PM
+Switch Has Started....>	23/Sep/2015 04:53:38 PM
+Switch Has Started....>	23/Sep/2015 04:53:38 PM
+Switch Has Started....>	24/Sep/2015 04:06:28 AM
+Searching for pre-configured source servers	24/Sep/2015 04:06:28 AM
+2 Source server(s) found:.	 	24/Sep/2015 04:06:30 AM
+Initializing Listener on... 127.0.0.1	9090	24/Sep/2015 04:06:30 AM
+Switch Has Started....>	24/Sep/2015 04:06:30 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:06:30 AM
+Initializing Listener on... 127.0.0.1	9083	24/Sep/2015 04:06:31 AM
+Switch Has Started....>	24/Sep/2015 04:06:31 AM
+Source: SourceNodeTwo listening at 127.0.0.1 on 9083	24/Sep/2015 04:06:31 AM
+Searching for pre-configured sink Clients:-->> 	24/Sep/2015 04:06:31 AM
+2 Sink Client(s) found	24/Sep/2015 04:06:31 AM
+Switch Has Started....>	24/Sep/2015 04:06:31 AM
+Switch Has Started....>	24/Sep/2015 04:06:31 AM
+Switch Has Started....>	24/Sep/2015 04:06:31 AM
+Connected to ==> 1	24/Sep/2015 04:08:30 AM
+Listener Peer is now receiving...24/Sep/2015 04:08:31 AM
+	24/Sep/2015 04:08:31 AM
+Switch Has Started....>	24/Sep/2015 04:08:31 AM
+
+ Enter Validator	24/Sep/2015 04:08:31 AM
+Transaction log::: 123456 9/24/2015 12:08:31 PM	24/Sep/2015 04:08:32 AM
+Sink node is null.	24/Sep/2015 04:08:32 AM
+Transaction log::: 123456 9/24/2015 12:08:32 PM	24/Sep/2015 04:08:32 AM
+(Event)Source server disconnected from: 1	24/Sep/2015 04:08:33 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:08:33 AM
+Connected to ==> 1	24/Sep/2015 04:08:33 AM
+(Event)Source server disconnected from: 1	24/Sep/2015 04:08:33 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:08:33 AM
+Connected to ==> 1	24/Sep/2015 04:10:33 AM
+Listener Peer is now receiving...24/Sep/2015 04:10:34 AM
+	24/Sep/2015 04:10:34 AM
+Switch Has Started....>	24/Sep/2015 04:10:34 AM
+
+ Enter Validator	24/Sep/2015 04:10:34 AM
+Transaction log::: 123456 9/24/2015 12:10:35 PM	24/Sep/2015 04:10:35 AM
+Sink node is null.	24/Sep/2015 04:10:35 AM
+Transaction log::: 123456 9/24/2015 12:10:35 PM	24/Sep/2015 04:10:35 AM
+(Event)Source server disconnected from: 1	24/Sep/2015 04:10:35 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:10:35 AM
+(Event)Source server disconnected from: 1	24/Sep/2015 04:10:35 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:10:35 AM
+Connected to ==> 1	24/Sep/2015 04:11:40 AM
+Listener Peer is now receiving...24/Sep/2015 04:11:41 AM
+	24/Sep/2015 04:11:41 AM
+Switch Has Started....>	24/Sep/2015 04:11:41 AM
+
+ Enter Validator	24/Sep/2015 04:11:41 AM
+Transaction log::: 123456 9/24/2015 12:11:41 PM	24/Sep/2015 04:11:41 AM
+Sink node is null.	24/Sep/2015 04:11:41 AM
+Transaction log::: 123456 9/24/2015 12:11:41 PM	24/Sep/2015 04:11:41 AM
+(Event)Source server disconnected from: 1	24/Sep/2015 04:11:41 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:11:41 AM
+Connected to ==> 1	24/Sep/2015 04:11:42 AM
+(Event)Source server disconnected from: 1	24/Sep/2015 04:11:42 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:11:42 AM
+Connected to ==> 1	24/Sep/2015 04:11:56 AM
+Listener Peer is now receiving...24/Sep/2015 04:11:57 AM
+	24/Sep/2015 04:11:57 AM
+Switch Has Started....>	24/Sep/2015 04:11:57 AM
+
+ Enter Validator	24/Sep/2015 04:11:57 AM
+Transaction log::: 123456 9/24/2015 12:11:57 PM	24/Sep/2015 04:11:57 AM
+Sink node is null.	24/Sep/2015 04:11:58 AM
+Transaction log::: 123456 9/24/2015 12:11:58 PM	24/Sep/2015 04:11:58 AM
+(Event)Source server disconnected from: 1	24/Sep/2015 04:11:58 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:11:58 AM
+Connected to ==> 1	24/Sep/2015 04:11:58 AM
+(Event)Source server disconnected from: 1	24/Sep/2015 04:11:58 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:11:58 AM
+Connected to ==> 1	24/Sep/2015 04:12:02 AM
+Listener Peer is now receiving...24/Sep/2015 04:12:03 AM
+	24/Sep/2015 04:12:03 AM
+Switch Has Started....>	24/Sep/2015 04:12:03 AM
+
+ Enter Validator	24/Sep/2015 04:12:03 AM
+Transaction log::: 123456 9/24/2015 12:12:03 PM	24/Sep/2015 04:12:03 AM
+Sink node is null.	24/Sep/2015 04:12:03 AM
+Transaction log::: 123456 9/24/2015 12:12:03 PM	24/Sep/2015 04:12:03 AM
+(Event)Source server disconnected from: 1	24/Sep/2015 04:12:03 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:12:03 AM
+Connected to ==> 1	24/Sep/2015 04:12:04 AM
+(Event)Source server disconnected from: 1	24/Sep/2015 04:12:04 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:12:04 AM
+Switch Has Started....>	24/Sep/2015 04:14:00 AM
+Searching for pre-configured source servers	24/Sep/2015 04:14:00 AM
+2 Source server(s) found:.	 	24/Sep/2015 04:14:02 AM
+Initializing Listener on... 127.0.0.1	9090	24/Sep/2015 04:14:02 AM
+Switch Has Started....>	24/Sep/2015 04:14:02 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:14:02 AM
+Initializing Listener on... 127.0.0.1	9083	24/Sep/2015 04:14:02 AM
+Switch Has Started....>	24/Sep/2015 04:14:02 AM
+Source: SourceNodeTwo listening at 127.0.0.1 on 9083	24/Sep/2015 04:14:02 AM
+Searching for pre-configured sink Clients:-->> 	24/Sep/2015 04:14:03 AM
+2 Sink Client(s) found	24/Sep/2015 04:14:03 AM
+Switch Has Started....>	24/Sep/2015 04:14:03 AM
+Switch Has Started....>	24/Sep/2015 04:14:03 AM
+Switch Has Started....>	24/Sep/2015 04:14:03 AM
+Connected to ==> 1	24/Sep/2015 04:14:35 AM
+Listener Peer is now receiving...24/Sep/2015 04:14:36 AM
+	24/Sep/2015 04:14:36 AM
+Switch Has Started....>	24/Sep/2015 04:14:36 AM
+
+ Enter Validator	24/Sep/2015 04:14:36 AM
+Transaction log::: 123456 9/24/2015 12:14:36 PM	24/Sep/2015 04:14:37 AM
+Loading Node Schemes	24/Sep/2015 04:14:53 AM
+Transaction log::: 123456 9/24/2015 12:14:53 PM	24/Sep/2015 04:14:53 AM
+(Event)Source server disconnected from: 1	24/Sep/2015 04:14:53 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:14:53 AM
+Connected to ==> 1	24/Sep/2015 04:14:53 AM
+(Event)Source server disconnected from: 1	24/Sep/2015 04:14:53 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:14:54 AM
+Connected to ==> 1	24/Sep/2015 04:15:37 AM
+Listener Peer is now receiving...24/Sep/2015 04:15:38 AM
+	24/Sep/2015 04:15:38 AM
+Switch Has Started....>	24/Sep/2015 04:15:38 AM
+
+ Enter Validator	24/Sep/2015 04:15:38 AM
+Transaction log::: 123456 9/24/2015 12:15:38 PM	24/Sep/2015 04:15:38 AM
+Loading Node Schemes	24/Sep/2015 04:15:38 AM
+Transaction log::: 123456 9/24/2015 12:15:38 PM	24/Sep/2015 04:15:38 AM
+(Event)Source server disconnected from: 1	24/Sep/2015 04:15:38 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:15:38 AM
+Connected to ==> 1	24/Sep/2015 04:15:39 AM
+Switch Has Started....>	24/Sep/2015 04:18:19 AM
+Searching for pre-configured source servers	24/Sep/2015 04:18:19 AM
+2 Source server(s) found:.	 	24/Sep/2015 04:18:22 AM
+Initializing Listener on... 127.0.0.1	9090	24/Sep/2015 04:18:22 AM
+Switch Has Started....>	24/Sep/2015 04:18:22 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:18:22 AM
+Initializing Listener on... 127.0.0.1	9083	24/Sep/2015 04:18:22 AM
+Switch Has Started....>	24/Sep/2015 04:18:22 AM
+Source: SourceNodeTwo listening at 127.0.0.1 on 9083	24/Sep/2015 04:18:22 AM
+Searching for pre-configured sink Clients:-->> 	24/Sep/2015 04:18:22 AM
+2 Sink Client(s) found	24/Sep/2015 04:18:22 AM
+Switch Has Started....>	24/Sep/2015 04:18:22 AM
+Switch Has Started....>	24/Sep/2015 04:18:22 AM
+Switch Has Started....>	24/Sep/2015 04:18:22 AM
+Connected to ==> 1	24/Sep/2015 04:18:46 AM
+(Event)Source server disconnected from: 1	24/Sep/2015 04:18:47 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:18:47 AM
+Connected to ==> 1	24/Sep/2015 04:18:47 AM
+Switch Has Started....>	24/Sep/2015 04:19:39 AM
+Searching for pre-configured source servers	24/Sep/2015 04:19:39 AM
+2 Source server(s) found:.	 	24/Sep/2015 04:19:41 AM
+Initializing Listener on... 127.0.0.1	9090	24/Sep/2015 04:19:41 AM
+Switch Has Started....>	24/Sep/2015 04:19:41 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:19:41 AM
+Initializing Listener on... 127.0.0.1	9083	24/Sep/2015 04:19:41 AM
+Switch Has Started....>	24/Sep/2015 04:19:42 AM
+Source: SourceNodeTwo listening at 127.0.0.1 on 9083	24/Sep/2015 04:19:42 AM
+Searching for pre-configured sink Clients:-->> 	24/Sep/2015 04:19:42 AM
+2 Sink Client(s) found	24/Sep/2015 04:19:42 AM
+Switch Has Started....>	24/Sep/2015 04:19:42 AM
+Switch Has Started....>	24/Sep/2015 04:19:42 AM
+Switch Has Started....>	24/Sep/2015 04:19:42 AM
+Connected to ==> 1	24/Sep/2015 04:19:49 AM
+Listener Peer is now receiving...24/Sep/2015 04:19:50 AM
+	24/Sep/2015 04:19:50 AM
+Switch Has Started....>	24/Sep/2015 04:19:50 AM
+
+ Enter Validator	24/Sep/2015 04:19:50 AM
+Transaction log::: 123456 9/24/2015 12:19:50 PM	24/Sep/2015 04:19:51 AM
+Loading Node Schemes	24/Sep/2015 04:19:51 AM
+Scheme : Scheme Loaded	24/Sep/2015 04:19:51 AM
+Getting fee:	24/Sep/2015 04:19:51 AM
+Transaction log::: 123456 9/24/2015 12:19:53 PM	24/Sep/2015 04:19:53 AM
+(Event)Source server disconnected from: 1	24/Sep/2015 04:19:53 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:19:53 AM
+Connected to ==> 1	24/Sep/2015 04:19:53 AM
+(Event)Source server disconnected from: 1	24/Sep/2015 04:19:53 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:19:53 AM
+Connected to ==> 1	24/Sep/2015 04:20:36 AM
+Listener Peer is now receiving...24/Sep/2015 04:20:37 AM
+	24/Sep/2015 04:20:37 AM
+Switch Has Started....>	24/Sep/2015 04:20:37 AM
+
+ Enter Validator	24/Sep/2015 04:20:37 AM
+Transaction log::: 123456 9/24/2015 12:20:37 PM	24/Sep/2015 04:20:37 AM
+Loading Node Schemes	24/Sep/2015 04:20:37 AM
+Scheme : Scheme Loaded	24/Sep/2015 04:20:37 AM
+Getting fee:	24/Sep/2015 04:20:37 AM
+Transaction log::: 123456 9/24/2015 12:20:37 PM	24/Sep/2015 04:20:37 AM
+(Event)Source server disconnected from: 1	24/Sep/2015 04:20:37 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:20:38 AM
+Connected to ==> 1	24/Sep/2015 04:20:38 AM
+(Event)Source server disconnected from: 1	24/Sep/2015 04:20:38 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:20:38 AM
+Connected to ==> 1	24/Sep/2015 04:23:47 AM
+Switch Has Started....>	24/Sep/2015 04:25:24 AM
+Searching for pre-configured source servers	24/Sep/2015 04:25:24 AM
+2 Source server(s) found:.	 	24/Sep/2015 04:25:24 AM
+Initializing Listener on... 127.0.0.1	9090	24/Sep/2015 04:25:24 AM
+Switch Has Started....>	24/Sep/2015 04:25:24 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:25:24 AM
+Initializing Listener on... 127.0.0.1	9083	24/Sep/2015 04:25:24 AM
+Switch Has Started....>	24/Sep/2015 04:25:24 AM
+Source: SourceNodeTwo listening at 127.0.0.1 on 9083	24/Sep/2015 04:25:24 AM
+Searching for pre-configured sink Clients:-->> 	24/Sep/2015 04:25:25 AM
+2 Sink Client(s) found	24/Sep/2015 04:25:25 AM
+Switch Has Started....>	24/Sep/2015 04:25:25 AM
+Switch Has Started....>	24/Sep/2015 04:25:25 AM
+Connected to ==> 1	24/Sep/2015 04:25:31 AM
+Listener Peer is now receiving...24/Sep/2015 04:25:32 AM
+	24/Sep/2015 04:25:32 AM
+Switch Has Started....>	24/Sep/2015 04:25:32 AM
+
+ Enter Validator	24/Sep/2015 04:25:32 AM
+Transaction log::: 123456 9/24/2015 12:25:32 PM	24/Sep/2015 04:25:32 AM
+Loading Node Schemes	24/Sep/2015 04:25:32 AM
+Scheme : Scheme Loaded	24/Sep/2015 04:25:32 AM
+Getting fee:	24/Sep/2015 04:25:32 AM
+
+ Could not connect to the Sink Node.	24/Sep/2015 04:25:40 AM
+Transaction log::: 123456 9/24/2015 12:25:40 PM	24/Sep/2015 04:25:40 AM
+(Event)Source server disconnected from: 1	24/Sep/2015 04:25:40 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:25:40 AM
+Connected to ==> 1	24/Sep/2015 04:25:40 AM
+Switch Has Started....>	24/Sep/2015 04:26:09 AM
+Searching for pre-configured source servers	24/Sep/2015 04:26:09 AM
+2 Source server(s) found:.	 	24/Sep/2015 04:26:09 AM
+Initializing Listener on... 127.0.0.1	9090	24/Sep/2015 04:26:09 AM
+Switch Has Started....>	24/Sep/2015 04:26:09 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:26:09 AM
+Initializing Listener on... 127.0.0.1	9083	24/Sep/2015 04:26:09 AM
+Switch Has Started....>	24/Sep/2015 04:26:09 AM
+Source: SourceNodeTwo listening at 127.0.0.1 on 9083	24/Sep/2015 04:26:09 AM
+Searching for pre-configured sink Clients:-->> 	24/Sep/2015 04:26:09 AM
+2 Sink Client(s) found	24/Sep/2015 04:26:09 AM
+Switch Has Started....>	24/Sep/2015 04:26:09 AM
+Switch Has Started....>	24/Sep/2015 04:26:10 AM
+Connected to ==> 1	24/Sep/2015 04:26:15 AM
+Listener Peer is now receiving...24/Sep/2015 04:26:16 AM
+	24/Sep/2015 04:26:16 AM
+Switch Has Started....>	24/Sep/2015 04:26:16 AM
+
+ Enter Validator	24/Sep/2015 04:26:16 AM
+Transaction log::: 123456 9/24/2015 12:26:16 PM	24/Sep/2015 04:26:16 AM
+Loading Node Schemes	24/Sep/2015 04:26:16 AM
+Scheme : Scheme Loaded	24/Sep/2015 04:26:16 AM
+Getting fee:	24/Sep/2015 04:26:16 AM
+
+ Could not connect to the Sink Node.	24/Sep/2015 04:26:24 AM
+Transaction log::: 123456 9/24/2015 12:26:24 PM	24/Sep/2015 04:26:24 AM
+(Event)Source server disconnected from: 1	24/Sep/2015 04:26:24 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:26:24 AM
+Connected to ==> 1	24/Sep/2015 04:26:24 AM
+(Event)Source server disconnected from: 1	24/Sep/2015 04:28:47 AM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:28:48 AM

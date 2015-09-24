@@ -74,6 +74,7 @@
     <Compile Include="Model\SchemeModel.cs" />
     <Compile Include="Model\SinkNodeModel.cs" />
     <Compile Include="Model\SourceNodeModel.cs" />
+    <Compile Include="Model\TransactionLogModel.cs" />
     <Compile Include="Model\TransactionModel.cs" />
     <Compile Include="Model\TransactionTypeChannelFeeModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -101,7 +102,9 @@
     <Compile Include="TransactionTypeChannelfeeManagement\ViewTransactionTypeChannelFee.cs" />
     <Compile Include="TransactionTypeManagement\AddTransactionType.cs" />
     <Compile Include="TransactionTypeManagement\EditTransactionType.cs" />
+    <Compile Include="TransactionTypeManagement\TransactionLogDetail.cs" />
     <Compile Include="TransactionTypeManagement\TrnsactionTypeDetail.cs" />
+    <Compile Include="TransactionTypeManagement\ViewTransactionLog.cs" />
     <Compile Include="TransactionTypeManagement\ViewTransactionTypeList.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -47,22 +47,22 @@ namespace BankSwitch.Engine1
              //TO INSTANTIATE CLIENT PEER
         TransactionManager trxnManager = new TransactionManager();
             //Start up all listeners
-            trxnManager.Log("Searching for pre-configured source servers");
+        Logger.Log("Searching for pre-configured source servers");
             IList<SourceNode> allSourceNode = new SourceNodeManager().RetrieveAll();
-            trxnManager.Log(allSourceNode.Count + " Source server(s) found:.\t ");
+            Logger.Log(allSourceNode.Count + " Source server(s) found:.\t ");
 
             foreach (var sourceNode in allSourceNode)
             {
                 Console.WriteLine("Initializing Listener on..." + sourceNode.IPAddress + "\t" + sourceNode.Port);
-                trxnManager.Log("Initializing Listener on... " + sourceNode.IPAddress + "\t" + sourceNode.Port);
+                Logger.Log("Initializing Listener on... " + sourceNode.IPAddress + "\t" + sourceNode.Port);
                 new Listener().StartListener(sourceNode);
                 sourceNode.IsActive = true;
                 new SourceNodeManager().Update(sourceNode);
             }
             //Start up all clients
-            trxnManager.Log("Searching for pre-configured sink Clients:-->> ");
+            Logger.Log("Searching for pre-configured sink Clients:-->> ");
             IList<SinkNode> allSinkNode = new SinkNodeManager().GetAllSinkNode();
-            trxnManager.Log(allSinkNode.Count + " Sink Client(s) found");
+            Logger.Log(allSinkNode.Count + " Sink Client(s) found");
 
             foreach (var thisSinkNode in allSinkNode)
             {
@@ -82,7 +82,7 @@ namespace BankSwitch.Engine1
             {
                 thisNode.IsActive = false;
                 new SourceNodeManager().Update(thisNode);
-                trxnManager.Log(thisNode.Name + " shutting down at " + thisNode.IPAddress + " on " + thisNode.Port);
+                Logger.Log(thisNode.Name + " shutting down at " + thisNode.IPAddress + " on " + thisNode.Port);
             }
 
             IList<SinkNode> SinkNodes = new SinkNodeManager().GetAllSinkNode();
@@ -91,7 +91,7 @@ namespace BankSwitch.Engine1
             {
                 sinkNode.IsActive = false;
                 new SinkNodeManager().Update(sinkNode);
-                trxnManager.Log(sinkNode.Name + " shutting down at " + sinkNode.IPAddress + " on " + sinkNode.Port);
+                Logger.Log(sinkNode.Name + " shutting down at " + sinkNode.IPAddress + " on " + sinkNode.Port);
                 Console.WriteLine("SinkNode ShortDown" + sinkNode.IPAddress + "\t" + sinkNode.Port);
             }
         }

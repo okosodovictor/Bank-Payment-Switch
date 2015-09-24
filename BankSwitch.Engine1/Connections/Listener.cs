@@ -1,5 +1,6 @@
 ﻿using BankSwitch.Core.Entities;
 using BankSwitch.Engine.ProcessorMangement;
+using BankSwitch.Engine1;
 using BankSwitch.Logic;
 using System;
 using System.Collections.Generic;
@@ -30,7 +31,7 @@ namespace BankSwitch.Engine.Connections
                         (new Iso8583Ascii1987BinaryBitmapMessageFormatter(), ipAddress, port),
                          new BasicMessagesIdentifier(11, 41), tcpListener);
 
-            trxnManager.Log("Source: " + theSourceNode.Name + " listening at " + ipAddress + " on " + port);
+            Logger.Log("Source: " + theSourceNode.Name + " listening at " + ipAddress + " on " + port);
 
 
             listener.Connected += new PeerConnectedEventHandler(listenerPeerConnected);
@@ -43,7 +44,7 @@ namespace BankSwitch.Engine.Connections
         {
             ListenerPeer peer = sender as ListenerPeer;
             if (peer == null) return;
-            trxnManager.Log("(Event)Source server disconnected from: " + peer.Name);
+            Logger.Log("(Event)Source server disconnected from: " + peer.Name);
             SourceNode theSourceNode = new SourceNodeManager().GetByID(Convert.ToInt32(peer.Name));
             StartListener(theSourceNode);
         }
@@ -53,7 +54,7 @@ namespace BankSwitch.Engine.Connections
             //Cast event sender as ClientPeer
             ListenerPeer sourcePeer = sender as ListenerPeer;
 
-            trxnManager.Log("Listener Peer is now receiving..." + DateTime.Now.ToString("dd/MMM/yyyy hh:mm:ss tt") + Environment.NewLine);
+            Logger.Log("Listener Peer is now receiving..." + DateTime.Now.ToString("dd/MMM/yyyy hh:mm:ss tt") + Environment.NewLine);
 
             //Get the Message received
             Iso8583Message incomingMsg = e.Message as Iso8583Message;
@@ -75,7 +76,7 @@ namespace BankSwitch.Engine.Connections
         {
 
             ListenerPeer peer = sender as ListenerPeer;
-            trxnManager.Log("Connected to ==> " + peer.Name);
+            Logger.Log("Connected to ==> " + peer.Name);
             if (peer == null) return;
         }
 

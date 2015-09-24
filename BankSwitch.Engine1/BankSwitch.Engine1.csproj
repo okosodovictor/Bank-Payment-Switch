@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Connections\Client.cs" />
     <Compile Include="Connections\Listener.cs" />
+    <Compile Include="Logger.cs" />
     <Compile Include="ProcessorManagement\TransactionManager.cs" />
     <Compile Include="Engine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
