@@ -93,7 +93,7 @@ namespace BankSwitch.Logic
 
         public Route GetRouteByCardPan(string theCardPan)
         {
-            var route = _db.Get<Route>().FirstOrDefault(x => x.CardPAN==theCardPan);
+            var route = _db.GetByCarPAN(theCardPan);
             return route;
         }
     }

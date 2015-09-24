@@ -30,7 +30,7 @@ namespace BankSwitch.UI.SourceNodeManagement
                              //Map(x => x.SchemeList).AsSectionField<TextLabel>(),
                              Map(x => x.IsActive).AsSectionField<TextLabel>(),
 
-                AddButton().WithText(x=>x.IsActive?"Disable Node":"Enable Node")
+                AddSectionButton().WithText(x=>x.IsActive?"Disable Node":"Enable Node")
                .SubmitTo(x=>
                   {
                      if(x.IsActive)
@@ -43,7 +43,7 @@ namespace BankSwitch.UI.SourceNodeManagement
                      }
                      var result = new SourceNodeManager().EditSourceNode(x);
                       return result;
-                  }),
+                  }).OnSuccessRedirectTo("~SourceNodeManagement/ViewSourceNodeList.aspx"),
 
                 AddSectionButton().WithText("Edit Source Node")
                 .ApplyMod<ButtonPopupMod>(x => x

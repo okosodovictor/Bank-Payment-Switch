@@ -17,43 +17,6 @@ namespace BankSwitch.Core.DAO
         {
 
         }
-        public object Create(SourceNode model)
-        {
-            object result = null;
-            try
-            {
-                using (ISession session = _Session.SessionFactory.OpenSession())
-                {
-                    using (ITransaction trn =_Session.BeginTransaction())
-                    {
-                        SourceNode sourceNode = new SourceNode
-                       {
-                           Name = model.Name,
-                           Port = model.Port,
-                           IsActive = false,
-                           IPAddress = model.IPAddress,
-                           HostName = model.HostName
-                       };
-                    result = session.Save(sourceNode);
-
-                    sourceNode.Schemes = model.Schemes;
-
-                    foreach (var scheme in model.Schemes)
-                    {
-                        session.Update(scheme);
-                        trn.Commit();
-                    }
-
-                    }
-                }
-                return result;
-            }
-            catch (Exception)
-            {
-                _Session.Transaction.Rollback();
-                throw;
-            }
-        }
 
         public object Save(SourceNode model)
         {
@@ -63,6 +26,19 @@ namespace BankSwitch.Core.DAO
                 using (var transactn = session.BeginTransaction())
                 {
                   result = session.Save(model);
+                    transactn.Commit();
+                }
+            }
+            return result;
+        }
+        public object Edit(SourceNode model)
+        {
+            object result = null;
+            using (var session = DataAccess.DataAccess.OpenSession())
+            {
+                using (var transactn = session.BeginTransaction())
+                {
+                    session.Merge(model);
                     transactn.Commit();
                 }
             }
@@ -114,6 +90,18 @@ namespace BankSwitch.Core.DAO
         {
             var query = _Session.QueryOver<SourceNode>().List<SourceNode>();
             return query;
+        }
+
+        public void Update(SourceNode sourceNode)
+        {
+            using (var session = DataAccess.DataAccess.OpenSession())
+            {
+                using (var transactn = session.BeginTransaction())
+                {
+                    session.Merge(sourceNode);
+                    transactn.Commit();
+                }
+            }
         }
 
     }

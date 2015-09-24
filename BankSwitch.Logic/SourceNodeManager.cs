@@ -32,26 +32,17 @@ namespace BankSwitch.Logic
        }
        public bool EditSourceNode(SourceNode model)
        {
-
            bool result = false;
            try
            {
-               var sourceNode = _db.Get<SourceNode>().FirstOrDefault(x => x.Name == model.Name && x.IPAddress == model.IPAddress);
-               if (sourceNode != null)
+              object obj = _db.Edit(model);
+               if(obj!=null)
                {
-                   sourceNode.Schemes = model.Schemes;
-                   sourceNode.Name = model.Name;
-                   sourceNode.IPAddress = model.IPAddress;
-                   sourceNode.HostName = model.HostName;
-                   sourceNode.Port = model.Port;
-                   sourceNode.IsActive = model.IsActive;
-                result = _db.Update(sourceNode);
-                _db.Commit();
+                   result = true;
                }
            }
            catch (Exception)
            {
-               _db.Rollback();
                throw;
            }
            return result;

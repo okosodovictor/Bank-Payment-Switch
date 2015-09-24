@@ -21,7 +21,7 @@ namespace BankSwitch.Engine.Connections
         {
             string ipAddress = theSourceNode.IPAddress;
             int port = Convert.ToInt32(theSourceNode.Port);
-
+           
             TcpListener tcpListener = new TcpListener(port);
             tcpListener.LocalInterface = ipAddress;
             tcpListener.Start();

@@ -77,7 +77,9 @@ namespace BankSwitch.Logic
 
        public Channel GetByCode(string channelCode)
        {
-           var channel = _db.Get<Channel>().Where(x => x.Code == channelCode).FirstOrDefault();
+
+           Channel channel = _db.GetAll<Channel>().Where(x => x.Code == channelCode).FirstOrDefault();
+
            return channel;
        }
     }

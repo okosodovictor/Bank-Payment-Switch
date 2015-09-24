@@ -8,3 +8,13 @@ C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Map
 C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Mapping\obj\Debug\BankSwitch.Mapping.csprojResolveAssemblyReference.cache
 C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Mapping\obj\Debug\BankSwitch.Mapping.dll
 C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Mapping\obj\Debug\BankSwitch.Mapping.pdb
+C:\Projects\BankSwitch\BankSwitch.Mapping\bin\Debug\BankSwitch.Mapping.dll
+C:\Projects\BankSwitch\BankSwitch.Mapping\bin\Debug\BankSwitch.Mapping.pdb
+C:\Projects\BankSwitch\BankSwitch.Mapping\bin\Debug\BankSwitch.Core.dll
+C:\Projects\BankSwitch\BankSwitch.Mapping\bin\Debug\FluentNHibernate.dll
+C:\Projects\BankSwitch\BankSwitch.Mapping\bin\Debug\Iesi.Collections.dll
+C:\Projects\BankSwitch\BankSwitch.Mapping\bin\Debug\NHibernate.dll
+C:\Projects\BankSwitch\BankSwitch.Mapping\bin\Debug\BankSwitch.Core.pdb
+C:\Projects\BankSwitch\BankSwitch.Mapping\obj\Debug\BankSwitch.Mapping.csprojResolveAssemblyReference.cache
+C:\Projects\BankSwitch\BankSwitch.Mapping\obj\Debug\BankSwitch.Mapping.dll
+C:\Projects\BankSwitch\BankSwitch.Mapping\obj\Debug\BankSwitch.Mapping.pdb

@@ -47,6 +47,15 @@ namespace BankSwitch.DAO
        {
          return _Session.QueryOver<Route>().List<Route>();
        }
-           
+      public Route GetByCarPAN(string cardPAN)
+       {
+           IList<Route> route = null;
+           using (var session = DataAccess.OpenSession())
+           {
+               route = session.QueryOver<Route>().List<Route>();
+           }
+           var query = route.Where(x => x.CardPAN == cardPAN).SingleOrDefault();
+           return query;
+       }
     } 
 }

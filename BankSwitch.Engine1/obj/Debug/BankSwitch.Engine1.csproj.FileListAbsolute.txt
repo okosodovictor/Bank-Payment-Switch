@@ -19,3 +19,22 @@ C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Eng
 C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Engine1\bin\Debug\BankSwitch.Logic.pdb
 C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Engine1\bin\Debug\log4net.xml
 C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Engine1\bin\Debug\BankSwitch.Mapping.pdb
+C:\Projects\BankSwitch\BankSwitch.Engine1\bin\Debug\BankSwitch.Engine1.exe.config
+C:\Projects\BankSwitch\BankSwitch.Engine1\bin\Debug\BankSwitch.Engine1.exe
+C:\Projects\BankSwitch\BankSwitch.Engine1\bin\Debug\BankSwitch.Engine1.pdb
+C:\Projects\BankSwitch\BankSwitch.Engine1\bin\Debug\BankSwitch.Core.dll
+C:\Projects\BankSwitch\BankSwitch.Engine1\bin\Debug\BankSwitch.DAO.dll
+C:\Projects\BankSwitch\BankSwitch.Engine1\bin\Debug\BankSwitch.Logic.dll
+C:\Projects\BankSwitch\BankSwitch.Engine1\bin\Debug\FluentNHibernate.dll
+C:\Projects\BankSwitch\BankSwitch.Engine1\bin\Debug\Iesi.Collections.dll
+C:\Projects\BankSwitch\BankSwitch.Engine1\bin\Debug\NHibernate.Criterion.Extensions.dll
+C:\Projects\BankSwitch\BankSwitch.Engine1\bin\Debug\NHibernate.dll
+C:\Projects\BankSwitch\BankSwitch.Engine1\bin\Debug\Trx.dll
+C:\Projects\BankSwitch\BankSwitch.Engine1\bin\Debug\BankSwitch.Mapping.dll
+C:\Projects\BankSwitch\BankSwitch.Engine1\bin\Debug\BankSwitch.Core.pdb
+C:\Projects\BankSwitch\BankSwitch.Engine1\bin\Debug\BankSwitch.DAO.pdb
+C:\Projects\BankSwitch\BankSwitch.Engine1\bin\Debug\BankSwitch.Logic.pdb
+C:\Projects\BankSwitch\BankSwitch.Engine1\bin\Debug\BankSwitch.Mapping.pdb
+C:\Projects\BankSwitch\BankSwitch.Engine1\obj\Debug\BankSwitch.Engine1.csprojResolveAssemblyReference.cache
+C:\Projects\BankSwitch\BankSwitch.Engine1\obj\Debug\BankSwitch.Engine1.exe
+C:\Projects\BankSwitch\BankSwitch.Engine1\obj\Debug\BankSwitch.Engine1.pdb

@@ -14,6 +14,7 @@ using Trx.Messaging;
 using Trx.Messaging.FlowControl;
 using Trx.Messaging.Channels;
 using System.Threading;
+using System.Globalization;
 
 namespace BankSwitch.Engine.ProcessorMangement
 {
@@ -36,6 +37,7 @@ namespace BankSwitch.Engine.ProcessorMangement
                  string.Format("{0:00}{1:00}", transmissionDate.Month, transmissionDate.Day),
                  string.Format("{0:00}{1:00}{2:00}", transmissionDate.Hour,
                  transmissionDate.Minute, transmissionDate.Second));
+
            //set Original Data Element
              string originalDataElement = string.Format("{0}{1}{2}", originalMessage.MessageTypeIdentifier.ToString(), originalMessage.Fields[11].ToString(), transactionDate);
            //add original data element to original message
@@ -45,12 +47,18 @@ namespace BankSwitch.Engine.ProcessorMangement
            LogTransaction(originalMessage, sourceNode);
 
            //  Check if it is reversal message and do the needful
-           if(originalMessage.MessageTypeIdentifier==421)
+           if (originalMessage.MessageTypeIdentifier == 421)
            {
-               Log("\n This is Reversal Message");
-
-                bool conReversal;
-                Iso8583Message reversalIsoMsg = GetReversalMessage(originalMessage, out conReversal);
+               Log("\n This is a reversal");
+               bool conReversal;
+               Iso8583Message reversalIsoMsg = GetReversalMessage(originalMessage, out conReversal);
+               if (!conReversal)
+               {
+                   LogTransaction(reversalIsoMsg);
+                   return reversalIsoMsg;
+               }
+               originalMessage = reversalIsoMsg;
+               LogTransaction(originalMessage, sourceNode);
            }
 
            string theCardPan = originalMessage.Fields[2].Value.ToString();
@@ -59,17 +67,20 @@ namespace BankSwitch.Engine.ProcessorMangement
            string orgExpiry = originalMessage.Fields[14].Value.ToString();
 
 
+           string code = originalMessage.Fields[123].ToString().Substring(13, 2);
 
-           Channel theChannel = new ChannelManager().GetByCode(originalMessage.Fields[123].ToString().Substring(13, 2));
+           Channel theChannel = new ChannelManager().GetByCode(code);
            Fee feeObj = null;
-           Route theRoute = new RouteManager().GetRouteByCardPan(theCardPan);
+           string cardPAN = theCardPan.Substring(0, 5);
+           Route theRoute = new RouteManager().GetRouteByCardPan(cardPAN);
            TransactionType transactionType = new TransactionTypeManager().GetByCode(trnxTypeCode);
            Iso8583Message responseMessage;
 
 
            //check if card has expired
            DateTime cardExpiryDate = ParseExpiryDate(orgExpiry);
-           if (cardExpiryDate < DateTime.Now)
+
+           if(cardExpiryDate < DateTime.Now)
            {
                responseMessage = SetReponseMessage(originalMessage, "54");         //Expired card
                LogTransaction(responseMessage, sourceNode);
@@ -109,7 +120,7 @@ namespace BankSwitch.Engine.ProcessorMangement
 
            try
            {
-               thisScheme = theSchemes.Where(x => x.Route.CardPAN == theCardPan).SingleOrDefault();
+               thisScheme = theSchemes.Where(x => x.Route.CardPAN == theCardPan.Substring(0,5)).SingleOrDefault();
            }
            catch (Exception ex)
            {
@@ -131,7 +142,7 @@ namespace BankSwitch.Engine.ProcessorMangement
 
            feeObj = IsTransactionAllowed(transactionType, theChannel, thisScheme);
 
-           Log("\n Getting fee");
+           Log("Getting fee:");
            if (feeObj == null)
            {
                responseMessage = SetReponseMessage(originalMessage, "58"); // Transaction type not allowed in this scheme
@@ -143,7 +154,9 @@ namespace BankSwitch.Engine.ProcessorMangement
                originalMessage = SetFee(originalMessage, CalculateFee(feeObj, amount));
            }
            bool needReversal = false;
+
            Iso8583Message msgFromFEP = ToFEP(originalMessage, sinkNode, out needReversal);
+
            LogTransaction(msgFromFEP, sourceNode, thisScheme, feeObj, needReversal);
 
 
@@ -178,7 +191,6 @@ namespace BankSwitch.Engine.ProcessorMangement
                        Convert.ToInt16(sinkNode.Port)), new Trx.Messaging.BasicMessagesIdentifier(11));
                _clientPeer.Connect();
                Thread.Sleep(1800);
-
                int retries = 0;
                while (retries < maxNoRetries)
                {
@@ -214,16 +226,14 @@ namespace BankSwitch.Engine.ProcessorMangement
                        response = request.ResponseMessage;
                        //ResponseMessage = GetResponseMesage(response as Iso8583Message);
                    }
-
-                   //LogTransaction(response as Iso8583Message);
-                   //_clientPeer.Close();
-                   //Thread.Sleep(6000);
                    return response as Iso8583Message;
                }
                else
                {
+                   Console.WriteLine("\n Could not connect to the Sink Node..");
+                   Console.BackgroundColor = ConsoleColor.Red;
                    Log("\n Could not connect to the Sink Node.");
-                   return SetReponseMessage(msgToSend, "91");  //Issuer inoperative
+                   return SetReponseMessage(msgToSend, "91");
                }
            }
            catch (Exception ex)
@@ -239,9 +249,12 @@ namespace BankSwitch.Engine.ProcessorMangement
            {
                foreach (var item in thisScheme.TransactionTypeChannelFees)
                {
-                   if (item.TransactionType.Code == transactionType.Code && item.Channel.Code == theChannel.Code)
+                   if (theChannel != null)
                    {
-                       return item.Fee;
+                       if (item.TransactionType.Code == transactionType.Code && item.Channel.Code == theChannel.Code)
+                       {
+                           return item.Fee;
+                       }
                    }
                }
 
@@ -289,8 +302,7 @@ namespace BankSwitch.Engine.ProcessorMangement
        {
            string year = orgExpiry.Substring(0, 2);
            string month = orgExpiry.Substring(2, 2);
-
-           string expiry = "01-" + month + "-" + year;
+           string expiry = month + "-" + "01-" + year;
            DateTime cardExpiryDate = DateTime.Now;
 
            if (DateTime.TryParse(expiry, out cardExpiryDate))
@@ -368,9 +380,17 @@ namespace BankSwitch.Engine.ProcessorMangement
                transactionLog.STAN = incomingMessage.Fields[11].ToString();
                transactionLog.Amount = Convert.ToDouble(incomingMessage.Fields[4].ToString());
                transactionLog.CardPAN = cardPan;
-               transactionLog.Channel = new ChannelManager().GetByCode(channelCode);
-               transactionLog.TransactionType = new TransactionTypeManager().GetByCode(transactionTypeCode);
-               transactionLog.SourceNode = sourceNode;
+              var channel =  new ChannelManager().GetByCode(channelCode);
+              if (channel != null)
+              {
+                  transactionLog.Channel = channel.Name;
+              }
+               var trnx = new TransactionTypeManager().GetByCode(transactionTypeCode);
+               if(trnx!=null)
+               {
+                   transactionLog.TransactionType = trnx.Name;
+               }
+               transactionLog.SourceNode = sourceNode.Name;
                transactionLog.TransactionDate = transmissionDate;
                transactionLog.DateCreated = DateTime.Now;
                transactionLog.DateModified = DateTime.Now;
@@ -383,29 +403,43 @@ namespace BankSwitch.Engine.ProcessorMangement
                {
                    responseCode = incomingMessage.Fields[39].Value.ToString();
                }
-               catch (Exception) { }
-
+               catch (Exception){ }
+                 
 
                if (scheme != null)
                {
-                   transactionLog.Scheme = scheme;
-                   transactionLog.Route = scheme.Route;
+                   transactionLog.Scheme = scheme.Name;
+                   transactionLog.Route = scheme.Route.Name;
 
-                   transactionLog.SinkNode = scheme.Route.SinkNode;
+                   transactionLog.SinkNode = scheme.Route.SinkNode.Name;
                }
 
                try
                {
-                   transactionLog.Charge = Convert.ToDecimal(incomingMessage.Fields[28].Value.ToString());
+                   string value = incomingMessage.Fields[28].Value.ToString();
+                   decimal result = 0;
+                   if(Decimal.TryParse(value, out result))
+                   {
+                       transactionLog.Charge = result;
+                   }
                }
                catch (Exception) { }
-   
-               transactionLog.Fee = fee;
-               transactionLog.ResponseCode = responseCode;
-               transactionLog.ResponseDescription = MessageDefinition.GetResponseDescription(responseCode);
-
-               transactionLog.Account1 = incomingMessage.Fields[102].ToString();
-               transactionLog.Account2 = incomingMessage.Fields[103].ToString();
+               if (fee != null)
+               {
+                   transactionLog.Fee = fee.Name;
+               }
+               if (responseCode != null)
+               {
+                   transactionLog.ResponseCode = responseCode;
+               }
+               if (responseCode != null)
+               {
+                   transactionLog.ResponseDescription = MessageDefinition.GetResponseDescription(responseCode);
+               }
+               string acc1 = incomingMessage.Fields[102].Value.ToString();
+               string acc2 = incomingMessage.Fields[103].Value.ToString();
+               transactionLog.Account1 = acc1;
+               transactionLog.Account2 = acc2;
                transactionLog.IsReversePending = needReversal;
 
                if (incomingMessage.MessageTypeIdentifier.ToString() == "430" && responseCode == "00")
@@ -426,9 +460,9 @@ namespace BankSwitch.Engine.ProcessorMangement
            catch (Exception ex)
            {
                Log("Error occurred while logging transaction \n" + ex.Message);
+               Console.ForegroundColor = ConsoleColor.Red;
            }
        }
-
 
        public void Log(string msg)
        {
@@ -438,6 +472,7 @@ namespace BankSwitch.Engine.ProcessorMangement
                writer.WriteLine(msg + "" +"\t"+ DateTime.Now.ToString("dd/MMM/yyyy hh:mm:ss tt"), Environment.NewLine);
            }
            Console.WriteLine("\n" + msg + "" +"\t"+ DateTime.Now.ToString("dd/MMM/yyyy hh:mm:ss tt"), Environment.NewLine);
+           Console.ForegroundColor = ConsoleColor.Green;
        }
 
        public void DoAutoReversal()
@@ -445,7 +480,8 @@ namespace BankSwitch.Engine.ProcessorMangement
            var allLogThatNeedsReversal = new TransactionLogManager().GetAllThatNeedsReversal();
            Iso8583Message msgFromFEP = null;
            bool needReversal = true;
-
+           var allSinkNodes = new SinkNodeManager().GetAllSinkNode().ToDictionary(x => x.Name);
+           var allSourceNodes = new SourceNodeManager().RetrieveAll().ToDictionary(x => x.Name);
            foreach (var thisLog in allLogThatNeedsReversal)
            {
                if (!thisLog.IsReversed && thisLog.IsReversePending)
@@ -454,12 +490,12 @@ namespace BankSwitch.Engine.ProcessorMangement
                    LogTransaction(revMsg);
                    if (thisLog.SinkNode != null)
                    {
-                       var sinkNode = new SinkNodeManager().GetById(thisLog.SinkNode.Id);
+                       var sinkNode = allSinkNodes[thisLog.SinkNode];
                        msgFromFEP = ToFEP(revMsg, sinkNode, out needReversal); //TOFEP should set needReversal to false
 
                        if (msgFromFEP.Fields[39].ToString() == "00")
                        {
-                           LogTransaction(msgFromFEP, thisLog.SourceNode, null, null, needReversal);
+                           LogTransaction(msgFromFEP, allSourceNodes[thisLog.SourceNode], null, null, needReversal);
                        }
                    }
 
@@ -510,7 +546,7 @@ namespace BankSwitch.Engine.ProcessorMangement
                //echoMsg.Fields.Add(40, "101");
                echoMsg.Fields.Add(41, "1701230J");
                echoMsg.Fields.Add(42, "VIACARD");
-               echoMsg.Fields.Add(43, "IronBar, Lekki, Lagos");
+               echoMsg.Fields.Add(43, "Yaba, Office, Lagos");
                echoMsg.Fields.Add(49, "566");
                echoMsg.Fields.Add(90, "00000000000000000000000" + log.OriginalDataElement);
                echoMsg.Fields.Add(102, log.Account1);

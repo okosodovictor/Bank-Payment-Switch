@@ -15,14 +15,14 @@ namespace BankSwitch.Core.Entities
         public virtual DateTime TransactionDate { get; set; }
         public virtual string Account1 { get; set; }
         public virtual string Account2 { get; set; }
-        public virtual TransactionType TransactionType { get; set; }
-        public virtual Channel Channel { get; set; }
-        public virtual SourceNode SourceNode { get; set; }
-        public virtual SinkNode SinkNode { get; set; }
-        public virtual Route Route { get; set; }
-        public virtual Scheme Scheme { get; set; }
+        public virtual string TransactionType { get; set; }
+        public virtual string Channel { get; set; }
+        public virtual string SourceNode { get; set; }
+        public virtual string SinkNode { get; set; }
+        public virtual string Route { get; set; }
+        public virtual string Scheme { get; set; }
         public virtual double Amount { get; set; }
-        public virtual Fee Fee { get; set; }
+        public virtual string Fee { get; set; }
         public virtual string ResponseCode { get; set; }
         public virtual string ResponseDescription { get; set; }
         public virtual decimal Charge { get; set; }

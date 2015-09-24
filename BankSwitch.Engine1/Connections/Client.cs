@@ -26,14 +26,14 @@ namespace BankSwitch.Engine.Connections
             ClientPeer client = new ClientPeer(sinkNode.Id.ToString(),
                         new TwoBytesNboHeaderChannel(new Iso8583Ascii1987BinaryBitmapMessageFormatter(), ipAddress, port),
                         new BasicMessagesIdentifier(11, 41));
-           
+          
             client.RequestDone += new PeerRequestDoneEventHandler(Client_RequestDone);
             client.RequestCancelled += new PeerRequestCancelledEventHandler(Client_RequestCancelled);
 
             client.Connected += new PeerConnectedEventHandler(ClientPeerConnected);
             client.Receive += new PeerReceiveEventHandler(ClientPeerOnReceive);
             client.Disconnected += new PeerDisconnectedEventHandler(ClientPeerDisconnected);
-
+            //client.Connect();
         }
 
         //When the requested send to a Sink (client) is done
@@ -42,8 +42,6 @@ namespace BankSwitch.Engine.Connections
             Iso8583Message response = e.Request.ResponseMessage as Iso8583Message;
             //SourceNode sourceNode = e.Request.Payload as SourceNode;
             SinkNode sinkNode = e.Request.Payload as SinkNode;
-
-
             //continue coding
         }
 
@@ -61,14 +59,14 @@ namespace BankSwitch.Engine.Connections
         {
             ClientPeer client = sender as ClientPeer;
             if (client == null) return;
-            trxnManager.Log("Connected to Client ==> " + client.Name);
+            trxnManager.Log("(Event) Connected to Client " + client.Name);
         }
 
         private void ClientPeerDisconnected(object sender, EventArgs e)
         {
             ClientPeer client = sender as ClientPeer;
             if (client == null) return;
-            trxnManager.Log("(Disconnected from Client =/=> " + client.Name);
+            trxnManager.Log("(Event) Disconnected from Client "  + client.Name);
         }
 
         private void ClientPeerOnReceive(object sender, ReceiveEventArgs e)

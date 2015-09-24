@@ -16,7 +16,7 @@ namespace BankSwitch.UI.SourceNodeManagement
        public ViewSourceNodeList()
        {
            WithTitle("View Source Nodes");
-           AddSection().WithTitle("Search")
+           AddSection()
            .IsFramed()
            .IsCollapsible()
           .WithFields(new List<IField>()
@@ -35,18 +35,18 @@ namespace BankSwitch.UI.SourceNodeManagement
                 {
                     new Column(new List<IField>()
                     {
-                            HasMany(x => x.SourceNodes)
-                            .AsSectionField<Grid>().LabelTextIs("Source Node")
+                              HasMany(x =>x.SourceNodes)
+                            .AsSectionField<Grid>()
                             .Of<SourceNode>()
                             .WithRowNumbers()
                             .WithColumn(x => x.Name)
-                            .WithColumn(x => x.HostName)
                             .WithColumn(x => x.IPAddress)
+                            .WithColumn(x => x.HostName)
                             .WithColumn(x => x.Port)
-                            .WithColumn(x => x.IsActive?"Active":"InActive","Status")
+
                             .WithRowNumbers()
                             .IsPaged<SourceNodeModel>(10, (x, e) =>
-                            {
+                            { 
                                 int totalCount = 0;
                                 try
                                 {
@@ -60,7 +60,7 @@ namespace BankSwitch.UI.SourceNodeManagement
                                 }
                                 e.TotalCount = totalCount * e.Limit;
                                  return x;
-                            }).ApplyMod<ViewDetailsMod>(y => y.Popup<sourceNodeDetail>("Source Node Details")),
+                            }).ApplyMod<ViewDetailsMod>(y => y.Popup<sourceNodeDetail>("Route Details")),
                 
                    })
                 });

@@ -14,13 +14,13 @@ namespace BankSwitch.Engine1
     {
         static void Main(string[] args)
         {
+
             Startup();
             //Do autoReversal 
             new TransactionManager().DoAutoReversal();
-
             while (true)
             {
-                Console.WriteLine("Switch waiting for connection... \nPress s to shutdown, r to restart, e to exit");
+                Console.WriteLine("Switch waiting for connection... \nPress s to shutdown, \t r to restart, \t q to quit/Exit");
 
                 if (Console.ReadLine() == "s")
                 {
@@ -30,7 +30,7 @@ namespace BankSwitch.Engine1
                 {
                     Startup();
                 }
-                else if (Console.ReadLine() == "e")
+                else if (Console.ReadLine() == "q")
                 {
                     Shutdown();
                     Environment.Exit(0);
@@ -47,15 +47,28 @@ namespace BankSwitch.Engine1
              //TO INSTANTIATE CLIENT PEER
         TransactionManager trxnManager = new TransactionManager();
             //Start up all listeners
-            trxnManager.Log("Searching for pre-configured source servers............\t");
+            trxnManager.Log("Searching for pre-configured source servers");
             IList<SourceNode> allSourceNode = new SourceNodeManager().RetrieveAll();
-            trxnManager.Log(allSourceNode.Count + " Source server(s) found:.........\t ");
+            trxnManager.Log(allSourceNode.Count + " Source server(s) found:.\t ");
 
             foreach (var sourceNode in allSourceNode)
             {
+                Console.WriteLine("Initializing Listener on..." + sourceNode.IPAddress + "\t" + sourceNode.Port);
+                trxnManager.Log("Initializing Listener on... " + sourceNode.IPAddress + "\t" + sourceNode.Port);
                 new Listener().StartListener(sourceNode);
                 sourceNode.IsActive = true;
                 new SourceNodeManager().Update(sourceNode);
+            }
+            //Start up all clients
+            trxnManager.Log("Searching for pre-configured sink Clients:-->> ");
+            IList<SinkNode> allSinkNode = new SinkNodeManager().GetAllSinkNode();
+            trxnManager.Log(allSinkNode.Count + " Sink Client(s) found");
+
+            foreach (var thisSinkNode in allSinkNode)
+            {
+                new Client().StartClient(thisSinkNode);
+                thisSinkNode.IsActive = true;
+                new SinkNodeManager().Update(thisSinkNode);
             }
         }
         public static void Shutdown()  //Set status to inactive
@@ -79,6 +92,7 @@ namespace BankSwitch.Engine1
                 sinkNode.IsActive = false;
                 new SinkNodeManager().Update(sinkNode);
                 trxnManager.Log(sinkNode.Name + " shutting down at " + sinkNode.IPAddress + " on " + sinkNode.Port);
+                Console.WriteLine("SinkNode ShortDown" + sinkNode.IPAddress + "\t" + sinkNode.Port);
             }
         }
     }

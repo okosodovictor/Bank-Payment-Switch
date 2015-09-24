@@ -89,5 +89,10 @@ namespace BankSwitch.Logic
                _db.Update(sinkNode);
            }
        }
+       public SinkNode GetByName(string name)
+       {
+           var query = _db.GetAll<SinkNode>().Where(x => x.Name == name).FirstOrDefault();
+           return query;
+       }
     }
 }

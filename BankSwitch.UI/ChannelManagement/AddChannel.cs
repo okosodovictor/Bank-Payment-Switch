@@ -11,7 +11,7 @@ namespace BankSwitch.UI.ChannelManagement
 {
    public class AddChannel:EntityUI<Channel>
     {
-       public AddChannel()
+       public AddChannel( )
        {
            string  error = "";
            WithTitle("Add Channel");
