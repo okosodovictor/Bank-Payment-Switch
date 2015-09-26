@@ -2369,3 +2369,15 @@ Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:26:24 AM
 Connected to ==> 1	24/Sep/2015 04:26:24 AM
 (Event)Source server disconnected from: 1	24/Sep/2015 04:28:47 AM
 Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 04:28:48 AM
+Switch Has Started....>	24/Sep/2015 05:27:15 PM
+Searching for pre-configured source servers	24/Sep/2015 05:27:15 PM
+2 Source server(s) found:.	 	24/Sep/2015 05:27:23 PM
+Switch Has Started....>	24/Sep/2015 05:27:24 PM
+Initializing Listener on... 127.0.0.1	9090	24/Sep/2015 05:27:24 PM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	24/Sep/2015 05:27:24 PM
+Initializing Listener on... 127.0.0.1	9083	24/Sep/2015 05:27:24 PM
+Source: SourceNodeTwo listening at 127.0.0.1 on 9083	24/Sep/2015 05:27:24 PM
+Searching for pre-configured sink Clients:-->> 	24/Sep/2015 05:27:24 PM
+2 Sink Client(s) found	24/Sep/2015 05:27:24 PM
+Switch Has Started....>	24/Sep/2015 05:27:24 PM
+Switch Has Started....>	24/Sep/2015 05:27:24 PM

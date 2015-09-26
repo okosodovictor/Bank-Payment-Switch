@@ -72,8 +72,8 @@ namespace BankSwitch.Engine.ProcessorMangement
 
            Channel theChannel = new ChannelManager().GetByCode(code);
            Fee feeObj = null;
-           string cardPAN = theCardPan.Substring(0, 6);
-           Route theRoute = new RouteManager().GetRouteByCardPan(cardPAN);
+          // string cardPAN = theCardPan.Substring(0, 6);
+           Route theRoute = new RouteManager().GetRouteByCardPan(theCardPan.Substring(0, 6));
            TransactionType transactionType = new TransactionTypeManager().GetByCode(trnxTypeCode);
            Iso8583Message responseMessage;
 

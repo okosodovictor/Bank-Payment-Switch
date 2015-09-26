@@ -19,24 +19,26 @@ namespace BankSwitch.Engine.Connections
     {
         //TO INSTANTIATE CLIENT PEER
         TransactionManager trxnManager = new TransactionManager();
-        public void StartClient(SinkNode sinkNode)
+        public void StartClient(List<SinkNode> sinkNodes)
         {
-            string ipAddress = sinkNode.IPAddress;
-            int port = Convert.ToInt32(sinkNode.Port);
+            foreach (var sinkNode in sinkNodes)
+            {
+                string ipAddress = sinkNode.IPAddress;
+                int port = Convert.ToInt32(sinkNode.Port);
 
-            ClientPeer client = new ClientPeer(sinkNode.Id.ToString(),
-                        new TwoBytesNboHeaderChannel(new Iso8583Ascii1987BinaryBitmapMessageFormatter(), ipAddress, port),
-                        new BasicMessagesIdentifier(11, 41));
-          
-            client.RequestDone += new PeerRequestDoneEventHandler(Client_RequestDone);
-            client.RequestCancelled += new PeerRequestCancelledEventHandler(Client_RequestCancelled);
+                ClientPeer client = new ClientPeer(sinkNode.Id.ToString(),
+                            new TwoBytesNboHeaderChannel(new Iso8583Ascii1987BinaryBitmapMessageFormatter(), ipAddress, port),
+                            new BasicMessagesIdentifier(11, 41));
 
-            client.Connected += new PeerConnectedEventHandler(ClientPeerConnected);
-            client.Receive += new PeerReceiveEventHandler(ClientPeerOnReceive);
-            client.Disconnected += new PeerDisconnectedEventHandler(ClientPeerDisconnected);
-            //client.Connect();
+                client.RequestDone += new PeerRequestDoneEventHandler(Client_RequestDone);
+                client.RequestCancelled += new PeerRequestCancelledEventHandler(Client_RequestCancelled);
+
+                client.Connected += new PeerConnectedEventHandler(ClientPeerConnected);
+                client.Receive += new PeerReceiveEventHandler(ClientPeerOnReceive);
+                client.Disconnected += new PeerDisconnectedEventHandler(ClientPeerDisconnected);
+                //client.Connect();
+            }
         }
-
         //When the requested send to a Sink (client) is done
         static void Client_RequestDone(object sender, PeerRequestDoneEventArgs e)
         {

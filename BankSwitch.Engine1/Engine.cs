@@ -42,34 +42,23 @@ namespace BankSwitch.Engine1
             }
         }
 
-      public static void Startup()
+        public static void Startup()
         {
-             //TO INSTANTIATE CLIENT PEER
-        TransactionManager trxnManager = new TransactionManager();
+            //TO INSTANTIATE CLIENT PEER
+            TransactionManager trxnManager = new TransactionManager();
             //Start up all listeners
-        Logger.Log("Searching for pre-configured source servers");
-            IList<SourceNode> allSourceNode = new SourceNodeManager().RetrieveAll();
+            Logger.Log("Searching for pre-configured source servers");
+            List<SourceNode> allSourceNode = new SourceNodeManager().RetrieveAll().ToList();
             Logger.Log(allSourceNode.Count + " Source server(s) found:.\t ");
 
-            foreach (var sourceNode in allSourceNode)
-            {
-                Console.WriteLine("Initializing Listener on..." + sourceNode.IPAddress + "\t" + sourceNode.Port);
-                Logger.Log("Initializing Listener on... " + sourceNode.IPAddress + "\t" + sourceNode.Port);
-                new Listener().StartListener(sourceNode);
-                sourceNode.IsActive = true;
-                new SourceNodeManager().Update(sourceNode);
-            }
+            new Listener().StartListener(allSourceNode);
+
             //Start up all clients
             Logger.Log("Searching for pre-configured sink Clients:-->> ");
-            IList<SinkNode> allSinkNode = new SinkNodeManager().GetAllSinkNode();
+            List<SinkNode> allSinkNode = new SinkNodeManager().GetAllSinkNode().ToList();
             Logger.Log(allSinkNode.Count + " Sink Client(s) found");
+            new Client().StartClient(allSinkNode);
 
-            foreach (var thisSinkNode in allSinkNode)
-            {
-                new Client().StartClient(thisSinkNode);
-                thisSinkNode.IsActive = true;
-                new SinkNodeManager().Update(thisSinkNode);
-            }
         }
         public static void Shutdown()  //Set status to inactive
         {
