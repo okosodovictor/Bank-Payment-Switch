@@ -36,7 +36,12 @@ namespace BankSwitch.UI.SinkNodeManagement
                           //x.IsActive = false;
                          result  = new SinkNodeManager().AddSinkNode(x);
                       }
-                      catch (Exception) { throw; }
+                      catch (Exception ex) 
+                      {
+                          while (ex.InnerException != null) ex = ex.InnerException;
+                          message = ex.Message;
+                          throw; 
+                      }
                     return result;
                   }).OnSuccessDisplay("Saved Successfully")
                   .OnFailureDisplay(string.Format("Failed to Save SinkNode:{0}", message));       

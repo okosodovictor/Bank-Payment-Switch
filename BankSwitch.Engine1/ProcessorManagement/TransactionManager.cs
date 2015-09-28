@@ -63,18 +63,18 @@ namespace BankSwitch.Engine.ProcessorMangement
            }
 
            string theCardPan = originalMessage.Fields[2].Value.ToString();
-           string trnxTypeCode = originalMessage.Fields[3].Value.ToString().Substring(0, 2);
+           string tranasactionTypeCode = originalMessage.Fields[3].Value.ToString().Substring(0, 2);
            double amount = Convert.ToDouble(originalMessage.Fields[4].Value);
            string orgExpiry = originalMessage.Fields[14].Value.ToString();
 
 
            string code = originalMessage.Fields[123].ToString().Substring(13, 2);
 
-           Channel theChannel = new ChannelManager().GetByCode(code);
-           Fee feeObj = null;
+           Channel channel = new ChannelManager().GetByCode(code);
+           Fee fee = null;
           // string cardPAN = theCardPan.Substring(0, 6);
            Route theRoute = new RouteManager().GetRouteByCardPan(theCardPan.Substring(0, 6));
-           TransactionType transactionType = new TransactionTypeManager().GetByCode(trnxTypeCode);
+           TransactionType transactionType = new TransactionTypeManager().GetByCode(tranasactionTypeCode);
            Iso8583Message responseMessage;
 
 
@@ -88,7 +88,7 @@ namespace BankSwitch.Engine.ProcessorMangement
                return responseMessage;
            }
 
-           if (amount <= 0 && trnxTypeCode != "31")
+           if (amount <= 0 && tranasactionTypeCode != "31")
            {
                responseMessage = SetReponseMessage(originalMessage, "13");         //Invalid amount
                Logger.LogTransaction(responseMessage, sourceNode);
@@ -102,9 +102,7 @@ namespace BankSwitch.Engine.ProcessorMangement
                Logger.LogTransaction(responseMessage, sourceNode);
                return responseMessage;
            }
-
            SinkNode sinkNode = theRoute.SinkNode;
-
            if (sinkNode == null)
            {
                Logger.Log("Sink node is null.");
@@ -114,14 +112,13 @@ namespace BankSwitch.Engine.ProcessorMangement
            }
 
 
-           Logger.Log("Loading Node Schemes");
+           Logger.Log("Loading SourceNode Schemes");
 
            var theSchemes = sourceNode.Schemes;
-           Scheme thisScheme = null;
-
+           Scheme scheme = null;
            try
            {
-               thisScheme = theSchemes.Where(x => x.Route.CardPAN == theCardPan.Substring(0,6)).SingleOrDefault();
+               scheme = theSchemes.Where(x => x.Route.CardPAN == theCardPan.Substring(0,6)).SingleOrDefault();
            }
            catch (Exception ex)
            {
@@ -131,7 +128,7 @@ namespace BankSwitch.Engine.ProcessorMangement
                return responseMessage;
            }
 
-           if (thisScheme == null)
+           if (scheme == null)
            {
                responseMessage = SetReponseMessage(originalMessage, "92"); // Route not allowed : Set correct response code later
                Logger.LogTransaction(responseMessage, sourceNode);
@@ -139,26 +136,25 @@ namespace BankSwitch.Engine.ProcessorMangement
            }
 
           // int panCount = sourceNode.Schemes.Count(x => x.Route == theRoute);
-           Logger.Log("Scheme : " + thisScheme.Name + " Loaded");
-
-           feeObj = IsTransactionAllowed(transactionType, theChannel, thisScheme);
+           Logger.Log("Scheme : " + scheme.Name + " Loaded");
 
            Logger.Log("Getting fee:");
-           if (feeObj == null)
+           fee = GetFeeIfTransactionIsAllowed(transactionType, channel, scheme);
+           if (fee == null)
            {
                responseMessage = SetReponseMessage(originalMessage, "58"); // Transaction type not allowed in this scheme
-               Logger.LogTransaction(responseMessage, sourceNode, thisScheme);
+               Logger.LogTransaction(responseMessage, sourceNode, scheme);
                return responseMessage;
            }
            else
            {
-               originalMessage = SetFee(originalMessage, CalculateFee(feeObj, amount));
+               originalMessage = SetFee(originalMessage, CalculateFee(fee, amount));
            }
            bool needReversal = false;
 
            Iso8583Message msgFromFEP = ToFEP(originalMessage, sinkNode, out needReversal);
 
-           Logger.LogTransaction(msgFromFEP, sourceNode, thisScheme, feeObj, needReversal);
+           Logger.LogTransaction(msgFromFEP, sourceNode, scheme, fee, needReversal);
 
 
            return msgFromFEP;
@@ -244,15 +240,15 @@ namespace BankSwitch.Engine.ProcessorMangement
            }
        }
 
-       private Fee IsTransactionAllowed(TransactionType transactionType, Channel theChannel, Scheme thisScheme)
+       private Fee GetFeeIfTransactionIsAllowed(TransactionType transactionType, Channel channel, Scheme scheme)
        {
            try
            {
-               foreach (var item in thisScheme.TransactionTypeChannelFees)
+               foreach (var item in scheme.TransactionTypeChannelFees)
                {
-                   if (theChannel != null)
+                   if (channel != null)
                    {
-                       if (item.TransactionType.Code == transactionType.Code && item.Channel.Code == theChannel.Code)
+                       if (item.TransactionType.Code == transactionType.Code && item.Channel.Code == channel.Code)
                        {
                            return item.Fee;
                        }
@@ -268,10 +264,10 @@ namespace BankSwitch.Engine.ProcessorMangement
            }
        }
 
-       private Iso8583Message SetFee(Iso8583Message msg, double feeAmount)
+       private Iso8583Message SetFee(Iso8583Message message, double feeAmount)
        {
-           msg.Fields.Add(28, feeAmount.ToString());
-           return msg;
+           message.Fields.Add(28, feeAmount.ToString());
+           return message;
        }
 
        private double CalculateFee(Fee fee, double amount)
@@ -289,11 +285,10 @@ namespace BankSwitch.Engine.ProcessorMangement
                {
                    feeCharged = fee.Maximum;
                }
-               else if (feeCharged < fee.Minimum)
+               if (feeCharged < fee.Minimum)
                {
                    feeCharged = fee.Minimum;
                }
-               else { }
            }
            Console.WriteLine("feeCharged is: " + feeCharged + "\n");
            return feeCharged;
@@ -313,21 +308,21 @@ namespace BankSwitch.Engine.ProcessorMangement
            return DateTime.Now;
        }
 
-       private Iso8583Message GetReversalMessage(Iso8583Message isoMsg, out bool conReversal)
+       private Iso8583Message GetReversalMessage(Iso8583Message isoMessage, out bool conReversal)
        {
            conReversal = true;
            string originalDataElement;
            try
            {
-               originalDataElement = isoMsg.Fields[90].ToString();
+               originalDataElement = isoMessage.Fields[90].ToString();
            }
            catch (Exception)
            {
                Logger.Log("Original data element is empty");
                conReversal = false;
-               SetReponseMessage(isoMsg, "12");
-               isoMsg.MessageTypeIdentifier = 430;
-               return isoMsg;
+               SetReponseMessage(isoMessage, "12");
+               isoMessage.MessageTypeIdentifier = 430;
+               return isoMessage;
            }
 
            //originalDataElement = originalDataElement.Remove(0, 23);
@@ -337,42 +332,42 @@ namespace BankSwitch.Engine.ProcessorMangement
            {
                Logger.Log("\n Transaction log not found");
                conReversal = false;
-               SetReponseMessage(isoMsg, "25");
-               isoMsg.MessageTypeIdentifier = 430;
-               return isoMsg;
+               SetReponseMessage(isoMessage, "25");
+               isoMessage.MessageTypeIdentifier = 430;
+               return isoMessage;
            }
 
            if (transactionLog.IsReversed)
            {
                Logger.Log("\n Transaction has already been reversed");
                conReversal = false;
-               SetReponseMessage(isoMsg, "94");
-               return isoMsg;
+               SetReponseMessage(isoMessage, "94");
+               return isoMessage;
            }
 
            Logger.Log("\n Continue with reversal");
-           isoMsg.Fields.Add(102, transactionLog.Account2);
-           isoMsg.Fields.Add(103, transactionLog.Account1);
+           isoMessage.Fields.Add(102, transactionLog.Account2);
+           isoMessage.Fields.Add(103, transactionLog.Account1);
 
-           return isoMsg;
+           return isoMessage;
        }
 
-       private Iso8583Message SetReponseMessage(Iso8583Message isoMsg, string code)
+       private Iso8583Message SetReponseMessage(Iso8583Message isoMessage, string code)
        {
-           isoMsg.SetResponseMessageTypeIdentifier();
-           isoMsg.Fields.Add(39, code);
-           return isoMsg;
+           isoMessage.SetResponseMessageTypeIdentifier();
+           isoMessage.Fields.Add(39, code);
+           return isoMessage;
        }
 
       
        public void DoAutoReversal()
        {
-           var allLogThatNeedsReversal = new TransactionLogManager().GetAllThatNeedsReversal();
+           var allLogsThatNeedsReversal = new TransactionLogManager().GetAllThatNeedsReversal();
            Iso8583Message msgFromFEP = null;
            bool needReversal = true;
            var allSinkNodes = new SinkNodeManager().GetAllSinkNode().ToDictionary(x => x.Name);
            var allSourceNodes = new SourceNodeManager().RetrieveAll().ToDictionary(x => x.Name);
-           foreach (var thisLog in allLogThatNeedsReversal)
+           foreach (var thisLog in allLogsThatNeedsReversal)
            {
                if (!thisLog.IsReversed && thisLog.IsReversePending)
                {
@@ -408,53 +403,53 @@ namespace BankSwitch.Engine.ProcessorMangement
 
        private Iso8583Message BuildReversalIsoMessage(TransactionLog log)
        {
-           Iso8583Message echoMsg = new Iso8583Message(421);
+           Iso8583Message echoMessage = new Iso8583Message(421);
            try
            {
-               echoMsg.Fields.Add(2, log.CardPAN);
-               echoMsg.Fields.Add(3, string.Format("{0}2000", "01"));
-               echoMsg.Fields.Add(4, log.Amount.ToString());
+               echoMessage.Fields.Add(2, log.CardPAN);
+               echoMessage.Fields.Add(3, string.Format("{0}2000", "01"));
+               echoMessage.Fields.Add(4, log.Amount.ToString());
                DateTime transmissionDate = DateTime.Now;
-               echoMsg.Fields.Add(7, string.Format("{0}{1}",
+               echoMessage.Fields.Add(7, string.Format("{0}{1}",
                    string.Format("{0:00}{1:00}", transmissionDate.Month, transmissionDate.Day),
                    string.Format("{0:00}{1:00}{2:00}", transmissionDate.Hour,
                    transmissionDate.Minute, transmissionDate.Second)));
-               echoMsg.Fields.Add(11, log.STAN);
-               echoMsg.Fields.Add(12, string.Format("{0:00}{1:00}{2:00}", transmissionDate.Hour,
+               echoMessage.Fields.Add(11, log.STAN);
+               echoMessage.Fields.Add(12, string.Format("{0:00}{1:00}{2:00}", transmissionDate.Hour,
                    transmissionDate.Minute, transmissionDate.Second));
-               echoMsg.Fields.Add(13, string.Format("{0:00}{1:00}", transmissionDate.Month, transmissionDate.Day));
+               echoMessage.Fields.Add(13, string.Format("{0:00}{1:00}", transmissionDate.Month, transmissionDate.Day));
 
                //echoMsg.Fields.Add(15, DateTime.Today.ToString("yyMM"));
-               echoMsg.Fields.Add(22, "123");
-               echoMsg.Fields.Add(25, "12");
-               echoMsg.Fields.Add(28, "C000000");
-               echoMsg.Fields.Add(29, "C000000");
+               echoMessage.Fields.Add(22, "123");
+               echoMessage.Fields.Add(25, "12");
+               echoMessage.Fields.Add(28, "C000000");
+               echoMessage.Fields.Add(29, "C000000");
                //echoMsg.Fields.Add(30, "C00000000");
-               echoMsg.Fields.Add(32, "100002");
+               echoMessage.Fields.Add(32, "100002");
                //echoMsg.Fields.Add(35, string.Format("{0}={1:yyMM}", cardPAN, xpiryDate));
                //echoMsg.Fields.Add(37, transactionLog.RetrivalRefNo);
                //echoMsg.Fields.Add(40, "101");
-               echoMsg.Fields.Add(41, "1701230J");
-               echoMsg.Fields.Add(42, "VIACARD");
-               echoMsg.Fields.Add(43, "Yaba, Office, Lagos");
-               echoMsg.Fields.Add(49, "566");
-               echoMsg.Fields.Add(90, "00000000000000000000000" + log.OriginalDataElement);
-               echoMsg.Fields.Add(102, log.Account1);
-               echoMsg.Fields.Add(103, log.Account2);
-               echoMsg.Fields.Add(123, "01".PadLeft(15, '0'));
+               echoMessage.Fields.Add(41, "1701230J");
+               echoMessage.Fields.Add(42, "VIACARD");
+               echoMessage.Fields.Add(43, "Yaba, Office, Lagos");
+               echoMessage.Fields.Add(49, "566");
+               echoMessage.Fields.Add(90, "00000000000000000000000" + log.OriginalDataElement);
+               echoMessage.Fields.Add(102, log.Account1);
+               echoMessage.Fields.Add(103, log.Account2);
+               echoMessage.Fields.Add(123, "01".PadLeft(15, '0'));
                Message inner = new Message();
                inner.Fields.Add(2, "IMNODE_00426629");
                //inner.Fields.Add(3, "ATMsrc      PRUICCsnk   000119000119ICCGroup    ");
                //inner.Fields.Add(20, DateTime.Today.ToString("yyMMdd"));
 
-               echoMsg.Fields.Add(127, inner);
+               echoMessage.Fields.Add(127, inner);
            }
            catch (Exception)
            {
                Logger.Log("Problem building reversal message");
                return null;
            }
-           return echoMsg;
+           return echoMessage;
        }
     }
 }

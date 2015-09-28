@@ -54,8 +54,8 @@ namespace BankSwitch.DAO
            {
                route = session.QueryOver<Route>().List<Route>();
            }
-           var query = route.Where(x => x.CardPAN == cardPAN).SingleOrDefault();
-           return query;
+           var result = route.Where(x => x.CardPAN == cardPAN).SingleOrDefault();
+           return result;
        }
     } 
 }

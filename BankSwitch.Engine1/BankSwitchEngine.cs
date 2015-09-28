@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BankSwitch.Engine1
 {
-    class Engine
+    class BankSwitchEngine
     {
         static void Main(string[] args)
         {
@@ -84,5 +84,11 @@ namespace BankSwitch.Engine1
                 Console.WriteLine("SinkNode ShortDown" + sinkNode.IPAddress + "\t" + sinkNode.Port);
             }
         }
+        //public static async Task StartListenerAndClient()
+        //{
+        //    Task SoureceListener = Task.Factory.StartNew(() => new Listener().StartListener(new List<SourceNode>()));
+        //    Task result = SoureceListener.ContinueWith(s => new Client().StartClient(new List<SinkNode>()), TaskContinuationOptions.OnlyOnRanToCompletion);
+        //    await result;
+        //}
     }
 }

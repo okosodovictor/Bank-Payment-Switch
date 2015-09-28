@@ -44,6 +44,7 @@ namespace BankSwitch.UI.TransactionTypeManagement
                    }
                    catch (Exception ex)
                    {
+                       while (ex.InnerException != null) ex = ex.InnerException;
                        error = ex.Message;
                        throw;
                    }

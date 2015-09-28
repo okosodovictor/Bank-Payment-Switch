@@ -46,12 +46,12 @@ namespace BankSwitch.Engine.Connections
 
         private void listenerPeerDisconnected(object sender, EventArgs e)
         {
+            List<SourceNode> SourceNodes = new List<SourceNode>();
             ListenerPeer peer = sender as ListenerPeer;
             if (peer == null) return;
-            Logger.Log("(Event)Source server disconnected from: " + peer.Name);
-            SourceNode theSourceNode = new SourceNodeManager().GetByID(Convert.ToInt32(peer.Name));
-            List<SourceNode> SourceNodes = new List<SourceNode>();
-            SourceNodes.Add(theSourceNode);
+            Logger.Log("(Event) Source server disconnected from: " + peer.Name);
+            SourceNode sourceNode = new SourceNodeManager().GetByID(Convert.ToInt32(peer.Name));
+            SourceNodes.Add(sourceNode);
             StartListener(SourceNodes);
         }
 
@@ -61,10 +61,10 @@ namespace BankSwitch.Engine.Connections
             ListenerPeer sourcePeer = sender as ListenerPeer;
             Logger.Log("Listener Peer is now receiving..." + DateTime.Now.ToString("dd/MMM/yyyy hh:mm:ss tt") + Environment.NewLine);
             //Get the Message received
-            Iso8583Message incomingMsg = e.Message as Iso8583Message;
-            if (incomingMsg == null) return;
+            Iso8583Message incomingMessage = e.Message as Iso8583Message;
+            if (incomingMessage == null) return;
             long sourceID = Convert.ToInt64(sourcePeer.Name);   //where message is coming from
-            Iso8583Message receivedMessage = new TransactionManager().ValidateMessage(incomingMsg, Convert.ToInt32( sourceID));
+            Iso8583Message receivedMessage = new TransactionManager().ValidateMessage(incomingMessage, Convert.ToInt32( sourceID));
             sourcePeer.Send(receivedMessage);
             sourcePeer.Close();
             sourcePeer.Dispose();
