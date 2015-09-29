@@ -31,8 +31,6 @@ C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\FluentNHibernate.dll
 C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.Mapping.dll
 C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.Core.pdb
 C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.Logic.pdb
-C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\Iesi.Collections.xml
-C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\NHibernate.xml
 C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.DAO.pdb
 C:\Projects\BankSwitch\BankSwitch.UI\bin\Debug\BankSwitch.Mapping.pdb
 C:\Projects\BankSwitch\BankSwitch.UI\obj\Debug\BankSwitch.UI.csprojResolveAssemblyReference.cache

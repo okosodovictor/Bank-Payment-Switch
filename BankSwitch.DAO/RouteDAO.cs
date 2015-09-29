@@ -1,7 +1,9 @@
 ﻿using BankSwitch.Core.DataAccess;
 using BankSwitch.Core.Entities;
+using NHibernate;
 using NHibernate.Criterion;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,15 +34,39 @@ namespace BankSwitch.DAO
            return result.List<Route>();
        }
 
-       public IList<Route> RetrieveByName(string name)
+       public IList<Route> RetrieveByName(string name, string cardPan, int start, int limit, out int total)
        {
-           if(string.IsNullOrEmpty(name))
+           List<Route> result = new List<Route>();
+           try
            {
-               return _Session.QueryOver<Route>().List<Route>();
+               ICriteria criteria = _Session.CreateCriteria(typeof(Route));
+               if (!string.IsNullOrEmpty(name))
+               {
+                   criteria.Add(Expression.Like("Name", name));
+               }
+               if (!string.IsNullOrEmpty(cardPan))
+               {
+                   criteria.Add(Expression.Like("CardPAN", cardPan));
+               }
+               ICriteria countCriteria = CriteriaTransformer.Clone(criteria).SetProjection(Projections.RowCountInt64());
+               ICriteria listCriteria = CriteriaTransformer.Clone(criteria).SetFirstResult(start).SetMaxResults(limit);
+               listCriteria.AddOrder(Order.Desc("Id"));
+
+               IList allResults = _Session.CreateMultiCriteria().Add(listCriteria).Add(countCriteria).List();
+
+               foreach (var o in (IList)allResults[0])
+               {
+                   result.Add((Route)o);
+               }
+
+               total = Convert.ToInt32((long)((IList)allResults[1])[0]);
+
+               return result;
            }
-           else
+           catch (Exception)
            {
-            return   _Session.QueryOver<Route>().Where(x => x.Name.IsLike(name, MatchMode.Anywhere)).List<Route>();
+
+               throw;
            }
        }
        public IList<Route> GetAllRoute()

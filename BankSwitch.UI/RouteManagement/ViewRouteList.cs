@@ -22,6 +22,7 @@ namespace BankSwitch.UI.RouteManagement
           .WithFields(new List<IField>()
              {
                         Map(x => x.Name).AsSectionField<TextBox>().WithLength(10),
+                        Map(x => x.CardPAN).AsSectionField<TextBox>().WithLength(10),
                         AddSectionButton()
                        .WithText("Search")
                        .UpdateWith(x =>
@@ -31,6 +32,9 @@ namespace BankSwitch.UI.RouteManagement
                                     })
              });
            AddSection().WithTitle("Routes").IsFramed().IsCollapsible()
+               .ApplyMod<ExportMod>(x => x.ExportToExcel().ExportToCsv().SetFileName("List Of Route")
+             .ExportAllRows()
+             .SetPagingLimit<RouteModel>(y => (int)System.Web.HttpContext.Current.Session["TotalRoute"]))
            .WithColumns(new List<Column>()
                 {
                     new Column(new List<IField>()
@@ -46,7 +50,10 @@ namespace BankSwitch.UI.RouteManagement
                             .WithRowNumbers()
                             .IsPaged<RouteModel>(10, (x, e) =>
                             {
-                                x.Routes = new RouteManager().RetreiveRouteByName(x.Name);
+                                 int total=0;
+                                 x.Routes = new RouteManager().RetreiveRoutes(x.Name, x.CardPAN, e.Start / e.Limit, e.Limit, out total);
+                                  e.TotalCount = total;
+                                  System.Web.HttpContext.Current.Session["TotalRoute"] = e.TotalCount;
                                 return x;
                             }).ApplyMod<ViewDetailsMod>(y => y.Popup<RouteDetail>("Route Details")),
                 

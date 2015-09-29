@@ -32,6 +32,9 @@ namespace BankSwitch.UI.ChannelManagement
                   
                                     });
              AddSection().WithTitle("Channels").IsFramed().IsCollapsible()
+              .ApplyMod<ExportMod>(x => x.ExportToExcel().ExportToCsv().SetFileName("List Of Channel")
+             .ExportAllRows()
+             .SetPagingLimit<ChannelModel>(y => (int)System.Web.HttpContext.Current.Session["TotalChannel"]))
              .WithColumns(new List<Column>()
                 {
                     new Column(new List<IField>()
@@ -49,7 +52,11 @@ namespace BankSwitch.UI.ChannelManagement
                                 int totalCount = 0;
                                 try
                                 {
-                                    x.Channels = new ChannelManager().RetreiveChannels(x.Name, x.Code);
+                                    int total = 0;
+                                    x.Channels = new ChannelManager().RetreiveChannels(x.Name, x.Code, e.Start / e.Limit, e.Limit, out total);
+                                    e.TotalCount = total;
+                                    System.Web.HttpContext.Current.Session["TotalChannel"] = e.TotalCount;
+                                    return x;
                                 }
                                 catch (Exception)
                                 {

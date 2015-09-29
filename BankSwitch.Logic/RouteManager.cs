@@ -82,9 +82,9 @@ namespace BankSwitch.Logic
                 throw;
             }
         }
-        public IList<Route> RetreiveRouteByName(string name)
+        public IList<Route> RetreiveRoutes(string name, string cardPan, int start, int limit, out int total)
         {
-            return _db.RetrieveByName(name);
+           return _db.RetrieveByName(name, cardPan, start, limit, out total);
         }
         public IList<Route> Search(string queryString, int pageIndex, int pageSize, out int totalCount)
         {

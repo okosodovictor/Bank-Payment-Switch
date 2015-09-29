@@ -63,16 +63,10 @@ namespace BankSwitch.Logic
        {
            return _db.GetAllChannel();
        }
-       public IList<Channel> RetreiveChannels(string name, string code)
+       public IList<Channel> RetreiveChannels(string name, string code, int start, int limit, out int total)
        {
-           if(string.IsNullOrEmpty(name) && string.IsNullOrEmpty(code))
-           {
-               return _db.GetAll<Channel>().ToList();
-           }
-           else
-           {
-          return _db.GetAll<Channel>().Where(x => x.Name == name || x.Code == code).ToList();
-           }
+
+           return _db.GetAllChannel(name, code, start, limit, out total);
        }
 
        public Channel GetByCode(string channelCode)

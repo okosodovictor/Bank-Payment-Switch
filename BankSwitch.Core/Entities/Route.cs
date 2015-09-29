@@ -12,6 +12,6 @@ namespace BankSwitch.Core.Entities
         public virtual string Name { get; set; }
         public virtual string CardPAN { get; set; }
         public virtual SinkNode SinkNode {get; set;}
-        public virtual string Description { get; set; }
+        public virtual string Description {get; set;}
     }
 }
