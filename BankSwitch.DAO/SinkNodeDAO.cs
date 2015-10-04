@@ -1,7 +1,9 @@
 ﻿using BankSwitch.Core.DataAccess;
 using BankSwitch.Core.Entities;
+using NHibernate;
 using NHibernate.Criterion;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,27 +18,46 @@ namespace BankSwitch.Core.DAO
 
        }
 
-       public IList<SinkNode> GetSinkNodes(string name, string hostName, string iPAddress)
+       public IList<SinkNode> GetSinkNodes(string name, string hostName, string iPAddress, string port, int start, int limit, out int total)
        {
+           List<SinkNode> result = new List<SinkNode>();
            try
            {
-               if (!string.IsNullOrEmpty(name) || !string.IsNullOrEmpty(hostName) || !string.IsNullOrEmpty(iPAddress))
+               ICriteria criteria = _Session.CreateCriteria(typeof(SinkNode));
+               if (!string.IsNullOrEmpty(name))
                {
-                   var query = _Session.QueryOver<SinkNode>().Where(x => x.Name.IsLike(name, MatchMode.Anywhere)
-                           || x.HostName.IsLike(hostName, MatchMode.Anywhere)
-                           || x.IPAddress.IsLike(iPAddress, MatchMode.Anywhere)
-                       ).List<SinkNode>();
+                   criteria.Add(Expression.Like("Name", name));
+               }
+               if (!string.IsNullOrEmpty(hostName))
+               {
+                   criteria.Add(Expression.Like("HostName", hostName));
+               }
+               if (!string.IsNullOrEmpty(iPAddress))
+               {
+                   criteria.Add(Expression.Like("IPAddress", iPAddress));
+               }
+               if (!string.IsNullOrEmpty(port))
+               {
+                   criteria.Add(Expression.Like("Port", port));
+               }
+               ICriteria countCriteria = CriteriaTransformer.Clone(criteria).SetProjection(Projections.RowCountInt64());
+               ICriteria listCriteria = CriteriaTransformer.Clone(criteria).SetFirstResult(start).SetMaxResults(limit);
+               listCriteria.AddOrder(Order.Desc("Id"));
 
-                   return query;
-               }
-               else
+               IList allResults = _Session.CreateMultiCriteria().Add(listCriteria).Add(countCriteria).List();
+
+               foreach (var o in (IList)allResults[0])
                {
-                   return _Session.QueryOver<SinkNode>().List<SinkNode>();
+                   result.Add((SinkNode)o);
                }
+
+               total = Convert.ToInt32((long)((IList)allResults[1])[0]);
+
+               return result;
            }
            catch (Exception)
            {
-               
+
                throw;
            }
        }

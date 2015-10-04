@@ -2674,3 +2674,382 @@ Transaction log::: 118744 9/28/2015 6:08:42 PM	28/Sep/2015 10:08:42 AM
 (Event) Source server disconnected from: 1	28/Sep/2015 10:08:42 AM
 Initializing Listener on... 127.0.0.1	9090	28/Sep/2015 10:08:42 AM
 Source: SourceNodeOne listening at 127.0.0.1 on 9090	28/Sep/2015 10:08:42 AM
+Switch Has Started....>	30/Sep/2015 12:37:22 PM
+Searching for pre-configured source servers	30/Sep/2015 12:37:23 PM
+2 Source server(s) found:.	 	30/Sep/2015 12:37:25 PM
+Switch Has Started....>	30/Sep/2015 12:37:25 PM
+Initializing Listener on... 127.0.0.1	9090	30/Sep/2015 12:37:25 PM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	30/Sep/2015 12:37:25 PM
+Initializing Listener on... 127.0.0.1	9083	30/Sep/2015 12:37:25 PM
+Source: SourceNodeTwo listening at 127.0.0.1 on 9083	30/Sep/2015 12:37:25 PM
+Searching for pre-configured sink Clients:-->> 	30/Sep/2015 12:37:25 PM
+2 Sink Client(s) found	30/Sep/2015 12:37:25 PM
+Switch Has Started....>	30/Sep/2015 12:37:25 PM
+Switch Has Started....>	30/Sep/2015 12:37:25 PM
+Connected to ==> 1	30/Sep/2015 12:39:02 PM
+Listener Peer is now receiving...30/Sep/2015 12:39:03 PM
+	30/Sep/2015 12:39:03 PM
+Switch Has Started....>	30/Sep/2015 12:39:03 PM
+
+ Enter Validator	30/Sep/2015 12:39:03 PM
+Transaction log::: 893980 9/30/2015 8:39:03 PM	30/Sep/2015 12:39:04 PM
+Loading SourceNode Schemes	30/Sep/2015 12:39:04 PM
+Scheme : Scheme Loaded	30/Sep/2015 12:39:04 PM
+Getting fee:	30/Sep/2015 12:39:04 PM
+Error: while checking if transaction is allowed 
+Object reference not set to an instance of an object.	30/Sep/2015 12:39:04 PM
+Transaction log::: 893980 9/30/2015 8:39:04 PM	30/Sep/2015 12:39:04 PM
+(Event) Source server disconnected from: 1	30/Sep/2015 12:39:04 PM
+Initializing Listener on... 127.0.0.1	9090	30/Sep/2015 12:39:04 PM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	30/Sep/2015 12:39:04 PM
+Connected to ==> 1	30/Sep/2015 12:39:04 PM
+(Event) Source server disconnected from: 1	30/Sep/2015 12:39:04 PM
+Initializing Listener on... 127.0.0.1	9090	30/Sep/2015 12:39:05 PM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	30/Sep/2015 12:39:05 PM
+Switch Has Started....>	30/Sep/2015 12:58:54 PM
+Searching for pre-configured source servers	30/Sep/2015 12:58:54 PM
+2 Source server(s) found:.	 	30/Sep/2015 12:58:57 PM
+Switch Has Started....>	30/Sep/2015 12:58:57 PM
+Initializing Listener on... 127.0.0.1	9090	30/Sep/2015 12:58:57 PM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	30/Sep/2015 12:58:57 PM
+Initializing Listener on... 127.0.0.1	9083	30/Sep/2015 12:58:57 PM
+Source: SourceNodeTwo listening at 127.0.0.1 on 9083	30/Sep/2015 12:58:57 PM
+Searching for pre-configured sink Clients:-->> 	30/Sep/2015 12:58:58 PM
+2 Sink Client(s) found	30/Sep/2015 12:58:58 PM
+Switch Has Started....>	30/Sep/2015 12:58:58 PM
+Switch Has Started....>	30/Sep/2015 12:58:58 PM
+Connected to ==> 1	30/Sep/2015 01:00:05 PM
+Listener Peer is now receiving...30/Sep/2015 01:00:06 PM
+	30/Sep/2015 01:00:06 PM
+Switch Has Started....>	30/Sep/2015 01:00:07 PM
+
+ Enter Validator	30/Sep/2015 01:00:07 PM
+Transaction log::: 876893 9/30/2015 9:00:07 PM	30/Sep/2015 01:00:08 PM
+Loading SourceNode Schemes	30/Sep/2015 01:00:08 PM
+Scheme : Scheme Loaded	30/Sep/2015 01:00:08 PM
+Getting fee:	30/Sep/2015 01:00:08 PM
+Transaction log::: 876893 9/30/2015 9:00:10 PM	30/Sep/2015 01:00:10 PM
+(Event) Source server disconnected from: 1	30/Sep/2015 01:00:10 PM
+Initializing Listener on... 127.0.0.1	9090	30/Sep/2015 01:00:11 PM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	30/Sep/2015 01:00:11 PM
+Connected to ==> 1	30/Sep/2015 01:00:59 PM
+Listener Peer is now receiving...30/Sep/2015 01:01:00 PM
+	30/Sep/2015 01:01:00 PM
+Switch Has Started....>	30/Sep/2015 01:01:00 PM
+
+ Enter Validator	30/Sep/2015 01:01:00 PM
+Transaction log::: 32114 9/30/2015 9:01:00 PM	30/Sep/2015 01:01:00 PM
+Loading SourceNode Schemes	30/Sep/2015 01:01:00 PM
+Scheme : Scheme Loaded	30/Sep/2015 01:01:00 PM
+Getting fee:	30/Sep/2015 01:01:00 PM
+Transaction log::: 32114 9/30/2015 9:01:00 PM	30/Sep/2015 01:01:00 PM
+(Event) Source server disconnected from: 1	30/Sep/2015 01:01:00 PM
+Initializing Listener on... 127.0.0.1	9090	30/Sep/2015 01:01:01 PM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	30/Sep/2015 01:01:01 PM
+Connected to ==> 1	30/Sep/2015 01:02:06 PM
+Listener Peer is now receiving...30/Sep/2015 01:02:07 PM
+	30/Sep/2015 01:02:07 PM
+Switch Has Started....>	30/Sep/2015 01:02:07 PM
+
+ Enter Validator	30/Sep/2015 01:02:07 PM
+Transaction log::: 558186 9/30/2015 9:02:07 PM	30/Sep/2015 01:02:08 PM
+Loading SourceNode Schemes	30/Sep/2015 01:02:08 PM
+Scheme : Scheme Loaded	30/Sep/2015 01:02:08 PM
+Getting fee:	30/Sep/2015 01:02:08 PM
+Transaction log::: 558186 9/30/2015 9:02:08 PM	30/Sep/2015 01:02:08 PM
+(Event) Source server disconnected from: 1	30/Sep/2015 01:02:08 PM
+Initializing Listener on... 127.0.0.1	9090	30/Sep/2015 01:02:08 PM
+Source: SourceNodeOne listening at 127.0.0.1 on 9090	30/Sep/2015 01:02:08 PM
+Connected to ==> 1	30/Sep/2015 01:03:13 PM
+Listener Peer is now receiving...30/Sep/2015 01:03:14 PM
+	30/Sep/2015 01:03:14 PM
+Switch Has Started....>	30/Sep/2015 01:03:14 PM
+
+ Enter Validator	30/Sep/2015 01:03:14 PM
+Transaction log::: 481172 9/30/2015 9:03:14 PM	30/Sep/2015 01:03:15 PM
+Loading SourceNode Schemes	30/Sep/2015 01:03:15 PM
+Scheme : Scheme Loaded	30/Sep/2015 01:03:15 PM
+Getting fee:	30/Sep/2015 01:03:15 PM
+Switch Has Started....>	30/Sep/2015 09:47:02 PM
+Searching for pre-configured source servers	30/Sep/2015 09:47:02 PM
+2 Source server(s) found:.	 	30/Sep/2015 09:47:06 PM
+Switch Has Started....>	30/Sep/2015 09:47:06 PM
+Initializing Listener on... 127.0.0.1	9080	30/Sep/2015 09:47:06 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	30/Sep/2015 09:47:06 PM
+Initializing Listener on... 127.0.0.1	9083	30/Sep/2015 09:47:06 PM
+Source: SourceNode again listening at 127.0.0.1 on 9083	30/Sep/2015 09:47:06 PM
+Searching for pre-configured sink Clients:-->> 	30/Sep/2015 09:47:06 PM
+2 Sink Client(s) found	30/Sep/2015 09:47:06 PM
+Switch Has Started....>	30/Sep/2015 09:47:06 PM
+Switch Has Started....>	30/Sep/2015 09:47:06 PM
+Switch Has Started....>	30/Sep/2015 09:53:45 PM
+Searching for pre-configured source servers	30/Sep/2015 09:53:45 PM
+2 Source server(s) found:.	 	30/Sep/2015 09:53:48 PM
+Switch Has Started....>	30/Sep/2015 09:53:48 PM
+Initializing Listener on... 127.0.0.1	9080	30/Sep/2015 09:53:48 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	30/Sep/2015 09:53:48 PM
+Initializing Listener on... 127.0.0.1	9083	30/Sep/2015 09:53:48 PM
+Source: SourceNode again listening at 127.0.0.1 on 9083	30/Sep/2015 09:53:48 PM
+Searching for pre-configured sink Clients:-->> 	30/Sep/2015 09:53:48 PM
+2 Sink Client(s) found	30/Sep/2015 09:53:48 PM
+Switch Has Started....>	30/Sep/2015 09:53:48 PM
+Switch Has Started....>	30/Sep/2015 09:53:48 PM
+Connected to ==> 1	30/Sep/2015 09:54:01 PM
+Listener Peer is now receiving...30/Sep/2015 09:54:02 PM
+	30/Sep/2015 09:54:02 PM
+Switch Has Started....>	30/Sep/2015 09:54:02 PM
+
+ Enter Validator	30/Sep/2015 09:54:02 PM
+Transaction log::: 402345 10/1/2015 5:54:02 AM	30/Sep/2015 09:54:03 PM
+Loading SourceNode Schemes	30/Sep/2015 09:54:03 PM
+Scheme : Scheme Onne Loaded	30/Sep/2015 09:54:03 PM
+Getting fee:	30/Sep/2015 09:54:03 PM
+Transaction log::: 402345 10/1/2015 5:54:05 AM	30/Sep/2015 09:54:05 PM
+(Event) Source server disconnected from: 1	30/Sep/2015 09:54:06 PM
+Initializing Listener on... 127.0.0.1	9080	30/Sep/2015 09:54:06 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	30/Sep/2015 09:54:06 PM
+Connected to ==> 1	30/Sep/2015 09:56:42 PM
+Listener Peer is now receiving...30/Sep/2015 09:56:43 PM
+	30/Sep/2015 09:56:43 PM
+Switch Has Started....>	30/Sep/2015 09:56:43 PM
+
+ Enter Validator	30/Sep/2015 09:56:43 PM
+Transaction log::: 948684 10/1/2015 5:56:43 AM	30/Sep/2015 09:56:43 PM
+Loading SourceNode Schemes	30/Sep/2015 09:56:44 PM
+Scheme : Scheme Onne Loaded	30/Sep/2015 09:56:44 PM
+Getting fee:	30/Sep/2015 09:56:44 PM
+
+ Could not connect to the Sink Node.	30/Sep/2015 09:56:51 PM
+Transaction log::: 948684 10/1/2015 5:56:51 AM	30/Sep/2015 09:56:52 PM
+(Event) Source server disconnected from: 1	30/Sep/2015 09:56:52 PM
+Initializing Listener on... 127.0.0.1	9080	30/Sep/2015 09:56:52 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	30/Sep/2015 09:56:52 PM
+Switch Has Started....>	30/Sep/2015 10:00:11 PM
+Searching for pre-configured source servers	30/Sep/2015 10:00:11 PM
+2 Source server(s) found:.	 	30/Sep/2015 10:00:14 PM
+Switch Has Started....>	30/Sep/2015 10:00:14 PM
+Initializing Listener on... 127.0.0.1	9080	30/Sep/2015 10:00:14 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	30/Sep/2015 10:00:14 PM
+Initializing Listener on... 127.0.0.1	9083	30/Sep/2015 10:00:14 PM
+Source: SourceNode again listening at 127.0.0.1 on 9083	30/Sep/2015 10:00:14 PM
+Searching for pre-configured sink Clients:-->> 	30/Sep/2015 10:00:14 PM
+2 Sink Client(s) found	30/Sep/2015 10:00:14 PM
+Switch Has Started....>	30/Sep/2015 10:00:14 PM
+Switch Has Started....>	30/Sep/2015 10:00:14 PM
+Connected to ==> 1	30/Sep/2015 10:00:23 PM
+Listener Peer is now receiving...30/Sep/2015 10:00:24 PM
+	30/Sep/2015 10:00:24 PM
+Switch Has Started....>	30/Sep/2015 10:00:24 PM
+
+ Enter Validator	30/Sep/2015 10:00:24 PM
+Transaction log::: 349535 10/1/2015 6:00:24 AM	30/Sep/2015 10:00:25 PM
+Loading SourceNode Schemes	30/Sep/2015 10:00:25 PM
+Scheme : Scheme Onne Loaded	30/Sep/2015 10:00:25 PM
+Getting fee:	30/Sep/2015 10:00:25 PM
+Transaction log::: 349535 10/1/2015 6:00:31 AM	30/Sep/2015 10:00:31 PM
+(Event) Source server disconnected from: 1	30/Sep/2015 10:00:31 PM
+Initializing Listener on... 127.0.0.1	9080	30/Sep/2015 10:00:31 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	30/Sep/2015 10:00:31 PM
+Connected to ==> 1	30/Sep/2015 10:30:48 PM
+Listener Peer is now receiving...30/Sep/2015 10:30:49 PM
+	30/Sep/2015 10:30:49 PM
+Switch Has Started....>	30/Sep/2015 10:30:49 PM
+
+ Enter Validator	30/Sep/2015 10:30:49 PM
+Transaction log::: 574903 10/1/2015 6:30:49 AM	30/Sep/2015 10:30:49 PM
+
+ This is a reversal	30/Sep/2015 10:30:51 PM
+Switch Has Started....>	30/Sep/2015 10:35:02 PM
+Searching for pre-configured source servers	30/Sep/2015 10:35:02 PM
+2 Source server(s) found:.	 	30/Sep/2015 10:35:05 PM
+Switch Has Started....>	30/Sep/2015 10:35:05 PM
+Initializing Listener on... 127.0.0.1	9080	30/Sep/2015 10:35:05 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	30/Sep/2015 10:35:05 PM
+Initializing Listener on... 127.0.0.1	9083	30/Sep/2015 10:35:06 PM
+Source: SourceNode again listening at 127.0.0.1 on 9083	30/Sep/2015 10:35:06 PM
+Searching for pre-configured sink Clients:-->> 	30/Sep/2015 10:35:06 PM
+2 Sink Client(s) found	30/Sep/2015 10:35:06 PM
+Switch Has Started....>	30/Sep/2015 10:35:06 PM
+Switch Has Started....>	30/Sep/2015 10:35:06 PM
+Connected to ==> 1	30/Sep/2015 10:35:14 PM
+Listener Peer is now receiving...30/Sep/2015 10:35:15 PM
+	30/Sep/2015 10:35:15 PM
+Switch Has Started....>	30/Sep/2015 10:35:15 PM
+
+ Enter Validator	30/Sep/2015 10:35:15 PM
+Transaction log::: 158734 10/1/2015 6:35:15 AM	30/Sep/2015 10:35:16 PM
+
+ This is a reversal	30/Sep/2015 10:35:16 PM
+Switch Has Started....>	30/Sep/2015 10:44:47 PM
+Searching for pre-configured source servers	30/Sep/2015 10:44:47 PM
+2 Source server(s) found:.	 	30/Sep/2015 10:44:50 PM
+Switch Has Started....>	30/Sep/2015 10:44:50 PM
+Initializing Listener on... 127.0.0.1	9080	30/Sep/2015 10:44:50 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	30/Sep/2015 10:44:51 PM
+Initializing Listener on... 127.0.0.1	9083	30/Sep/2015 10:44:51 PM
+Source: SourceNode again listening at 127.0.0.1 on 9083	30/Sep/2015 10:44:51 PM
+Searching for pre-configured sink Clients:-->> 	30/Sep/2015 10:44:51 PM
+2 Sink Client(s) found	30/Sep/2015 10:44:51 PM
+Switch Has Started....>	30/Sep/2015 10:44:51 PM
+Switch Has Started....>	30/Sep/2015 10:45:25 PM
+Connected to ==> 1	30/Sep/2015 10:46:21 PM
+Listener Peer is now receiving...30/Sep/2015 10:46:22 PM
+	30/Sep/2015 10:46:22 PM
+Switch Has Started....>	30/Sep/2015 10:46:22 PM
+
+ Enter Validator	30/Sep/2015 10:46:22 PM
+Transaction log::: 694367 10/1/2015 6:46:22 AM	30/Sep/2015 10:46:23 PM
+
+ This is a reversal	30/Sep/2015 10:46:23 PM
+Switch Has Started....>	30/Sep/2015 11:00:36 PM
+Searching for pre-configured source servers	30/Sep/2015 11:00:36 PM
+2 Source server(s) found:.	 	30/Sep/2015 11:00:39 PM
+Switch Has Started....>	30/Sep/2015 11:00:39 PM
+Initializing Listener on... 127.0.0.1	9080	30/Sep/2015 11:00:39 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	30/Sep/2015 11:00:39 PM
+Initializing Listener on... 127.0.0.1	9083	30/Sep/2015 11:00:40 PM
+Source: SourceNode again listening at 127.0.0.1 on 9083	30/Sep/2015 11:00:40 PM
+Searching for pre-configured sink Clients:-->> 	30/Sep/2015 11:00:40 PM
+2 Sink Client(s) found	30/Sep/2015 11:00:40 PM
+Switch Has Started....>	30/Sep/2015 11:00:40 PM
+Switch Has Started....>	30/Sep/2015 11:00:43 PM
+Connected to ==> 1	30/Sep/2015 11:01:35 PM
+Listener Peer is now receiving...30/Sep/2015 11:01:36 PM
+	30/Sep/2015 11:01:36 PM
+Switch Has Started....>	30/Sep/2015 11:01:36 PM
+
+ Enter Validator	30/Sep/2015 11:01:36 PM
+Transaction log::: 692189 10/1/2015 7:01:36 AM	30/Sep/2015 11:01:37 PM
+Loading SourceNode Schemes	30/Sep/2015 11:01:37 PM
+Scheme : Scheme Onne Loaded	30/Sep/2015 11:01:37 PM
+Getting fee:	30/Sep/2015 11:01:37 PM
+Error: while checking if transaction is allowed 
+Object reference not set to an instance of an object.	30/Sep/2015 11:01:37 PM
+Transaction log::: 692189 10/1/2015 7:01:37 AM	30/Sep/2015 11:01:37 PM
+(Event) Source server disconnected from: 1	30/Sep/2015 11:01:37 PM
+Initializing Listener on... 127.0.0.1	9080	30/Sep/2015 11:01:37 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	30/Sep/2015 11:01:37 PM
+Connected to ==> 1	30/Sep/2015 11:02:07 PM
+Listener Peer is now receiving...30/Sep/2015 11:02:08 PM
+	30/Sep/2015 11:02:08 PM
+Switch Has Started....>	30/Sep/2015 11:02:08 PM
+
+ Enter Validator	30/Sep/2015 11:02:08 PM
+Transaction log::: 476944 10/1/2015 7:02:08 AM	30/Sep/2015 11:02:08 PM
+Loading SourceNode Schemes	30/Sep/2015 11:02:08 PM
+Scheme : Scheme Onne Loaded	30/Sep/2015 11:02:08 PM
+Getting fee:	30/Sep/2015 11:02:08 PM
+Transaction log::: 476944 10/1/2015 7:02:10 AM	30/Sep/2015 11:02:10 PM
+(Event) Source server disconnected from: 1	30/Sep/2015 11:02:10 PM
+Initializing Listener on... 127.0.0.1	9080	30/Sep/2015 11:02:10 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	30/Sep/2015 11:02:10 PM
+Connected to ==> 1	30/Sep/2015 11:04:06 PM
+Listener Peer is now receiving...30/Sep/2015 11:04:07 PM
+	30/Sep/2015 11:04:07 PM
+Switch Has Started....>	30/Sep/2015 11:04:07 PM
+
+ Enter Validator	30/Sep/2015 11:04:07 PM
+Transaction log::: 476944 10/1/2015 7:04:08 AM	30/Sep/2015 11:04:08 PM
+
+ This is a reversal	30/Sep/2015 11:04:08 PM
+Switch Has Started....>	30/Sep/2015 11:07:33 PM
+Searching for pre-configured source servers	30/Sep/2015 11:07:33 PM
+2 Source server(s) found:.	 	30/Sep/2015 11:07:33 PM
+Switch Has Started....>	30/Sep/2015 11:07:33 PM
+Initializing Listener on... 127.0.0.1	9080	30/Sep/2015 11:07:33 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	30/Sep/2015 11:07:33 PM
+Initializing Listener on... 127.0.0.1	9083	30/Sep/2015 11:07:33 PM
+Source: SourceNode again listening at 127.0.0.1 on 9083	30/Sep/2015 11:07:33 PM
+Searching for pre-configured sink Clients:-->> 	30/Sep/2015 11:07:34 PM
+2 Sink Client(s) found	30/Sep/2015 11:07:34 PM
+Switch Has Started....>	30/Sep/2015 11:07:34 PM
+Connected to ==> 1	30/Sep/2015 11:07:55 PM
+Listener Peer is now receiving...30/Sep/2015 11:07:56 PM
+	30/Sep/2015 11:07:56 PM
+Switch Has Started....>	30/Sep/2015 11:07:56 PM
+
+ Enter Validator	30/Sep/2015 11:07:56 PM
+Transaction log::: 476944 10/1/2015 7:07:56 AM	30/Sep/2015 11:07:56 PM
+
+ This is a reversal	30/Sep/2015 11:07:56 PM
+(Event) Source server disconnected from: 1	30/Sep/2015 11:10:43 PM
+Initializing Listener on... 127.0.0.1	9080	30/Sep/2015 11:10:43 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	30/Sep/2015 11:10:43 PM
+(Event) Source server disconnected from: 1	30/Sep/2015 11:12:55 PM
+Connected to ==> 1	30/Sep/2015 11:12:55 PM
+Initializing Listener on... 127.0.0.1	9080	30/Sep/2015 11:12:55 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	30/Sep/2015 11:12:55 PM
+Switch Has Started....>	30/Sep/2015 11:18:38 PM
+Searching for pre-configured source servers	30/Sep/2015 11:18:38 PM
+2 Source server(s) found:.	 	30/Sep/2015 11:18:42 PM
+Switch Has Started....>	30/Sep/2015 11:18:42 PM
+Initializing Listener on... 127.0.0.1	9080	30/Sep/2015 11:18:42 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	30/Sep/2015 11:18:42 PM
+Initializing Listener on... 127.0.0.1	9083	30/Sep/2015 11:18:42 PM
+Source: SourceNode again listening at 127.0.0.1 on 9083	30/Sep/2015 11:18:42 PM
+Searching for pre-configured sink Clients:-->> 	30/Sep/2015 11:18:42 PM
+2 Sink Client(s) found	30/Sep/2015 11:18:42 PM
+Switch Has Started....>	30/Sep/2015 11:18:42 PM
+Switch Has Started....>	30/Sep/2015 11:18:43 PM
+Connected to ==> 1	30/Sep/2015 11:19:00 PM
+Listener Peer is now receiving...30/Sep/2015 11:19:01 PM
+	30/Sep/2015 11:19:01 PM
+Switch Has Started....>	30/Sep/2015 11:19:01 PM
+
+ Enter Validator	30/Sep/2015 11:19:02 PM
+Transaction log::: 51920 10/1/2015 7:19:02 AM	30/Sep/2015 11:19:02 PM
+
+ This is a reversal	30/Sep/2015 11:19:02 PM
+Switch Has Started....>	30/Sep/2015 11:28:14 PM
+Searching for pre-configured source servers	30/Sep/2015 11:28:14 PM
+2 Source server(s) found:.	 	30/Sep/2015 11:28:18 PM
+Switch Has Started....>	30/Sep/2015 11:28:18 PM
+Initializing Listener on... 127.0.0.1	9080	30/Sep/2015 11:28:18 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	30/Sep/2015 11:28:18 PM
+Initializing Listener on... 127.0.0.1	9083	30/Sep/2015 11:28:18 PM
+Source: SourceNode again listening at 127.0.0.1 on 9083	30/Sep/2015 11:28:18 PM
+Searching for pre-configured sink Clients:-->> 	30/Sep/2015 11:28:18 PM
+2 Sink Client(s) found	30/Sep/2015 11:28:18 PM
+Switch Has Started....>	30/Sep/2015 11:28:18 PM
+Switch Has Started....>	30/Sep/2015 11:28:20 PM
+Connected to ==> 1	30/Sep/2015 11:29:06 PM
+Listener Peer is now receiving...30/Sep/2015 11:29:07 PM
+	30/Sep/2015 11:29:07 PM
+Switch Has Started....>	30/Sep/2015 11:29:07 PM
+
+ Enter Validator	30/Sep/2015 11:29:07 PM
+Transaction log::: 465428 10/1/2015 7:29:08 AM	30/Sep/2015 11:29:08 PM
+
+ This is a reversal	30/Sep/2015 11:29:08 PM
+Switch Has Started....>	30/Sep/2015 11:37:23 PM
+Searching for pre-configured source servers	30/Sep/2015 11:37:23 PM
+2 Source server(s) found:.	 	30/Sep/2015 11:37:27 PM
+Switch Has Started....>	30/Sep/2015 11:37:27 PM
+Initializing Listener on... 127.0.0.1	9080	30/Sep/2015 11:37:27 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	30/Sep/2015 11:37:27 PM
+Initializing Listener on... 127.0.0.1	9083	30/Sep/2015 11:37:27 PM
+Source: SourceNode again listening at 127.0.0.1 on 9083	30/Sep/2015 11:37:27 PM
+Searching for pre-configured sink Clients:-->> 	30/Sep/2015 11:37:27 PM
+2 Sink Client(s) found	30/Sep/2015 11:37:27 PM
+Switch Has Started....>	30/Sep/2015 11:37:27 PM
+Switch Has Started....>	30/Sep/2015 11:37:29 PM
+Connected to ==> 1	30/Sep/2015 11:37:44 PM
+Listener Peer is now receiving...30/Sep/2015 11:37:45 PM
+	30/Sep/2015 11:37:45 PM
+Switch Has Started....>	30/Sep/2015 11:37:45 PM
+
+ Enter Validator	30/Sep/2015 11:37:45 PM
+Transaction log::: 949249 10/1/2015 7:37:45 AM	30/Sep/2015 11:37:46 PM
+
+ This is a reversal	30/Sep/2015 11:37:46 PM
+Original Data Element: 4219492491001073745	30/Sep/2015 11:38:40 PM
+
+ Continue with reversal	30/Sep/2015 11:39:08 PM
+Transaction log::: 949249 10/1/2015 7:39:16 AM	30/Sep/2015 11:39:16 PM
+Loading SourceNode Schemes	30/Sep/2015 11:39:16 PM
+Scheme : Scheme Onne Loaded	30/Sep/2015 11:39:16 PM
+Getting fee:	30/Sep/2015 11:39:16 PM
+Transaction log::: 949249 10/1/2015 7:39:18 AM	30/Sep/2015 11:39:18 PM
+(Event) Source server disconnected from: 1	30/Sep/2015 11:39:18 PM
+Initializing Listener on... 127.0.0.1	9080	30/Sep/2015 11:39:18 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	30/Sep/2015 11:39:18 PM

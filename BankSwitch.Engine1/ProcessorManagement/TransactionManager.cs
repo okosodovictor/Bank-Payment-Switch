@@ -365,38 +365,38 @@ namespace BankSwitch.Engine.ProcessorMangement
            var allLogsThatNeedsReversal = new TransactionLogManager().GetAllThatNeedsReversal();
            Iso8583Message msgFromFEP = null;
            bool needReversal = true;
-           var allSinkNodes = new SinkNodeManager().GetAllSinkNode().ToDictionary(x => x.Name);
-           var allSourceNodes = new SourceNodeManager().RetrieveAll().ToDictionary(x => x.Name);
-           foreach (var thisLog in allLogsThatNeedsReversal)
+           Dictionary<string, SinkNode> allSinkNodes = new SinkNodeManager().GetAllSinkNode().ToDictionary(x => x.Name);
+           Dictionary<string, SourceNode> allSourceNodes = new SourceNodeManager().RetrieveAll().ToDictionary(x => x.Name);
+           foreach (var log in allLogsThatNeedsReversal)
            {
-               if (!thisLog.IsReversed && thisLog.IsReversePending)
+               if (!log.IsReversed && log.IsReversePending)
                {
-                   Iso8583Message revMsg = BuildReversalIsoMessage(thisLog);
+                   Iso8583Message revMsg = BuildReversalIsoMessage(log);
                    Logger.LogTransaction(revMsg);
-                   if (thisLog.SinkNode != null)
+                   if (log.SinkNode != null)
                    {
-                       var sinkNode = allSinkNodes[thisLog.SinkNode];
+                       var sinkNode = allSinkNodes[log.SinkNode];
                        msgFromFEP = ToFEP(revMsg, sinkNode, out needReversal); //TOFEP should set needReversal to false
 
                        if (msgFromFEP.Fields[39].ToString() == "00")
                        {
-                           Logger.LogTransaction(msgFromFEP, allSourceNodes[thisLog.SourceNode], null, null, needReversal);
+                           Logger.LogTransaction(msgFromFEP, allSourceNodes[log.SourceNode], null, null, needReversal);
                        }
                    }
 
                    if (!needReversal)
                    {
-                       thisLog.IsReversePending = false;
-                       thisLog.IsReversed = true;
-                       new TransactionLogManager().Update(thisLog);
-                       Logger.Log("Auto Reversal done for: " + thisLog.OriginalDataElement);
+                       log.IsReversePending = false;
+                       log.IsReversed = true;
+                       new TransactionLogManager().Update(log);
+                       Logger.Log("Auto Reversal done for: " + log.OriginalDataElement);
                    }
                }
-               if (thisLog.IsReversed)
+               if (log.IsReversed)
                {
-                   thisLog.IsReversePending = false;
-                   thisLog.IsReversed = true;
-                   new TransactionLogManager().Update(thisLog);
+                   log.IsReversePending = false;
+                   log.IsReversed = true;
+                   new TransactionLogManager().Update(log);
                }
            }
        }

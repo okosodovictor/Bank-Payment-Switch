@@ -35,7 +35,7 @@ namespace BankSwitch.UI.SinkNodeManagement
                .Popup<EditSinkNode>("Edit Sink Node"));
 
            AddButton().WithText(x=>x.IsActive?"Disable Node":"Enable Node")
-               .SubmitTo(x=>
+               .UpdateWith(x=>
                   {
                      if(x.IsActive)
                      {
@@ -45,8 +45,8 @@ namespace BankSwitch.UI.SinkNodeManagement
                      {
                          x.IsActive = true;
                      }
-                     var result = new SinkNodeManager().Edit(x);
-                      return result;
+                      new SinkNodeManager().Edit(x);
+                     return x;
                   });
        }
     }

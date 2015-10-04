@@ -13,7 +13,7 @@ namespace BankSwitch.Core.Mappings
        public SinkNodeMap()
        {
            Id(x => x.Id);
-           Map(x => x.Name).Unique();
+           Map(x => x.Name);
            Map(x => x.HostName);
            Map(x => x.IPAddress);
            Map(x => x.Port);

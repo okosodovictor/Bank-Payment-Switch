@@ -74,5 +74,27 @@ namespace BankSwitch.DAO
            totalCount = result.RowCount();
            return result.List<Scheme>();
        }
+
+       public object UpdateScheme(Scheme model)
+       {
+           object result = null;
+           using (var session = DataAccess.OpenSession())
+           {
+               using (var trnx = session.BeginTransaction())
+               {
+                   try
+                   {
+                result = session.Merge(model);
+                   trnx.Commit();
+                   }
+                   catch (Exception)
+                   {
+                       trnx.Rollback();
+                       throw;
+                   }
+                   return result;
+               }
+           }
+       }
     }
 }

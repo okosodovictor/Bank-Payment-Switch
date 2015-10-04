@@ -13,10 +13,15 @@ using System.Web;
 
 namespace BankSwitch.UI.SchemeManagement
 {
-    public class AddScheme : EntityUI<SchemeModel>
+    public class AddScheme : EntityUI<Scheme>
     {
         public AddScheme()
         {
+
+            PrePopulateFrom<Scheme>(x =>
+            {
+                return x;
+            });
             List<TransactionTypeChannelFee> list = new List<TransactionTypeChannelFee>();
             WithTitle("Scheme Management");
             AddSection().WithTitle("Add New Scheme")
@@ -35,16 +40,15 @@ namespace BankSwitch.UI.SchemeManagement
                         
                       new Column(  
                      new List<IField> { 
-                            Map(x => x.Type)
+                            Map(x => x.TypeUI)
                                     .AsSectionField<DropDownList>()
                                     .Of(new TransactionTypeManager().GetAllTransactionType())
-                                    .ListOf(x => x.Name, x => x.Id)
-                                    ,
-                              Map(x => x.Channel)
+                                    .ListOf(x => x.Name, x => x.Id).LabelTextIs("TransactionType"),
+                              Map(x => x.ChannelUI)
                                     .AsSectionField<DropDownList>()
                                     .Of(new ChannelManager().GetAllChannel())
                                     .ListOf(x => x.Name, x => x.Id),
-                              Map(x => x.Fee)
+                              Map(x => x.FeeUI)
                                     .AsSectionField<DropDownList>()
                                     .Of(new FeeManager().GetFees())
                                     .ListOf(x => x.Name, x => x.Id),
@@ -52,20 +56,28 @@ namespace BankSwitch.UI.SchemeManagement
                                     AddSectionButton().WithText("Add Transaction_Channel_Fee")
                                         .UpdateWith(x => 
                                           {
-                                                  TransactionTypeChannelFee trnx = new TransactionTypeChannelFee
-                                                      {
-                                                           Channel=x.Channel,
-                                                           Fee=x.Fee,
-                                                           TransactionType=x.Type
-                                                      };
-                                                 
-                                               if(x.TransactionTypeChannelFees.Any(s=>s.Channel==x.Channel && s.Fee== x.Fee))
+                                                  TransactionTypeChannelFee trnx = new TransactionTypeChannelFee();
+
+                                                  if (x.ChannelUI != null) trnx.Channel = x.ChannelUI;
+                                                  if (x.FeeUI != null) trnx.Fee = x.FeeUI;
+                                                  if (x.TypeUI != null) trnx.TransactionType = x.TypeUI;
+                                                      
+                                               if(x.TransactionTypeChannelFees.Any(s=>s.Channel==x.ChannelUI && s.Fee== x.FeeUI))
                                                {
                                                    x.TransactionTypeChannelFees.Remove(trnx);
                                                }
                                                else
                                                {
                                                    x.TransactionTypeChannelFees.Add(trnx);
+                                               }
+                                              return x;
+                                          }),
+                                       AddSectionButton().WithText("Remove Transaction_Channel_Fee")
+                                        .UpdateWith(x => 
+                                          {      
+                                               if(x.TransactionTypeChannelFees.Any())
+                                               {
+                                                   x.TransactionTypeChannelFees.Remove(x.TransactionTypeChannelFees[0]);
                                                }
                                               return x;
                                           })

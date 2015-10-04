@@ -14,7 +14,6 @@ namespace BankSwitch.Engine1
     {
         static void Main(string[] args)
         {
-
             Startup();
             //Do autoReversal 
             new TransactionManager().DoAutoReversal();

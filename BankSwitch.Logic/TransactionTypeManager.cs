@@ -42,7 +42,7 @@ namespace BankSwitch.Logic
            bool result = false;
            try
            {
-               var transx = _db.Get<TransactionType>().FirstOrDefault(x => x.Name == model.Name && x.Code == model.Code);
+               var transx = _db.Get<TransactionType>().FirstOrDefault(x => x.Name == model.Name || x.Code == model.Code);
                if (transx != null)
                {
                    transx.Code = model.Code;
@@ -78,9 +78,9 @@ namespace BankSwitch.Logic
          }
        }
 
-       public IList<TransactionType> Search(string queryString, int pageIndex, int pageSize, out int totalCount)
+       public IList<TransactionType> Search(string name,string code, int start, int limit, out int total)
        {
-           return _db.Search(queryString, pageIndex, pageSize, out totalCount);
+           return _db.Search(name, code, start, limit, out total);
        }
 
        public TransactionType GetByCode(string transactionTypeCode)

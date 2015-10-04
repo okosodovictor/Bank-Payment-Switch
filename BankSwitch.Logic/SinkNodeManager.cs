@@ -66,9 +66,9 @@ namespace BankSwitch.Logic
             }
         }
 
-       public IList<SinkNode> GetSinkNodes(string name, string hostName, string iPAddress)
+        public IList<SinkNode> GetSinkNodes(string name, string hostName, string iPAddress, string port, int start, int limit, out int total)
        {
-           return _db.GetSinkNodes(name, hostName, iPAddress);
+           return _db.GetSinkNodes(name, hostName, iPAddress, port, start, limit , out total);
        }
        public IList<SinkNode> GetAllSinkNode()
        {

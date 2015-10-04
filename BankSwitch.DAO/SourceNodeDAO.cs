@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using NHibernate.Linq.Expressions;
 using NHibernate.Criterion;
 using NHibernate;
+using System.Collections;
 
 namespace BankSwitch.Core.DAO
 {
@@ -44,30 +45,49 @@ namespace BankSwitch.Core.DAO
             }
             return result;
         }
-        public IList<SourceNode> SearchSinkNode(string queryparam, int pageIndex, int pageSize, out int totalCount)
+        public IList<SourceNode> SearchSinkNode(string name, string hostName, string iPAddress, string port, int start, int limit, out int total)
         {
-           
-            var query = _Session.QueryOver<SourceNode>();
 
-            if(string.IsNullOrEmpty(queryparam))
+            List<SourceNode> result = new List<SourceNode>();
+            try
             {
-                totalCount = query.RowCount();
-               var sourceNodes = query.List<SourceNode>();
-               return sourceNodes;
-            }
-            else
-            {
-                query.Where(x => x.Name.IsLike(queryparam, MatchMode.Anywhere) ||
-                    x.HostName.IsLike(queryparam, MatchMode.Anywhere) ||
-                    x.IPAddress.IsLike(queryparam, MatchMode.Anywhere) ||
-                    x.Port.IsLike(queryparam, MatchMode.Anywhere)
-                )
-                  .List<SinkNode>();
-            }
+                ICriteria criteria = _Session.CreateCriteria(typeof(SourceNode));
+                if (!string.IsNullOrEmpty(name))
+                {
+                    criteria.Add(Expression.Like("Name", name));
+                }
+                if (!string.IsNullOrEmpty(hostName))
+                {
+                    criteria.Add(Expression.Like("HostName", hostName));
+                }
+                if (!string.IsNullOrEmpty(iPAddress))
+                {
+                    criteria.Add(Expression.Like("IPAddress", iPAddress));
+                }
+                if (!string.IsNullOrEmpty(port))
+                {
+                    criteria.Add(Expression.Like("Port", port));
+                }
+                ICriteria countCriteria = CriteriaTransformer.Clone(criteria).SetProjection(Projections.RowCountInt64());
+                ICriteria listCriteria = CriteriaTransformer.Clone(criteria).SetFirstResult(start).SetMaxResults(limit);
+                listCriteria.AddOrder(Order.Desc("Id"));
 
-            var result = query.Skip(pageIndex).Take(pageSize);
-            totalCount = result.RowCount();
-            return result.List<SourceNode>();
+                IList allResults = _Session.CreateMultiCriteria().Add(listCriteria).Add(countCriteria).List();
+
+                foreach (var o in (IList)allResults[0])
+                {
+                    result.Add((SourceNode)o);
+                }
+
+                total = Convert.ToInt32((long)((IList)allResults[1])[0]);
+
+                return result;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public SourceNode GetByName(string name)
@@ -92,16 +112,26 @@ namespace BankSwitch.Core.DAO
             return query;
         }
 
-        public void Update(SourceNode sourceNode)
+        public object UpdateSourceNode(SourceNode sourceNode)
         {
+            object result = false;
             using (var session = DataAccess.DataAccess.OpenSession())
             {
                 using (var transactn = session.BeginTransaction())
                 {
-                    session.Merge(sourceNode);
-                    transactn.Commit();
+                    try
+                    {
+                        result = session.Merge(sourceNode);
+                        transactn.Commit();
+                    }
+                    catch (Exception)
+                    {
+                        transactn.Rollback();
+                        throw;
+                    }
                 }
             }
+            return result;
         }
 
     }

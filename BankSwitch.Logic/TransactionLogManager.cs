@@ -29,9 +29,9 @@ namespace BankSwitch.Logic
 
            public TransactionLog GetByOriginalDataElement(string originalDataElement, out string originalDataElement2)
            {
-               originalDataElement = originalDataElement.Remove(0, 23);
+               originalDataElement = originalDataElement.Remove(0,0);
                originalDataElement2 = originalDataElement;
-               return new TransactionLogDAO().GetByOriginalDataElement(originalDataElement);
+              return new TransactionLogDAO().GetByOriginalDataElement(originalDataElement);
            }
 
            public IList<TransactionLog> GetAllThatNeedsReversal()

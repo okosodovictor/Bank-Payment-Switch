@@ -15,23 +15,31 @@ namespace BankSwitch.UI.SinkNodeManagement
     {
        public ViewSinkNodeList()
        {
-            WithTitle("View Sink Nodes");
-             AddSection().WithTitle("Search")
-             .IsFramed()
-             .IsCollapsible()
-            .WithFields(new List<IField>()
-             {
-
-                       Map(x => x.Name).AsSectionField<TextBox>().WithLength(10),
-                       Map(x => x.HostName).AsSectionField<TextBox>().LabelTextIs("Host Name").WithLength(10),
-                        AddSectionButton()
-                       .WithText("Search")
-                       .UpdateWith(x =>
-                                    {
-                                        return x;
-                                    })
-                                });
-
+           WithTitle("View Sink Nodes");
+           AddSection()
+           .IsFramed()
+           .IsCollapsible()
+              .WithColumns(
+                  new List<Column>()
+                    {
+                        new Column(new List<IField>()
+                        {  
+                           Map(x => x.Name).AsSectionField<TextBox>().LabelTextIs("Name"),
+                           Map(x => x.Port).AsSectionField<TextBox>().WithLength(30),
+                              AddSectionButton()
+                            .WithText("Search")
+                            .UpdateWith(x=> 
+                                {
+                                    return x;
+                                })
+                            }),
+                              new Column(
+                            new List<IField>()
+                            {
+                              Map(x => x.HostName).AsSectionField<TextBox>().LabelTextIs("Host Name"),
+                               Map(x=>x.IPAddress).AsSectionField<TextBox>().WithLength(30),
+                            }),
+                    });
                
                  Map(x =>x.SinkNodes).As<Grid>()
                 .ApplyMod<IconMod>(x => x.WithIcon(Ext.Net.Icon.Link))
@@ -45,18 +53,19 @@ namespace BankSwitch.UI.SinkNodeManagement
                .WithColumn(x => x.IsActive?"Active":"Inactive","Status")
                .IsPaged<SinkNodeModel>(10, (x, e) =>
                {
-                   int totalCount = 0;
+                   int total = 0;
                    try
                    {
-                       x.SinkNodes = new SinkNodeManager().GetSinkNodes(x.Name, x.HostName, x.IPAddress);
-                       e.TotalCount = totalCount * e.Limit;
+                       x.SinkNodes = new SinkNodeManager().GetSinkNodes(x.Name, x.HostName, x.IPAddress, x.Port, e.Start / e.Limit, e.Limit, out total);
+                       e.TotalCount = total;
+                       System.Web.HttpContext.Current.Session["TotalSinkNode"] = e.TotalCount;
+                       return x;
                    }
                    catch (Exception)
                    {
 
                        throw;
                    }
-                   return x;
                });
         }
        }

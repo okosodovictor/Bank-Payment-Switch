@@ -51,5 +51,21 @@ namespace BankSwitch.Logic
        {
            return _db.Search(queryString, pageIndex, PageSize, out totalCount);
        }
+       public object UpdateScheme(Scheme model)
+       {
+           object result = null;
+           var scheme = _db.Get<Scheme>().FirstOrDefault(x => x.Id==model.Id);
+           if (scheme != null)
+           {
+               scheme.Name = model.Name;
+               scheme.Route = model.Route;
+               foreach(var item in model.TransactionTypeChannelFees)
+               {
+                   item.Scheme = scheme;
+               }
+             result = _db.UpdateScheme(model);
+           }
+           return result;
+       }
     }
 }

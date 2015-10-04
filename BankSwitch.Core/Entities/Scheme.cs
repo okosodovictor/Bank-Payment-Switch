@@ -12,6 +12,11 @@ namespace BankSwitch.Core.Entities
         public virtual Route Route { get; set; }
         public virtual IList<TransactionTypeChannelFee> TransactionTypeChannelFees { get; set; }
         public virtual string Description { get; set; }
+
+        public virtual Fee FeeUI { get; set; }
+        public virtual Channel ChannelUI { get; set; }
+        public virtual TransactionType TypeUI { get; set; }
+        public virtual IList<Scheme> Schemes { get; set; }
         public Scheme()
         {
             TransactionTypeChannelFees = new List<TransactionTypeChannelFee>();

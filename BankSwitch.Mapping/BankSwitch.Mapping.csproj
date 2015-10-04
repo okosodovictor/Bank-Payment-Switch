@@ -33,13 +33,11 @@
     <Reference Include="FluentNHibernate">
       <HintPath>..\..\..\..\..\..\..\CBAProject\CBAProject\CBA.Web\bin\FluentNHibernate.dll</HintPath>
     </Reference>
-    <Reference Include="Iesi.Collections, Version=1.0.0.3, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Projects\BankSwitch\BankSwitch.Engine\bin\Debug\Iesi.Collections.dll</HintPath>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\BankSwitch.Engine1\bin\Debug\Iesi.Collections.dll</HintPath>
     </Reference>
-    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Projects\BankSwitch\BankSwitch.Engine\bin\Debug\NHibernate.dll</HintPath>
+    <Reference Include="NHibernate">
+      <HintPath>..\BankSwitch.Engine1\bin\Debug\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

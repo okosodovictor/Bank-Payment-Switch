@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace BankSwitch.UI.SchemeManagement
 {
-   public class ViewSchemeList:EntityUI<SchemeModel>
+   public class ViewSchemeList:EntityUI<Scheme>
     {
        public ViewSchemeList()
        {
@@ -42,14 +42,13 @@ namespace BankSwitch.UI.SchemeManagement
                             .WithColumn(x => x.Name)
                             .WithColumn(x => x.Route.Name,"Route")
                             .WithColumn(x => x.Description)
-                            .WithColumn(x => x.TransactionTypeChannelFees.Count, "TransactionTypeChannelFeeList Count")
+                           // .WithColumn(x => x.TransactionTypeChannelFees.Count, "TransactionTypeChannelFeeList Count")
                             .WithRowNumbers()
-                            .IsPaged<SchemeModel>(10, (x, e) =>
+                            .IsPaged<Scheme>(10, (x, e) =>
                             {
                                 int totalCount = 0;
                                 try
                                 {
-                                   
                                     x.Schemes = new SchemeManager().Search(x.Name, e.Start, e.Limit, out totalCount);
                                     e.TotalCount = totalCount;
                                     return x;
@@ -58,8 +57,6 @@ namespace BankSwitch.UI.SchemeManagement
                                 {
                                     throw ;
                                 }
-                                e.TotalCount = totalCount * e.Limit;
-                                 return x;
                             }).ApplyMod<ViewDetailsMod>(y => y.Popup<SchemeDetail>("Scheme Details")),
                 
                    })

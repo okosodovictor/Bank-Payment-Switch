@@ -14,6 +14,7 @@ C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Log
 C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\log4net.dll
 C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\Iesi.Collections.dll
 C:\Users\Appzone\Documents\Visual Studio 2013\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\log4net.xml
+C:\Projects\BankSwitch\BankSwitch.Logic\obj\Debug\BankSwitch.Logic.csprojResolveAssemblyReference.cache
 C:\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\BankSwitch.Logic.dll
 C:\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\BankSwitch.Logic.pdb
 C:\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\BankSwitch.Core.dll
@@ -27,6 +28,5 @@ C:\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\BankSwitch.Core.pdb
 C:\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\BankSwitch.DAO.pdb
 C:\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\log4net.xml
 C:\Projects\BankSwitch\BankSwitch.Logic\bin\Debug\BankSwitch.Mapping.pdb
-C:\Projects\BankSwitch\BankSwitch.Logic\obj\Debug\BankSwitch.Logic.csprojResolveAssemblyReference.cache
 C:\Projects\BankSwitch\BankSwitch.Logic\obj\Debug\BankSwitch.Logic.dll
 C:\Projects\BankSwitch\BankSwitch.Logic\obj\Debug\BankSwitch.Logic.pdb

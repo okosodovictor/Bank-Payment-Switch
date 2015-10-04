@@ -15,21 +15,33 @@ namespace BankSwitch.UI.SourceNodeManagement
     {
        public ViewSourceNodeList()
        {
-           WithTitle("View Source Nodes");
+           WithTitle("View Sink Nodes");
            AddSection()
            .IsFramed()
            .IsCollapsible()
-          .WithFields(new List<IField>()
-             {
-                        Map(x => x.Name).AsSectionField<TextBox>().WithLength(10),
-                        AddSectionButton()
-                       .WithText("Search")
-                       .UpdateWith(x =>
-                                    {
-                                        return x;
-                                    })
-                  
-             });
+              .WithColumns(
+                  new List<Column>()
+                    {
+                        new Column(new List<IField>()
+                        {  
+                           Map(x => x.Name).AsSectionField<TextBox>().LabelTextIs("Name"),
+                           Map(x => x.Port).AsSectionField<TextBox>().WithLength(30),
+                              AddSectionButton()
+                            .WithText("Search")
+                            .UpdateWith(x=> 
+                                {
+                                    return x;
+                                })
+                            }),
+                              new Column(
+                            new List<IField>()
+                            {
+                              Map(x => x.HostName).AsSectionField<TextBox>().LabelTextIs("Host Name"),
+                               Map(x=>x.IPAddress).AsSectionField<TextBox>().WithLength(30),
+                            }),
+                    });
+               
+
            AddSection().WithTitle("Source Nodes").IsFramed().IsCollapsible()
            .WithColumns(new List<Column>()
                 {
@@ -43,23 +55,21 @@ namespace BankSwitch.UI.SourceNodeManagement
                             .WithColumn(x => x.IPAddress)
                             .WithColumn(x => x.HostName)
                             .WithColumn(x => x.Port)
-
                             .WithRowNumbers()
                             .IsPaged<SourceNodeModel>(10, (x, e) =>
                             { 
-                                int totalCount = 0;
+                                int total= 0;
                                 try
                                 {
-                                    x.SourceNodes = new SourceNodeManager().Search(x.Name, e.Start, e.Limit, out totalCount);
-                                    e.TotalCount = totalCount;
+                                    x.SourceNodes = new SourceNodeManager().GetAllSourceNode(x.Name, x.HostName, x.IPAddress, x.Port, e.Start / e.Limit, e.Limit, out total);
+                                    e.TotalCount = total;
+                                    System.Web.HttpContext.Current.Session["TotalSinkNode"] = e.TotalCount;
                                     return x;
                                 }
                                 catch (Exception)
                                 {
                                     throw;
                                 }
-                                e.TotalCount = totalCount * e.Limit;
-                                 return x;
                             }).ApplyMod<ViewDetailsMod>(y => y.Popup<sourceNodeDetail>("Route Details")),
                 
                    })

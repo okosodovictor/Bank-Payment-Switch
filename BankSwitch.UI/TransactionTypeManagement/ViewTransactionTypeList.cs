@@ -24,27 +24,22 @@ namespace BankSwitch.UI.TransactionTypeManagement
                             new Column
                                 ( new List<IField>
                                     {  
-                                        Map(x => x.Name)
-                                            .AsSectionField<TextBox>()
-                                            .WithLength(50)      
-                                            .LabelTextIs("Search:"),
+                                        Map(x => x.Name).AsSectionField<TextBox>().WithLength(50).LabelTextIs("Name:"),
+                                        Map(x => x.Code).AsSectionField<TextBox>().WithLength(50).LabelTextIs("Code:"),
                                         AddSectionButton() 
                                             .WithText("Search")  
-                                            .UpdateWith (x => x)
-                                    }) 
+                                            .UpdateWith (x =>
+                                            {
+                                                return x;
+                                            })
+                                    })
                           });
-          //.WithFields(new List<IField>{
-          //  AddSectionButton() 
-          //       .WithText("Search")  
-          //       .UpdateWith (x => x)  
-          //     });
+ 
 
-
-          //Grid Section
-          HasMany(x => x.TransactonTypes).As<Grid>()
+           HasMany(x => x.TransactonTypes).As<Grid>()
           .ApplyMod<IconMod>(x => x.WithIcon(Ext.Net.Icon.LinkEdit))
           .ApplyMod<ViewDetailsMod>(y => y
-              .Popup<TrnsactionTypeDetail>("Sink Node Details")
+              .Popup<TrnsactionTypeDetail>(" TransactionType Details")
               .PrePopulate<TransactionType, TransactionType>
                   (x =>
                   {
@@ -57,11 +52,12 @@ namespace BankSwitch.UI.TransactionTypeManagement
              .WithColumn(x => x.Code, "Code")
              .WithColumn(x => x.Description, "Description")
              .WithAutoLoad()
-              .IsPaged<Model.TransactionTypeModel>(10, (x, pageDetails) =>
+              .IsPaged<Model.TransactionTypeModel>(10, (x, e) =>
               {
-                  int totalCount;
-                  x.TransactonTypes = new TransactionTypeManager().Search(x.Name, pageDetails.Start, pageDetails.Limit, out totalCount);
-                  pageDetails.TotalCount = totalCount;
+                  int total=0;
+                  x.TransactonTypes = new TransactionTypeManager().Search(x.Name, x.Code, e.Start / e.Limit, e.Limit, out total);
+                  e.TotalCount = total;
+                  System.Web.HttpContext.Current.Session["TotalTransactionType"] = e.TotalCount;
                   return x;
               });
       }

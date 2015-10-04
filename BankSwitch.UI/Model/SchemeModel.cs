@@ -9,10 +9,9 @@ namespace BankSwitch.UI.Model
 {
    public class SchemeModel:Scheme
     {
-       public virtual IList<Scheme> Schemes {get; set;}
-       public virtual Fee Fee { get; set; }
-       public virtual Channel Channel { get; set; }
-       public virtual TransactionType Type {get; set;}
-
+       //public virtual IList<Scheme> Schemes {get; set;}
+       //public virtual Fee Fee { get; set; }
+       //public virtual Channel Channel { get; set; }
+       //public virtual TransactionType Type {get; set;}
     }
 }

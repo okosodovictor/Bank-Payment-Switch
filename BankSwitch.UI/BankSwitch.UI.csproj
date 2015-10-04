@@ -135,6 +135,10 @@
       <Project>{c1fc2ef4-82ba-4342-ba22-d995fd0397f5}</Project>
       <Name>BankSwitch.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\BankSwitch.DAO\BankSwitch.DAO.csproj">
+      <Project>{f001f2a3-d776-4ad9-95c4-47ea1bf3994c}</Project>
+      <Name>BankSwitch.DAO</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BankSwitch.Logic\BankSwitch.Logic.csproj">
       <Project>{8f9439b7-eaff-4e2c-bda5-6fc683a87c2e}</Project>
       <Name>BankSwitch.Logic</Name>
