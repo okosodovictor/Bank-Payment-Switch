@@ -51,7 +51,7 @@ namespace BankSwitch.Logic
             bool result = false;
             try
             {
-                var route = _db.Get<Route>().Where(x => x.Name == model.Name && x.CardPAN == model.CardPAN).FirstOrDefault();
+                var route = _db.Get<Route>().Where(x =>x.Id==model.Id).FirstOrDefault();
                 if (route != null)
                 {
                     route.Name = model.Name;

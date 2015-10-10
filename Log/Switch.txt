@@ -3053,3 +3053,639 @@ Transaction log::: 949249 10/1/2015 7:39:18 AM	30/Sep/2015 11:39:18 PM
 (Event) Source server disconnected from: 1	30/Sep/2015 11:39:18 PM
 Initializing Listener on... 127.0.0.1	9080	30/Sep/2015 11:39:18 PM
 Source: SourceNodes listening at 127.0.0.1 on 9080	30/Sep/2015 11:39:18 PM
+Switch Has Started....>	05/Oct/2015 02:12:29 PM
+Searching for pre-configured source servers	05/Oct/2015 02:12:30 PM
+2 Source server(s) found:.	 	05/Oct/2015 02:12:33 PM
+Switch Has Started....>	05/Oct/2015 02:12:33 PM
+Initializing Listener on... 127.0.0.1	9080	05/Oct/2015 02:12:33 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	05/Oct/2015 02:12:33 PM
+Initializing Listener on... 127.0.0.1	9083	05/Oct/2015 02:12:33 PM
+Source: SourceNode again listening at 127.0.0.1 on 9083	05/Oct/2015 02:12:33 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 02:12:34 PM
+2 Sink Client(s) found	05/Oct/2015 02:12:34 PM
+Switch Has Started....>	05/Oct/2015 02:12:34 PM
+Switch Has Started....>	05/Oct/2015 02:12:34 PM
+Connected to ==> 1	05/Oct/2015 02:15:25 PM
+Listener Peer is now receiving...05/Oct/2015 02:15:25 PM
+	05/Oct/2015 02:15:26 PM
+Switch Has Started....>	05/Oct/2015 02:15:26 PM
+
+ Enter Validator	05/Oct/2015 02:15:26 PM
+Transaction log::: 99133 10/5/2015 10:15:26 PM	05/Oct/2015 02:15:27 PM
+Loading SourceNode Schemes	05/Oct/2015 02:15:27 PM
+Scheme : Scheme Onne Loaded	05/Oct/2015 02:15:27 PM
+Getting fee:	05/Oct/2015 02:15:27 PM
+
+ Could not connect to the Sink Node.	05/Oct/2015 02:15:35 PM
+Transaction log::: 99133 10/5/2015 10:15:35 PM	05/Oct/2015 02:15:35 PM
+(Event) Source server disconnected from: 1	05/Oct/2015 02:15:35 PM
+Initializing Listener on... 127.0.0.1	9080	05/Oct/2015 02:15:35 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	05/Oct/2015 02:15:35 PM
+Connected to ==> 1	05/Oct/2015 02:15:35 PM
+(Event) Source server disconnected from: 1	05/Oct/2015 02:15:37 PM
+Initializing Listener on... 127.0.0.1	9080	05/Oct/2015 02:15:37 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	05/Oct/2015 02:15:37 PM
+Switch Has Started....>	05/Oct/2015 02:17:35 PM
+Searching for pre-configured source servers	05/Oct/2015 02:17:35 PM
+2 Source server(s) found:.	 	05/Oct/2015 02:17:37 PM
+Switch Has Started....>	05/Oct/2015 02:17:37 PM
+Initializing Listener on... 127.0.0.1	9080	05/Oct/2015 02:17:37 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	05/Oct/2015 02:17:37 PM
+Initializing Listener on... 127.0.0.1	9083	05/Oct/2015 02:17:37 PM
+Source: SourceNode again listening at 127.0.0.1 on 9083	05/Oct/2015 02:17:37 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 02:17:37 PM
+2 Sink Client(s) found	05/Oct/2015 02:17:37 PM
+Switch Has Started....>	05/Oct/2015 02:17:37 PM
+Switch Has Started....>	05/Oct/2015 02:17:38 PM
+Connected to ==> 1	05/Oct/2015 02:19:31 PM
+Listener Peer is now receiving...05/Oct/2015 02:19:32 PM
+	05/Oct/2015 02:19:32 PM
+Switch Has Started....>	05/Oct/2015 02:19:32 PM
+
+ Enter Validator	05/Oct/2015 02:19:32 PM
+Transaction log::: 707604 10/5/2015 10:19:32 PM	05/Oct/2015 02:19:32 PM
+Loading SourceNode Schemes	05/Oct/2015 02:19:32 PM
+Scheme : Scheme Onne Loaded	05/Oct/2015 02:19:32 PM
+Getting fee:	05/Oct/2015 02:19:32 PM
+
+ Could not connect to the Sink Node.	05/Oct/2015 02:19:40 PM
+Transaction log::: 707604 10/5/2015 10:19:40 PM	05/Oct/2015 02:19:40 PM
+(Event) Source server disconnected from: 1	05/Oct/2015 02:19:41 PM
+Initializing Listener on... 127.0.0.1	9080	05/Oct/2015 02:19:41 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	05/Oct/2015 02:19:41 PM
+Connected to ==> 1	05/Oct/2015 02:20:36 PM
+Listener Peer is now receiving...05/Oct/2015 02:20:37 PM
+	05/Oct/2015 02:20:37 PM
+Switch Has Started....>	05/Oct/2015 02:20:37 PM
+
+ Enter Validator	05/Oct/2015 02:20:37 PM
+Transaction log::: 737583 10/5/2015 10:20:37 PM	05/Oct/2015 02:20:38 PM
+Loading SourceNode Schemes	05/Oct/2015 02:21:13 PM
+Scheme : Scheme Onne Loaded	05/Oct/2015 02:21:13 PM
+Getting fee:	05/Oct/2015 02:21:13 PM
+Switch Has Started....>	05/Oct/2015 02:24:09 PM
+Searching for pre-configured source servers	05/Oct/2015 02:24:09 PM
+2 Source server(s) found:.	 	05/Oct/2015 02:24:12 PM
+Switch Has Started....>	05/Oct/2015 02:24:12 PM
+Initializing Listener on... 127.0.0.1	9080	05/Oct/2015 02:24:12 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	05/Oct/2015 02:24:13 PM
+Initializing Listener on... 127.0.0.1	9083	05/Oct/2015 02:24:13 PM
+Source: SourceNode again listening at 127.0.0.1 on 9083	05/Oct/2015 02:24:13 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 02:24:13 PM
+2 Sink Client(s) found	05/Oct/2015 02:24:13 PM
+Switch Has Started....>	05/Oct/2015 02:24:13 PM
+Switch Has Started....>	05/Oct/2015 02:24:13 PM
+Connected to ==> 1	05/Oct/2015 02:24:26 PM
+Listener Peer is now receiving...05/Oct/2015 02:24:27 PM
+	05/Oct/2015 02:24:27 PM
+Switch Has Started....>	05/Oct/2015 02:24:27 PM
+
+ Enter Validator	05/Oct/2015 02:24:27 PM
+Transaction log::: 562859 10/5/2015 10:24:27 PM	05/Oct/2015 02:24:28 PM
+Loading SourceNode Schemes	05/Oct/2015 02:24:35 PM
+Scheme : Scheme Onne Loaded	05/Oct/2015 02:24:35 PM
+Getting fee:	05/Oct/2015 02:24:35 PM
+Transaction log::: 562859 10/5/2015 10:24:38 PM	05/Oct/2015 02:24:38 PM
+(Event) Source server disconnected from: 1	05/Oct/2015 02:24:38 PM
+Initializing Listener on... 127.0.0.1	9080	05/Oct/2015 02:24:38 PM
+Source: SourceNodes listening at 127.0.0.1 on 9080	05/Oct/2015 02:24:38 PM
+Switch Has Started....>	05/Oct/2015 03:52:44 PM
+Searching for pre-configured source servers	05/Oct/2015 03:52:44 PM
+2 Source server(s) found:.	 	05/Oct/2015 03:52:47 PM
+Switch Has Started....>	05/Oct/2015 03:52:47 PM
+Initializing Listener on... 127.0.0.1	9070	05/Oct/2015 03:52:47 PM
+Source: Test SourceNode listening at 127.0.0.1 on 9070	05/Oct/2015 03:52:48 PM
+Initializing Listener on... 192.168.2.24	8583	05/Oct/2015 03:52:48 PM
+Switch Has Started....>	05/Oct/2015 03:56:51 PM
+Searching for pre-configured source servers	05/Oct/2015 03:56:51 PM
+2 Source server(s) found:.	 	05/Oct/2015 03:56:53 PM
+Switch Has Started....>	05/Oct/2015 03:56:53 PM
+Initializing Listener on... 127.0.0.1	9070	05/Oct/2015 03:56:53 PM
+Source: Test SourceNode listening at 127.0.0.1 on 9070	05/Oct/2015 03:56:53 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 03:56:53 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 03:56:54 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 03:56:54 PM
+2 Sink Client(s) found	05/Oct/2015 03:56:54 PM
+Switch Has Started....>	05/Oct/2015 03:56:54 PM
+Switch Has Started....>	05/Oct/2015 03:56:54 PM
+Connected to ==> 2	05/Oct/2015 03:57:58 PM
+Listener Peer is now receiving...05/Oct/2015 03:57:58 PM
+	05/Oct/2015 03:57:58 PM
+Switch Has Started....>	05/Oct/2015 03:57:58 PM
+
+ Enter Validator	05/Oct/2015 03:57:58 PM
+Transaction log::: 366732 10/5/2015 11:57:58 PM	05/Oct/2015 03:57:59 PM
+Loading SourceNode Schemes	05/Oct/2015 03:58:04 PM
+Scheme : Tester Scheme Loaded	05/Oct/2015 03:58:04 PM
+Getting fee:	05/Oct/2015 03:58:04 PM
+Error: while checking if transaction is allowed 
+Object reference not set to an instance of an object.	05/Oct/2015 03:58:04 PM
+Transaction log::: 366732 10/5/2015 11:58:04 PM	05/Oct/2015 03:58:04 PM
+(Event) Source server disconnected from: 2	05/Oct/2015 03:58:04 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 03:58:04 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 03:58:04 PM
+Connected to ==> 2	05/Oct/2015 03:59:38 PM
+Listener Peer is now receiving...05/Oct/2015 03:59:38 PM
+	05/Oct/2015 03:59:38 PM
+Switch Has Started....>	05/Oct/2015 03:59:38 PM
+
+ Enter Validator	05/Oct/2015 03:59:38 PM
+Transaction log::: 126176 10/5/2015 11:59:38 PM	05/Oct/2015 03:59:38 PM
+Loading SourceNode Schemes	05/Oct/2015 03:59:38 PM
+Scheme : Tester Scheme Loaded	05/Oct/2015 03:59:38 PM
+Getting fee:	05/Oct/2015 03:59:38 PM
+Error: while checking if transaction is allowed 
+Object reference not set to an instance of an object.	05/Oct/2015 03:59:39 PM
+Transaction log::: 126176 10/5/2015 11:59:39 PM	05/Oct/2015 03:59:39 PM
+(Event) Source server disconnected from: 2	05/Oct/2015 03:59:39 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 03:59:39 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 03:59:39 PM
+Connected to ==> 2	05/Oct/2015 04:01:53 PM
+Listener Peer is now receiving...05/Oct/2015 04:01:53 PM
+	05/Oct/2015 04:01:53 PM
+Switch Has Started....>	05/Oct/2015 04:01:53 PM
+
+ Enter Validator	05/Oct/2015 04:01:53 PM
+Transaction log::: 669872 10/6/2015 12:01:53 AM	05/Oct/2015 04:01:54 PM
+Loading SourceNode Schemes	05/Oct/2015 04:01:54 PM
+Scheme : Tester Scheme Loaded	05/Oct/2015 04:01:54 PM
+Getting fee:	05/Oct/2015 04:01:54 PM
+Transaction log::: 669872 10/6/2015 12:01:56 AM	05/Oct/2015 04:01:56 PM
+(Event) Source server disconnected from: 2	05/Oct/2015 04:01:56 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:01:57 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:01:57 PM
+Switch Has Started....>	05/Oct/2015 04:04:31 PM
+Searching for pre-configured source servers	05/Oct/2015 04:04:31 PM
+2 Source server(s) found:.	 	05/Oct/2015 04:04:35 PM
+Switch Has Started....>	05/Oct/2015 04:04:35 PM
+Initializing Listener on... 127.0.0.1	9070	05/Oct/2015 04:04:35 PM
+Source: Test SourceNode listening at 127.0.0.1 on 9070	05/Oct/2015 04:04:35 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:04:35 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:04:35 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 04:04:36 PM
+2 Sink Client(s) found	05/Oct/2015 04:04:36 PM
+Switch Has Started....>	05/Oct/2015 04:04:36 PM
+Switch Has Started....>	05/Oct/2015 04:04:36 PM
+Connected to ==> 2	05/Oct/2015 04:05:46 PM
+Listener Peer is now receiving...05/Oct/2015 04:05:47 PM
+	05/Oct/2015 04:05:47 PM
+Switch Has Started....>	05/Oct/2015 04:05:47 PM
+
+ Enter Validator	05/Oct/2015 04:05:47 PM
+Transaction log::: 897951 10/6/2015 12:05:47 AM	05/Oct/2015 04:05:48 PM
+Loading SourceNode Schemes	05/Oct/2015 04:05:48 PM
+Scheme : Tester Scheme Loaded	05/Oct/2015 04:05:48 PM
+Getting fee:	05/Oct/2015 04:05:48 PM
+Error: while checking if transaction is allowed 
+Object reference not set to an instance of an object.	05/Oct/2015 04:05:48 PM
+Transaction log::: 897951 10/6/2015 12:05:48 AM	05/Oct/2015 04:05:48 PM
+(Event) Source server disconnected from: 2	05/Oct/2015 04:05:48 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:05:48 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:05:48 PM
+Connected to ==> 2	05/Oct/2015 04:06:12 PM
+Listener Peer is now receiving...05/Oct/2015 04:06:13 PM
+	05/Oct/2015 04:06:13 PM
+Switch Has Started....>	05/Oct/2015 04:06:13 PM
+
+ Enter Validator	05/Oct/2015 04:06:13 PM
+Transaction log::: 955424 10/6/2015 12:06:13 AM	05/Oct/2015 04:06:13 PM
+Loading SourceNode Schemes	05/Oct/2015 04:06:14 PM
+Scheme : Tester Scheme Loaded	05/Oct/2015 04:06:14 PM
+Getting fee:	05/Oct/2015 04:06:14 PM
+Transaction log::: 955424 10/6/2015 12:06:16 AM	05/Oct/2015 04:06:16 PM
+(Event) Source server disconnected from: 2	05/Oct/2015 04:06:16 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:06:16 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:06:16 PM
+Connected to ==> 2	05/Oct/2015 04:08:14 PM
+Listener Peer is now receiving...05/Oct/2015 04:08:14 PM
+	05/Oct/2015 04:08:14 PM
+Switch Has Started....>	05/Oct/2015 04:08:14 PM
+
+ Enter Validator	05/Oct/2015 04:08:14 PM
+Transaction log::: 863042 10/6/2015 12:08:15 AM	05/Oct/2015 04:08:15 PM
+Loading SourceNode Schemes	05/Oct/2015 04:08:15 PM
+Scheme : Tester Scheme Loaded	05/Oct/2015 04:08:15 PM
+Getting fee:	05/Oct/2015 04:08:15 PM
+
+ Could not connect to the Sink Node.	05/Oct/2015 04:08:23 PM
+Transaction log::: 863042 10/6/2015 12:08:23 AM	05/Oct/2015 04:08:23 PM
+(Event) Source server disconnected from: 2	05/Oct/2015 04:08:23 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:08:23 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:08:23 PM
+Switch Has Started....>	05/Oct/2015 04:11:16 PM
+Searching for pre-configured source servers	05/Oct/2015 04:11:16 PM
+2 Source server(s) found:.	 	05/Oct/2015 04:11:19 PM
+Switch Has Started....>	05/Oct/2015 04:11:19 PM
+Initializing Listener on... 127.0.0.1	9070	05/Oct/2015 04:11:19 PM
+Source: Test SourceNode listening at 127.0.0.1 on 9070	05/Oct/2015 04:11:19 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:11:19 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:11:19 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 04:11:19 PM
+2 Sink Client(s) found	05/Oct/2015 04:11:19 PM
+Switch Has Started....>	05/Oct/2015 04:11:19 PM
+Switch Has Started....>	05/Oct/2015 04:11:19 PM
+Connected to ==> 2	05/Oct/2015 04:11:41 PM
+Listener Peer is now receiving...05/Oct/2015 04:11:42 PM
+	05/Oct/2015 04:11:42 PM
+Switch Has Started....>	05/Oct/2015 04:11:42 PM
+
+ Enter Validator	05/Oct/2015 04:11:42 PM
+Transaction log::: 595706 10/6/2015 12:11:42 AM	05/Oct/2015 04:11:44 PM
+Loading SourceNode Schemes	05/Oct/2015 04:11:44 PM
+Scheme : Tester Scheme Loaded	05/Oct/2015 04:11:44 PM
+Getting fee:	05/Oct/2015 04:11:44 PM
+
+ Could not connect to the Sink Node.	05/Oct/2015 04:11:52 PM
+Transaction log::: 595706 10/6/2015 12:11:52 AM	05/Oct/2015 04:11:52 PM
+(Event) Source server disconnected from: 2	05/Oct/2015 04:11:52 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:11:53 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:11:53 PM
+Switch Has Started....>	05/Oct/2015 04:12:42 PM
+Searching for pre-configured source servers	05/Oct/2015 04:12:42 PM
+2 Source server(s) found:.	 	05/Oct/2015 04:12:45 PM
+Switch Has Started....>	05/Oct/2015 04:12:45 PM
+Initializing Listener on... 127.0.0.1	9070	05/Oct/2015 04:12:45 PM
+Source: Test SourceNode listening at 127.0.0.1 on 9070	05/Oct/2015 04:12:45 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:12:45 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:12:45 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 04:12:45 PM
+2 Sink Client(s) found	05/Oct/2015 04:12:45 PM
+Switch Has Started....>	05/Oct/2015 04:12:45 PM
+Switch Has Started....>	05/Oct/2015 04:12:45 PM
+Switch Has Started....>	05/Oct/2015 04:12:55 PM
+Searching for pre-configured source servers	05/Oct/2015 04:12:55 PM
+2 Source server(s) found:.	 	05/Oct/2015 04:12:58 PM
+Switch Has Started....>	05/Oct/2015 04:12:58 PM
+Initializing Listener on... 127.0.0.1	9070	05/Oct/2015 04:12:58 PM
+Source: Test SourceNode listening at 127.0.0.1 on 9070	05/Oct/2015 04:12:58 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:12:58 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:12:58 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 04:12:59 PM
+2 Sink Client(s) found	05/Oct/2015 04:12:59 PM
+Switch Has Started....>	05/Oct/2015 04:12:59 PM
+Switch Has Started....>	05/Oct/2015 04:12:59 PM
+Switch Has Started....>	05/Oct/2015 04:13:09 PM
+Searching for pre-configured source servers	05/Oct/2015 04:13:09 PM
+2 Source server(s) found:.	 	05/Oct/2015 04:13:11 PM
+Switch Has Started....>	05/Oct/2015 04:13:11 PM
+Initializing Listener on... 127.0.0.1	9070	05/Oct/2015 04:13:11 PM
+Source: Test SourceNode listening at 127.0.0.1 on 9070	05/Oct/2015 04:13:11 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:13:11 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:13:11 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 04:13:11 PM
+2 Sink Client(s) found	05/Oct/2015 04:13:11 PM
+Switch Has Started....>	05/Oct/2015 04:13:11 PM
+Switch Has Started....>	05/Oct/2015 04:13:11 PM
+Connected to ==> 2	05/Oct/2015 04:13:26 PM
+Listener Peer is now receiving...05/Oct/2015 04:13:28 PM
+	05/Oct/2015 04:13:28 PM
+Switch Has Started....>	05/Oct/2015 04:13:28 PM
+
+ Enter Validator	05/Oct/2015 04:13:28 PM
+Transaction log::: 851666 10/6/2015 12:13:28 AM	05/Oct/2015 04:13:29 PM
+Loading SourceNode Schemes	05/Oct/2015 04:13:29 PM
+Scheme : Tester Scheme Loaded	05/Oct/2015 04:13:29 PM
+Getting fee:	05/Oct/2015 04:13:29 PM
+Transaction log::: 851666 10/6/2015 12:13:31 AM	05/Oct/2015 04:13:31 PM
+(Event) Source server disconnected from: 2	05/Oct/2015 04:13:31 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:13:31 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:13:31 PM
+Connected to ==> 2	05/Oct/2015 04:13:54 PM
+Listener Peer is now receiving...05/Oct/2015 04:13:55 PM
+	05/Oct/2015 04:13:55 PM
+Switch Has Started....>	05/Oct/2015 04:13:55 PM
+
+ Enter Validator	05/Oct/2015 04:13:55 PM
+Transaction log::: 774440 10/6/2015 12:13:55 AM	05/Oct/2015 04:13:55 PM
+Loading SourceNode Schemes	05/Oct/2015 04:13:55 PM
+Scheme : Tester Scheme Loaded	05/Oct/2015 04:13:55 PM
+Getting fee:	05/Oct/2015 04:13:55 PM
+
+ Could not connect to the Sink Node.	05/Oct/2015 04:14:03 PM
+Transaction log::: 774440 10/6/2015 12:14:03 AM	05/Oct/2015 04:14:03 PM
+(Event) Source server disconnected from: 2	05/Oct/2015 04:14:03 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:14:03 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:14:03 PM
+Connected to ==> 2	05/Oct/2015 04:14:40 PM
+Listener Peer is now receiving...05/Oct/2015 04:14:41 PM
+	05/Oct/2015 04:14:41 PM
+Switch Has Started....>	05/Oct/2015 04:14:41 PM
+
+ Enter Validator	05/Oct/2015 04:14:41 PM
+Transaction log::: 695303 10/6/2015 12:14:41 AM	05/Oct/2015 04:14:41 PM
+Loading SourceNode Schemes	05/Oct/2015 04:14:41 PM
+Scheme : Tester Scheme Loaded	05/Oct/2015 04:14:41 PM
+Getting fee:	05/Oct/2015 04:14:41 PM
+Error: while checking if transaction is allowed 
+Object reference not set to an instance of an object.	05/Oct/2015 04:14:41 PM
+Transaction log::: 695303 10/6/2015 12:14:41 AM	05/Oct/2015 04:14:41 PM
+(Event) Source server disconnected from: 2	05/Oct/2015 04:14:41 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:14:41 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:14:41 PM
+Switch Has Started....>	05/Oct/2015 04:15:21 PM
+Searching for pre-configured source servers	05/Oct/2015 04:15:21 PM
+2 Source server(s) found:.	 	05/Oct/2015 04:15:24 PM
+Switch Has Started....>	05/Oct/2015 04:15:24 PM
+Initializing Listener on... 127.0.0.1	9070	05/Oct/2015 04:15:24 PM
+Source: Test SourceNode listening at 127.0.0.1 on 9070	05/Oct/2015 04:15:24 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:15:24 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:15:24 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 04:15:24 PM
+2 Sink Client(s) found	05/Oct/2015 04:15:24 PM
+Switch Has Started....>	05/Oct/2015 04:15:24 PM
+Switch Has Started....>	05/Oct/2015 04:15:24 PM
+Connected to ==> 2	05/Oct/2015 04:15:38 PM
+Listener Peer is now receiving...05/Oct/2015 04:15:39 PM
+	05/Oct/2015 04:15:39 PM
+Switch Has Started....>	05/Oct/2015 04:15:39 PM
+
+ Enter Validator	05/Oct/2015 04:15:39 PM
+Transaction log::: 673428 10/6/2015 12:15:39 AM	05/Oct/2015 04:15:40 PM
+Loading SourceNode Schemes	05/Oct/2015 04:15:40 PM
+Scheme : Tester Scheme Loaded	05/Oct/2015 04:15:40 PM
+Getting fee:	05/Oct/2015 04:15:40 PM
+Error: while checking if transaction is allowed 
+Object reference not set to an instance of an object.	05/Oct/2015 04:15:40 PM
+Transaction log::: 673428 10/6/2015 12:15:40 AM	05/Oct/2015 04:15:40 PM
+(Event) Source server disconnected from: 2	05/Oct/2015 04:15:40 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:15:40 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:15:40 PM
+Connected to ==> 2	05/Oct/2015 04:16:36 PM
+Switch Has Started....>	05/Oct/2015 04:17:06 PM
+Searching for pre-configured source servers	05/Oct/2015 04:17:06 PM
+2 Source server(s) found:.	 	05/Oct/2015 04:17:08 PM
+Switch Has Started....>	05/Oct/2015 04:17:08 PM
+Initializing Listener on... 127.0.0.1	9070	05/Oct/2015 04:17:09 PM
+Source: Test SourceNode listening at 127.0.0.1 on 9070	05/Oct/2015 04:17:09 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:17:09 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:17:09 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 04:17:09 PM
+2 Sink Client(s) found	05/Oct/2015 04:17:09 PM
+Switch Has Started....>	05/Oct/2015 04:17:09 PM
+Switch Has Started....>	05/Oct/2015 04:17:09 PM
+Connected to ==> 2	05/Oct/2015 04:17:11 PM
+Switch Has Started....>	05/Oct/2015 04:18:03 PM
+Searching for pre-configured source servers	05/Oct/2015 04:18:04 PM
+2 Source server(s) found:.	 	05/Oct/2015 04:18:07 PM
+Switch Has Started....>	05/Oct/2015 04:18:07 PM
+Initializing Listener on... 127.0.0.1	9070	05/Oct/2015 04:18:07 PM
+Source: Test SourceNode listening at 127.0.0.1 on 9070	05/Oct/2015 04:18:07 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:18:07 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:18:07 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 04:18:07 PM
+2 Sink Client(s) found	05/Oct/2015 04:18:07 PM
+Switch Has Started....>	05/Oct/2015 04:18:08 PM
+Switch Has Started....>	05/Oct/2015 04:18:08 PM
+Connected to ==> 2	05/Oct/2015 04:18:09 PM
+Switch Has Started....>	05/Oct/2015 04:20:46 PM
+Searching for pre-configured source servers	05/Oct/2015 04:20:46 PM
+2 Source server(s) found:.	 	05/Oct/2015 04:20:48 PM
+Switch Has Started....>	05/Oct/2015 04:20:48 PM
+Initializing Listener on... 127.0.0.1	9070	05/Oct/2015 04:20:48 PM
+Source: Test SourceNode listening at 127.0.0.1 on 9070	05/Oct/2015 04:20:48 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:20:48 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:20:48 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 04:20:49 PM
+2 Sink Client(s) found	05/Oct/2015 04:20:49 PM
+Switch Has Started....>	05/Oct/2015 04:20:49 PM
+Switch Has Started....>	05/Oct/2015 04:20:49 PM
+Connected to ==> 2	05/Oct/2015 04:20:52 PM
+Switch Has Started....>	05/Oct/2015 04:22:09 PM
+Searching for pre-configured source servers	05/Oct/2015 04:22:09 PM
+2 Source server(s) found:.	 	05/Oct/2015 04:22:11 PM
+Switch Has Started....>	05/Oct/2015 04:22:11 PM
+Initializing Listener on... 127.0.0.1	9070	05/Oct/2015 04:22:11 PM
+Source: Test SourceNode listening at 127.0.0.1 on 9070	05/Oct/2015 04:22:11 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:22:11 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:22:11 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 04:22:11 PM
+2 Sink Client(s) found	05/Oct/2015 04:22:12 PM
+Switch Has Started....>	05/Oct/2015 04:22:12 PM
+Switch Has Started....>	05/Oct/2015 04:22:12 PM
+Connected to ==> 2	05/Oct/2015 04:22:12 PM
+Listener Peer is now receiving...05/Oct/2015 04:22:14 PM
+	05/Oct/2015 04:22:14 PM
+Switch Has Started....>	05/Oct/2015 04:22:14 PM
+
+ Enter Validator	05/Oct/2015 04:22:14 PM
+Transaction log::: 167858 10/6/2015 12:22:14 AM	05/Oct/2015 04:22:15 PM
+Loading SourceNode Schemes	05/Oct/2015 04:22:15 PM
+Scheme : Tester Scheme Loaded	05/Oct/2015 04:22:15 PM
+Getting fee:	05/Oct/2015 04:22:15 PM
+
+ Could not connect to the Sink Node.	05/Oct/2015 04:22:23 PM
+Transaction log::: 167858 10/6/2015 12:22:23 AM	05/Oct/2015 04:22:23 PM
+(Event) Source server disconnected from: 2	05/Oct/2015 04:22:23 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:22:23 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:22:23 PM
+Connected to ==> 2	05/Oct/2015 04:22:25 PM
+Switch Has Started....>	05/Oct/2015 04:22:46 PM
+Searching for pre-configured source servers	05/Oct/2015 04:22:46 PM
+2 Source server(s) found:.	 	05/Oct/2015 04:22:48 PM
+Switch Has Started....>	05/Oct/2015 04:22:49 PM
+Initializing Listener on... 127.0.0.1	9070	05/Oct/2015 04:22:49 PM
+Source: Test SourceNode listening at 127.0.0.1 on 9070	05/Oct/2015 04:22:49 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:22:49 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:22:49 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 04:22:49 PM
+2 Sink Client(s) found	05/Oct/2015 04:22:49 PM
+Switch Has Started....>	05/Oct/2015 04:22:49 PM
+Switch Has Started....>	05/Oct/2015 04:22:49 PM
+Connected to ==> 2	05/Oct/2015 04:22:52 PM
+Switch Has Started....>	05/Oct/2015 04:22:58 PM
+Searching for pre-configured source servers	05/Oct/2015 04:22:58 PM
+2 Source server(s) found:.	 	05/Oct/2015 04:22:59 PM
+Switch Has Started....>	05/Oct/2015 04:22:59 PM
+Initializing Listener on... 127.0.0.1	9070	05/Oct/2015 04:22:59 PM
+Source: Test SourceNode listening at 127.0.0.1 on 9070	05/Oct/2015 04:22:59 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:22:59 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:22:59 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 04:22:59 PM
+2 Sink Client(s) found	05/Oct/2015 04:22:59 PM
+Switch Has Started....>	05/Oct/2015 04:22:59 PM
+Switch Has Started....>	05/Oct/2015 04:22:59 PM
+Connected to ==> 2	05/Oct/2015 04:23:02 PM
+Switch Has Started....>	05/Oct/2015 04:24:37 PM
+Searching for pre-configured source servers	05/Oct/2015 04:24:37 PM
+2 Source server(s) found:.	 	05/Oct/2015 04:24:38 PM
+Switch Has Started....>	05/Oct/2015 04:24:38 PM
+Initializing Listener on... 127.0.0.1	9070	05/Oct/2015 04:24:38 PM
+Source: Test SourceNode listening at 127.0.0.1 on 9070	05/Oct/2015 04:24:38 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:24:38 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:24:38 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 04:24:38 PM
+2 Sink Client(s) found	05/Oct/2015 04:24:38 PM
+Switch Has Started....>	05/Oct/2015 04:24:38 PM
+Switch Has Started....>	05/Oct/2015 04:24:38 PM
+Connected to ==> 2	05/Oct/2015 04:25:21 PM
+Listener Peer is now receiving...05/Oct/2015 04:25:21 PM
+	05/Oct/2015 04:25:21 PM
+Switch Has Started....>	05/Oct/2015 04:25:21 PM
+
+ Enter Validator	05/Oct/2015 04:25:21 PM
+Transaction log::: 935248 10/6/2015 12:25:21 AM	05/Oct/2015 04:25:22 PM
+Loading SourceNode Schemes	05/Oct/2015 04:25:22 PM
+Scheme : Tester Scheme Loaded	05/Oct/2015 04:25:22 PM
+Getting fee:	05/Oct/2015 04:25:22 PM
+Transaction log::: 935248 10/6/2015 12:25:23 AM	05/Oct/2015 04:25:23 PM
+(Event) Source server disconnected from: 2	05/Oct/2015 04:25:23 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:25:24 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:25:24 PM
+Connected to ==> 2	05/Oct/2015 04:25:28 PM
+Switch Has Started....>	05/Oct/2015 04:26:24 PM
+Searching for pre-configured source servers	05/Oct/2015 04:26:24 PM
+2 Source server(s) found:.	 	05/Oct/2015 04:26:26 PM
+Switch Has Started....>	05/Oct/2015 04:26:26 PM
+Initializing Listener on... 127.0.0.1	9070	05/Oct/2015 04:26:26 PM
+Source: Test SourceNode listening at 127.0.0.1 on 9070	05/Oct/2015 04:26:26 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:26:26 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:26:26 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 04:26:27 PM
+2 Sink Client(s) found	05/Oct/2015 04:26:27 PM
+Switch Has Started....>	05/Oct/2015 04:26:27 PM
+Switch Has Started....>	05/Oct/2015 04:26:27 PM
+Switch Has Started....>	05/Oct/2015 04:28:20 PM
+Searching for pre-configured source servers	05/Oct/2015 04:28:20 PM
+2 Source server(s) found:.	 	05/Oct/2015 04:28:22 PM
+Switch Has Started....>	05/Oct/2015 04:28:22 PM
+Initializing Listener on... 127.0.0.1	9070	05/Oct/2015 04:28:22 PM
+Source: Test SourceNode listening at 127.0.0.1 on 9070	05/Oct/2015 04:28:22 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:28:22 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:28:22 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 04:28:22 PM
+2 Sink Client(s) found	05/Oct/2015 04:28:22 PM
+Switch Has Started....>	05/Oct/2015 04:28:22 PM
+Switch Has Started....>	05/Oct/2015 04:28:22 PM
+Connected to ==> 2	05/Oct/2015 04:28:26 PM
+Listener Peer is now receiving...05/Oct/2015 04:28:27 PM
+	05/Oct/2015 04:28:27 PM
+Switch Has Started....>	05/Oct/2015 04:28:27 PM
+
+ Enter Validator	05/Oct/2015 04:28:27 PM
+Transaction log::: 903157 10/6/2015 12:28:27 AM	05/Oct/2015 04:28:28 PM
+Loading SourceNode Schemes	05/Oct/2015 04:28:28 PM
+Scheme : Tester Scheme Loaded	05/Oct/2015 04:28:28 PM
+Getting fee:	05/Oct/2015 04:28:28 PM
+Error: while checking if transaction is allowed 
+Object reference not set to an instance of an object.	05/Oct/2015 04:28:28 PM
+Transaction log::: 903157 10/6/2015 12:28:28 AM	05/Oct/2015 04:28:28 PM
+(Event) Source server disconnected from: 2	05/Oct/2015 04:28:28 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:28:28 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:28:28 PM
+Connected to ==> 2	05/Oct/2015 04:28:53 PM
+Listener Peer is now receiving...05/Oct/2015 04:28:55 PM
+	05/Oct/2015 04:28:55 PM
+Switch Has Started....>	05/Oct/2015 04:28:55 PM
+
+ Enter Validator	05/Oct/2015 04:28:55 PM
+Transaction log::: 881070 10/6/2015 12:28:55 AM	05/Oct/2015 04:28:55 PM
+Loading SourceNode Schemes	05/Oct/2015 04:28:55 PM
+Scheme : Tester Scheme Loaded	05/Oct/2015 04:28:55 PM
+Getting fee:	05/Oct/2015 04:28:55 PM
+
+ Could not connect to the Sink Node.	05/Oct/2015 04:29:03 PM
+Transaction log::: 881070 10/6/2015 12:29:03 AM	05/Oct/2015 04:29:03 PM
+(Event) Source server disconnected from: 2	05/Oct/2015 04:29:03 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:29:03 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:29:03 PM
+Switch Has Started....>	05/Oct/2015 04:29:47 PM
+Searching for pre-configured source servers	05/Oct/2015 04:29:47 PM
+2 Source server(s) found:.	 	05/Oct/2015 04:29:49 PM
+Switch Has Started....>	05/Oct/2015 04:29:49 PM
+Initializing Listener on... 127.0.0.1	9070	05/Oct/2015 04:29:49 PM
+Source: Test SourceNode listening at 127.0.0.1 on 9070	05/Oct/2015 04:29:49 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:29:49 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:29:49 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 04:29:49 PM
+2 Sink Client(s) found	05/Oct/2015 04:29:49 PM
+Switch Has Started....>	05/Oct/2015 04:29:49 PM
+Switch Has Started....>	05/Oct/2015 04:29:49 PM
+Connected to ==> 2	05/Oct/2015 04:30:56 PM
+Switch Has Started....>	05/Oct/2015 04:31:34 PM
+Searching for pre-configured source servers	05/Oct/2015 04:31:34 PM
+2 Source server(s) found:.	 	05/Oct/2015 04:31:36 PM
+Switch Has Started....>	05/Oct/2015 04:31:36 PM
+Initializing Listener on... 127.0.0.1	9070	05/Oct/2015 04:31:36 PM
+Source: Test SourceNode listening at 127.0.0.1 on 9070	05/Oct/2015 04:31:36 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:31:36 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:31:36 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 04:31:36 PM
+2 Sink Client(s) found	05/Oct/2015 04:31:36 PM
+Switch Has Started....>	05/Oct/2015 04:31:36 PM
+Switch Has Started....>	05/Oct/2015 04:31:36 PM
+Connected to ==> 2	05/Oct/2015 04:32:27 PM
+Listener Peer is now receiving...05/Oct/2015 04:32:29 PM
+	05/Oct/2015 04:32:29 PM
+Switch Has Started....>	05/Oct/2015 04:32:29 PM
+
+ Enter Validator	05/Oct/2015 04:32:29 PM
+Transaction log::: 165892 10/6/2015 12:32:29 AM	05/Oct/2015 04:32:30 PM
+Loading SourceNode Schemes	05/Oct/2015 04:32:30 PM
+Scheme : Tester Scheme Loaded	05/Oct/2015 04:32:30 PM
+Getting fee:	05/Oct/2015 04:32:30 PM
+Error: while checking if transaction is allowed 
+Object reference not set to an instance of an object.	05/Oct/2015 04:32:30 PM
+Transaction log::: 165892 10/6/2015 12:32:30 AM	05/Oct/2015 04:32:30 PM
+(Event) Source server disconnected from: 2	05/Oct/2015 04:32:30 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:32:30 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:32:30 PM
+Connected to ==> 2	05/Oct/2015 04:32:37 PM
+Switch Has Started....>	05/Oct/2015 04:34:46 PM
+Test SourceNode shutting down at 127.0.0.1 on 9070	05/Oct/2015 04:34:46 PM
+Lanres Box shutting down at 192.168.2.59 on 8583	05/Oct/2015 04:34:46 PM
+SinkNode One shutting down at 127.0.0.1 on 9080	05/Oct/2015 04:34:46 PM
+Test SinkNode two shutting down at 127.0.0.1 on 9071	05/Oct/2015 04:34:46 PM
+Switch Has Started....>	05/Oct/2015 04:35:11 PM
+Searching for pre-configured source servers	05/Oct/2015 04:35:11 PM
+2 Source server(s) found:.	 	05/Oct/2015 04:35:11 PM
+Switch Has Started....>	05/Oct/2015 04:35:11 PM
+Initializing Listener on... 127.0.0.1	9070	05/Oct/2015 04:35:11 PM
+Source: Test SourceNode listening at 127.0.0.1 on 9070	05/Oct/2015 04:35:11 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:35:11 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:35:11 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 04:35:11 PM
+2 Sink Client(s) found	05/Oct/2015 04:35:11 PM
+Switch Has Started....>	05/Oct/2015 04:35:11 PM
+Connected to ==> 2	05/Oct/2015 04:35:12 PM
+(Event) Source server disconnected from: 2	05/Oct/2015 04:35:13 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:35:13 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:35:13 PM
+Switch Has Started....>	05/Oct/2015 04:35:15 PM
+Searching for pre-configured source servers	05/Oct/2015 04:35:15 PM
+2 Source server(s) found:.	 	05/Oct/2015 04:35:16 PM
+Switch Has Started....>	05/Oct/2015 04:35:16 PM
+Initializing Listener on... 127.0.0.1	9070	05/Oct/2015 04:35:16 PM
+Source: Test SourceNode listening at 127.0.0.1 on 9070	05/Oct/2015 04:35:16 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:35:16 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:35:16 PM
+Searching for pre-configured sink Clients:-->> 	05/Oct/2015 04:35:16 PM
+2 Sink Client(s) found	05/Oct/2015 04:35:16 PM
+Switch Has Started....>	05/Oct/2015 04:35:16 PM
+Connected to ==> 2	05/Oct/2015 04:35:32 PM
+Listener Peer is now receiving...05/Oct/2015 04:35:33 PM
+	05/Oct/2015 04:35:33 PM
+Switch Has Started....>	05/Oct/2015 04:35:33 PM
+
+ Enter Validator	05/Oct/2015 04:35:33 PM
+Transaction log::: 320646 10/6/2015 12:35:33 AM	05/Oct/2015 04:35:33 PM
+Loading SourceNode Schemes	05/Oct/2015 04:35:33 PM
+Scheme : Tester Scheme Loaded	05/Oct/2015 04:35:33 PM
+Getting fee:	05/Oct/2015 04:35:33 PM
+Transaction log::: 320646 10/6/2015 12:35:35 AM	05/Oct/2015 04:35:35 PM
+(Event) Source server disconnected from: 2	05/Oct/2015 04:35:35 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:35:35 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:35:35 PM
+Connected to ==> 2	05/Oct/2015 04:36:03 PM
+Listener Peer is now receiving...05/Oct/2015 04:36:04 PM
+	05/Oct/2015 04:36:04 PM
+Switch Has Started....>	05/Oct/2015 04:36:04 PM
+
+ Enter Validator	05/Oct/2015 04:36:04 PM
+Transaction log::: 320646 10/6/2015 12:36:04 AM	05/Oct/2015 04:36:04 PM
+Loading SourceNode Schemes	05/Oct/2015 04:36:04 PM
+Scheme : Tester Scheme Loaded	05/Oct/2015 04:36:04 PM
+Getting fee:	05/Oct/2015 04:36:04 PM
+Transaction log::: 320646 10/6/2015 12:36:06 AM	05/Oct/2015 04:36:06 PM
+(Event) Source server disconnected from: 2	05/Oct/2015 04:36:06 PM
+Initializing Listener on... 192.168.2.59	8583	05/Oct/2015 04:36:06 PM
+Source: Lanres Box listening at 192.168.2.59 on 8583	05/Oct/2015 04:36:06 PM

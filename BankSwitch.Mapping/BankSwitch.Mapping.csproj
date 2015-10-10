@@ -31,13 +31,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FluentNHibernate">
-      <HintPath>..\..\..\..\..\..\..\CBAProject\CBAProject\CBA.Web\bin\FluentNHibernate.dll</HintPath>
+      <HintPath>..\..\..\CBAProject\dll\FluentNHibernate.dll</HintPath>
     </Reference>
     <Reference Include="Iesi.Collections">
-      <HintPath>..\BankSwitch.Engine1\bin\Debug\Iesi.Collections.dll</HintPath>
+      <HintPath>..\BankSwitch.Engine\bin\Debug\Iesi.Collections.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate">
-      <HintPath>..\BankSwitch.Engine1\bin\Debug\NHibernate.dll</HintPath>
+      <HintPath>..\..\..\CBAProject\CBAProject\CBA.Web\bin\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

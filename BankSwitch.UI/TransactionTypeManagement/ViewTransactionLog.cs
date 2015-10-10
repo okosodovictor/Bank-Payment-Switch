@@ -60,6 +60,7 @@ namespace BankSwitch.UI.TransactionTypeManagement
             .WithColumn(x => x.Account2)
             .WithColumn(x=>x.Amount)
             .WithColumn(x=>x.CardPAN)
+            .WithColumn(x=>x.MTI)
             .WithColumn(x=>x.Channel)
             .WithColumn(x=>x.Charge)
             .WithColumn(x => x.TransactionDate,"Transaction Date")

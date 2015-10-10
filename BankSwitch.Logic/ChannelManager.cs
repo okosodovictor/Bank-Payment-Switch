@@ -40,7 +40,7 @@ namespace BankSwitch.Logic
        public bool Edit(Channel model)
        {
            bool result = false;
-           var ch = _db.Get<Channel>().FirstOrDefault(x => x.Name == model.Name && x.Code == model.Code);
+           var ch = _db.Get<Channel>().FirstOrDefault(x =>x.Id==model.Id);
            if(ch!=null)
            {
                ch.Name = model.Name;

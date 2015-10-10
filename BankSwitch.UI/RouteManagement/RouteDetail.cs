@@ -40,16 +40,9 @@ namespace BankSwitch.UI.RouteManagement
                })
              }
              );
-           AddButton().WithText("Edit")
-               .ApplyMod<ButtonPopupMod>(x => x.Popup<EditRoute>("Edit Route")
-               .PrePopulate<Route, Route>(y => y));
-        }
-        public static string State(String Param)
-        {
-            if (Param == "Active")
-                return "Active";
-            else
-                return "In-active";
+            AddButton().WithText("Edit Route")
+                .ApplyMod<ButtonPopupMod>(x => x.Popup<EditRoute>("Edit Route"));
+               //.PrePopulate<Route, Route>(y => y));
         }
     }
 }

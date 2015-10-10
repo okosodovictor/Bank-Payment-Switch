@@ -42,7 +42,7 @@ namespace BankSwitch.Logic
            bool result = false;
            try
            {
-               var transx = _db.Get<TransactionType>().FirstOrDefault(x => x.Name == model.Name || x.Code == model.Code);
+               var transx = _db.Get<TransactionType>().FirstOrDefault(x =>x.Id==model.Id);
                if (transx != null)
                {
                    transx.Code = model.Code;

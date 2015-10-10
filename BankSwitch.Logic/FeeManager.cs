@@ -52,7 +52,7 @@ namespace BankSwitch.Logic
            bool result = false;
            try
            {
-               var fee = _db.Get<Fee>().FirstOrDefault(x => x.Name == model.Name);
+               var fee = _db.Get<Fee>().FirstOrDefault(x => x.Id==model.Id);
                if (fee != null)
                {
                    fee.Name = model.Name;
